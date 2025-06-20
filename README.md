@@ -10,3 +10,5 @@ Ooe.fmp12 endeavors to have an example of one of every possible configuration of
 Achieving 100% coverage is not a realistic goal, but the hope is that over time we can accumulate examples of all of the different possible permutations to this file.
 
 Among other possible use cases, having these examples available makes it easier to explore the FileMaker Save-as-XML (SaXML) format.
+
+Log in with admin / admin.
