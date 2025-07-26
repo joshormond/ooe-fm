@@ -18,7 +18,8 @@ Among other possible use cases, having these examples available makes it easier 
 
 ## Credentials
 
-- Ooe.fmp12: Log in with admin / admin.
+- Log in for both files: admin / admin
+- EAR password for Two.fmp12: admin
 
 ## SaXML encoding
 

@@ -48,7 +48,7 @@
 				</ObjectList>
 			</FileAccessCatalog>
 			<ExternalDataSourceCatalog membercount="3">
-				<UUID modifications="8" userName="Mislav" accountName="admin" timestamp="2025-07-16T07:45:01">417E47B0-60CC-434B-A30B-1E49B790D800</UUID>
+				<UUID modifications="9" userName="Mislav" accountName="admin" timestamp="2025-07-26T18:02:22">417E47B0-60CC-434B-A30B-1E49B790D800</UUID>
 				<TagList></TagList>
 				<ExternalDataSource name="Ooe_dev" type="FileMaker" id="1">
 					<File>
@@ -64,11 +64,11 @@
 					<UUID modifications="1" userName="SC NXP2R99WWT" accountName="Admin" timestamp="2025-06-09T10:19:00">AC01FBF7-68A1-4C6A-B51A-AFC4A24C8BDE</UUID>
 					<TagList></TagList>
 				</ExternalDataSource>
-				<ExternalDataSource name="Ooe2" type="FileMaker" id="4">
+				<ExternalDataSource name="Two" type="FileMaker" id="4">
 					<File>
-						<UniversalPathList>file:Ooe2</UniversalPathList>
+						<UniversalPathList>file:Two</UniversalPathList>
 					</File>
-					<UUID modifications="0" userName="Mislav" accountName="admin" timestamp="2025-07-16T07:45:00">6D667462-7EFB-4D54-AA43-06E9B16716BF</UUID>
+					<UUID modifications="1" userName="Mislav" accountName="admin" timestamp="2025-07-26T18:02:06">6D667462-7EFB-4D54-AA43-06E9B16716BF</UUID>
 					<TagList></TagList>
 				</ExternalDataSource>
 			</ExternalDataSourceCatalog>
@@ -88,10 +88,10 @@
 				</BaseTable>
 			</BaseTableCatalog>
 			<TableOccurrenceCatalog membercount="6">
-				<UUID modifications="20" userName="Mislav" accountName="admin" timestamp="2025-07-16T07:55:17">4EF01E87-25C8-468E-939E-BE82841BA6B9</UUID>
+				<UUID modifications="23" userName="Mislav" accountName="admin" timestamp="2025-07-26T18:02:34">4EF01E87-25C8-468E-939E-BE82841BA6B9</UUID>
 				<TagList></TagList>
 				<TableOccurrenceNotes>
-					<ObjectList membercount="1">
+					<ObjectList membercount="2">
 						<LayoutObject hash="738536BAB867D77B2B29D5211F531E8F" id="1" type="Text" name="" kind="2">
 							<UUID>8C925190-14AD-4EC3-BA65-2FBFF5A4A647</UUID>
 							<Bounds top="408" left="83" bottom="533" right="415"></Bounds>
@@ -108,10 +108,29 @@
 }
 ]]></LocalCSS>
 						</LayoutObject>
+						<LayoutObject hash="FBFE631400E1207CF7F81DCC4FFA81CF" id="2" type="Text" name="" kind="2">
+							<UUID>D4D97FB0-D511-46F2-BA25-93D32DAA2154</UUID>
+							<Bounds top="453" left="477" bottom="578" right="809"></Bounds>
+							<Options>805306368</Options>
+							<Text>
+								<Options>0</Options>
+								<StyledText>
+									<Data><![CDATA[2nd relationship graph note (this one is purple on yellow and uses a different font and font size and color)]]></Data>
+								</StyledText>
+							</Text>
+							<LocalCSS name="" displayName=""><![CDATA[self:normal .self
+{
+	background-color: rgba(100%,100%,20%,1);
+	font-family: -fm-font-family(Helvetica,Helvetica);
+	font-size: 14pt;
+	color: rgba(52.1569%,0%,68.6275%,1);
+}
+]]></LocalCSS>
+						</LayoutObject>
 					</ObjectList>
 				</TableOccurrenceNotes>
 				<TableOccurrence View="Full" height="86" id="1065089" name="TestTable" type="Local">
-					<UUID modifications="7" userName="Mislav" accountName="Admin" timestamp="2025-05-04T09:35:18">4908496C-B0B9-4840-9BFC-6C2D42719F0C</UUID>
+					<UUID modifications="9" userName="Mislav" accountName="admin" timestamp="2025-07-24T16:09:21">4908496C-B0B9-4840-9BFC-6C2D42719F0C</UUID>
 					<BaseTableSourceReference type="BaseTableReference">
 						<BaseTableReference id="129" name="TestTable" UUID="471CCAC6-9046-4B2E-BD66-03EEAE88170B"></BaseTableReference>
 					</BaseTableSourceReference>
@@ -120,7 +139,7 @@
 					<TagList></TagList>
 				</TableOccurrence>
 				<TableOccurrence View="Full" height="74" id="1065091" name="Contacts" type="Local">
-					<UUID modifications="6" userName="Mislav" accountName="Admin" timestamp="2025-05-04T09:35:02">E8E43577-C015-43EC-A455-99DD51B56BF2</UUID>
+					<UUID modifications="8" userName="Mislav" accountName="admin" timestamp="2025-07-24T16:10:37">E8E43577-C015-43EC-A455-99DD51B56BF2</UUID>
 					<BaseTableSourceReference type="BaseTableReference">
 						<BaseTableReference id="131" name="Contacts" UUID="48C3E49A-617B-45C4-98F9-E901BD4E69BE"></BaseTableReference>
 					</BaseTableSourceReference>
@@ -129,7 +148,7 @@
 					<TagList></TagList>
 				</TableOccurrence>
 				<TableOccurrence View="Full" height="74" id="1065093" name="Contacts_TestTable" type="Local">
-					<UUID modifications="9" userName="Mislav" accountName="admin" timestamp="2025-07-03T11:18:50">82E7BFF7-DBDE-4FB4-BCD4-401A07C5AFF7</UUID>
+					<UUID modifications="11" userName="Mislav" accountName="admin" timestamp="2025-07-24T16:10:37">82E7BFF7-DBDE-4FB4-BCD4-401A07C5AFF7</UUID>
 					<BaseTableSourceReference type="BaseTableReference">
 						<BaseTableReference id="129" name="TestTable" UUID="471CCAC6-9046-4B2E-BD66-03EEAE88170B"></BaseTableReference>
 					</BaseTableSourceReference>
@@ -138,7 +157,7 @@
 					<TagList></TagList>
 				</TableOccurrence>
 				<TableOccurrence View="Full" height="86" id="1065094" name="TestTable_Contacts" type="Local">
-					<UUID modifications="6" userName="Mislav" accountName="Admin" timestamp="2025-05-04T09:35:18">34F19F48-2BB3-48DB-8C03-44DD5FBF74F4</UUID>
+					<UUID modifications="8" userName="Mislav" accountName="admin" timestamp="2025-07-24T16:09:21">34F19F48-2BB3-48DB-8C03-44DD5FBF74F4</UUID>
 					<BaseTableSourceReference type="BaseTableReference">
 						<BaseTableReference id="131" name="Contacts" UUID="48C3E49A-617B-45C4-98F9-E901BD4E69BE"></BaseTableReference>
 					</BaseTableSourceReference>
@@ -156,7 +175,7 @@
 					<TagList></TagList>
 				</TableOccurrence>
 				<TableOccurrence View="Full" height="86" id="1065096" name="Invoice" type="External">
-					<UUID modifications="3" userName="Mislav" accountName="admin" timestamp="2025-07-16T07:55:16">A5169A3E-937A-4ADF-950E-255E8394E38E</UUID>
+					<UUID modifications="4" userName="Mislav" accountName="admin" timestamp="2025-07-26T18:02:32">A5169A3E-937A-4ADF-950E-255E8394E38E</UUID>
 					<BaseTableSourceReference type="ExternalDataSourceReference"></BaseTableSourceReference>
 					<CoordRect top="216" left="571" bottom="332" right="702"></CoordRect>
 					<Color red="120" green="120" blue="120" alpha="1.00"></Color>
@@ -164,11 +183,11 @@
 				</TableOccurrence>
 			</TableOccurrenceCatalog>
 			<CustomFunctionsCatalog membercount="14">
-				<UUID modifications="11" userName="Mislav" accountName="admin" timestamp="2025-07-14T13:11:14">00F1397B-1D68-4D94-BB3E-8FCB7E4D3255</UUID>
+				<UUID modifications="12" userName="Mislav" accountName="admin" timestamp="2025-07-24T16:14:15">00F1397B-1D68-4D94-BB3E-8FCB7E4D3255</UUID>
 				<TagList></TagList>
 				<ObjectList membercount="14">
 					<CustomFunction id="2" name="OrderOfOperations" access="All">
-						<UUID modifications="6" userName="Mislav" accountName="admin" timestamp="2025-07-14T13:11:13">D87A5E62-C8CF-4959-8B25-4E70EAF7BE87</UUID>
+						<UUID modifications="7" userName="Mislav" accountName="admin" timestamp="2025-07-24T16:14:14">D87A5E62-C8CF-4959-8B25-4E70EAF7BE87</UUID>
 						<TagList></TagList>
 						<Display>OrderOfOperations</Display>
 					</CustomFunction>
@@ -633,9 +652,9 @@
 				</ValueList>
 			</OptionsForValueLists>
 			<RelationshipCatalog membercount="2">
-				<UUID modifications="3" userName="Mislav" accountName="Admin" timestamp="2025-05-04T09:35:19">E09D59C4-1456-43E1-A305-2965143F3D06</UUID>
+				<UUID modifications="5" userName="Mislav" accountName="admin" timestamp="2025-07-24T16:12:00">E09D59C4-1456-43E1-A305-2965143F3D06</UUID>
 				<Relationship id="1">
-					<UUID modifications="1" userName="Mislav" accountName="Admin" timestamp="2025-05-04T09:16:24">5D85DEC9-B562-4723-BE4C-B4A93966377A</UUID>
+					<UUID modifications="2" userName="Mislav" accountName="admin" timestamp="2025-07-24T16:10:37">5D85DEC9-B562-4723-BE4C-B4A93966377A</UUID>
 					<LeftTable cascadeCreate="True" cascadeDelete="True" type="Local">
 						<TableOccurrenceReference id="1065093" name="Contacts_TestTable" UUID="82E7BFF7-DBDE-4FB4-BCD4-401A07C5AFF7"></TableOccurrenceReference>
 						<SortSpecification value="True" maintain="True">
@@ -653,7 +672,7 @@
 					<RightTable cascadeCreate="False" cascadeDelete="False" type="Local">
 						<TableOccurrenceReference id="1065091" name="Contacts" UUID="E8E43577-C015-43EC-A455-99DD51B56BF2"></TableOccurrenceReference>
 					</RightTable>
-					<JoinPredicateList membercount="1">
+					<JoinPredicateList membercount="2">
 						<JoinPredicate type="Equal">
 							<LeftField>
 								<FieldReference id="14" name="ID" UUID="3699B045-50A7-4EAE-B404-5C9A8564735B">
@@ -666,18 +685,44 @@
 								</FieldReference>
 							</RightField>
 						</JoinPredicate>
+						<JoinPredicate type="Equal">
+							<LeftField>
+								<FieldReference id="12" name="CalcField1_c" UUID="3686EC6C-B572-4D52-A0E2-1C0C56F9360C">
+									<TableOccurrenceReference id="1065093" name="Contacts_TestTable" UUID="82E7BFF7-DBDE-4FB4-BCD4-401A07C5AFF7"></TableOccurrenceReference>
+								</FieldReference>
+							</LeftField>
+							<RightField>
+								<FieldReference id="6" name="Name" UUID="CDA37349-D2D9-4ACA-B58C-9F8272B51F9D">
+									<TableOccurrenceReference id="1065091" name="Contacts" UUID="E8E43577-C015-43EC-A455-99DD51B56BF2"></TableOccurrenceReference>
+								</FieldReference>
+							</RightField>
+						</JoinPredicate>
 					</JoinPredicateList>
 					<TagList></TagList>
 				</Relationship>
 				<Relationship id="2">
-					<UUID modifications="1" userName="Mislav" accountName="Admin" timestamp="2025-05-04T09:35:18">015D99E7-5FD8-430E-A593-9AF31C9FA308</UUID>
+					<UUID modifications="2" userName="Mislav" accountName="admin" timestamp="2025-07-24T16:09:21">015D99E7-5FD8-430E-A593-9AF31C9FA308</UUID>
 					<LeftTable cascadeCreate="True" cascadeDelete="True" type="Local">
 						<TableOccurrenceReference id="1065094" name="TestTable_Contacts" UUID="34F19F48-2BB3-48DB-8C03-44DD5FBF74F4"></TableOccurrenceReference>
 						<SortSpecification value="True" maintain="True">
-							<SortList membercount="1">
+							<SortList membercount="3">
 								<Sort type="Ascending">
 									<PrimaryField>
 										<FieldReference id="6" name="Name" UUID="CDA37349-D2D9-4ACA-B58C-9F8272B51F9D">
+											<TableOccurrenceReference id="1065094" name="TestTable_Contacts" UUID="34F19F48-2BB3-48DB-8C03-44DD5FBF74F4"></TableOccurrenceReference>
+										</FieldReference>
+									</PrimaryField>
+								</Sort>
+								<Sort type="Ascending">
+									<PrimaryField>
+										<FieldReference id="3" name="CreatedBy" UUID="1BF264AB-AF53-47EF-BA6B-8381FDA9D48F">
+											<TableOccurrenceReference id="1065094" name="TestTable_Contacts" UUID="34F19F48-2BB3-48DB-8C03-44DD5FBF74F4"></TableOccurrenceReference>
+										</FieldReference>
+									</PrimaryField>
+								</Sort>
+								<Sort type="Ascending">
+									<PrimaryField>
+										<FieldReference id="5" name="ModifiedBy" UUID="26C9FA76-D53E-46E3-9E8A-5700074F5C6C">
 											<TableOccurrenceReference id="1065094" name="TestTable_Contacts" UUID="34F19F48-2BB3-48DB-8C03-44DD5FBF74F4"></TableOccurrenceReference>
 										</FieldReference>
 									</PrimaryField>
@@ -716,7 +761,7 @@
 					<CustomFunctionCalc>
 						<CustomFunctionReference id="2" name="OrderOfOperations" UUID="D87A5E62-C8CF-4959-8B25-4E70EAF7BE87"></CustomFunctionReference>
 						<Calculation>
-							<Text><![CDATA[// The custom function references a field// It's set up this way, so that we can see how SaXML handles this situationContacts::OrderOfOperationsTest_u// 2025-07-14 mkos: Added comment]]></Text>
+							<Text><![CDATA[// The custom function references a field// It's set up this way, so that we can see how SaXML handles this situationContacts::OrderOfOperationsTest_u& If ( Random > .5 ; " " & Contacts::Name )// 2025-07-14 mkos: Added comment]]></Text>
 						</Calculation>
 					</CustomFunctionCalc>
 					<CustomFunctionCalc>
@@ -803,7 +848,7 @@
 					<Object id="8"></Object>
 					<Object id="9"></Object>
 				</PasteIndexList>
-				<UUID modifications="6" userName="Mislav" accountName="Admin" timestamp="2025-06-08T15:09:17">03DFA0E0-A37A-4AD0-90F0-15FFA8C6452F</UUID>
+				<UUID modifications="8" userName="Mislav" accountName="admin" timestamp="2025-07-24T16:32:22">03DFA0E0-A37A-4AD0-90F0-15FFA8C6452F</UUID>
 				<TagList></TagList>
 				<CustomMenu name="[Format]" id="1">
 					<UUID modifications="0" userName="Mislav" accountName="Admin" timestamp="2025-04-16T17:58:46">65D45D33-866F-4D14-99B5-3E869E89819D</UUID>
@@ -1166,9 +1211,9 @@
 					<Options browseMode="True" findMode="True" previewMode="True"></Options>
 				</CustomMenu>
 				<CustomMenu name="MyCustomMenu" id="26">
-					<UUID modifications="3" userName="Mislav" accountName="Admin" timestamp="2025-06-08T15:09:17">01A30526-B3F6-4834-8333-9C61558697B3</UUID>
+					<UUID modifications="5" userName="Mislav" accountName="admin" timestamp="2025-07-24T16:25:04">01A30526-B3F6-4834-8333-9C61558697B3</UUID>
 					<TagList></TagList>
-					<MenuItemList membercount="3">
+					<MenuItemList membercount="5">
 						<CustomMenuItem hash="C388239250CB870A1E54B4721BC8010B" index="0" isSubMenuItem="False" isSeparatorItem="False">
 							<UUID>002866B8-9121-46E8-BD82-ECE1A774440A</UUID>
 							<Conditions>
@@ -1280,6 +1325,34 @@
 							<Command id="0"></Command>
 							<Override name="True" action="True" Shortcut="False"></Override>
 						</CustomMenuItem>
+						<CustomMenuItem hash="8FC61588198C30E5542E0244BF531DD2" index="3" isSubMenuItem="False" isSeparatorItem="True">
+							<UUID>CFADD5FE-BE9D-4CCB-A561-444E044952BB</UUID>
+							<Conditions>
+								<Install>
+									<Calculation>
+										<Text><![CDATA[1]]></Text>
+									</Calculation>
+								</Install>
+							</Conditions>
+							<Override name="False" action="False" Shortcut="False"></Override>
+						</CustomMenuItem>
+						<CustomMenuItem hash="214D8F4F0F3715B85FA37A54EF75A9DF" index="4" isSubMenuItem="True" isSeparatorItem="False">
+							<UUID>8ED39453-A75F-4BFC-9D37-0F943C10039D</UUID>
+							<CustomMenuReference id="9" name="[Manage]"></CustomMenuReference>
+							<Conditions>
+								<Install>
+									<Calculation>
+										<Text><![CDATA[Random > .5]]></Text>
+									</Calculation>
+								</Install>
+							</Conditions>
+							<Name>
+								<Calculation>
+									<Text><![CDATA["Manage (submenu)"]]></Text>
+								</Calculation>
+							</Name>
+							<Override name="True" action="False" Shortcut="False"></Override>
+						</CustomMenuItem>
 					</MenuItemList>
 					<Conditions>
 						<Install>
@@ -1300,16 +1373,25 @@
 					</Options>
 				</CustomMenu>
 			</CustomMenuCatalog>
-			<CustomMenuSetCatalog membercount="1">
-				<PasteIndexList membercount="1">
+			<CustomMenuSetCatalog membercount="2">
+				<PasteIndexList membercount="2">
 					<Object id="2"></Object>
+					<Object id="3"></Object>
 				</PasteIndexList>
-				<UUID modifications="3" userName="Mislav" accountName="Admin" timestamp="2025-05-04T09:29:19">2CE39497-5A3F-42B4-B53A-2D7EDC08A094</UUID>
+				<UUID modifications="4" userName="Mislav" accountName="admin" timestamp="2025-07-24T16:32:22">2CE39497-5A3F-42B4-B53A-2D7EDC08A094</UUID>
 				<TagList></TagList>
 				<CustomMenuSetReference id="1" name="[Standard FileMaker Menus]" UUID="F70D8C22-9C5B-42A4-823E-745B4145E1E5"></CustomMenuSetReference>
-				<ObjectList membercount="1">
+				<ObjectList membercount="2">
 					<CustomMenuSet name="MyCustomMenuSet" id="2" comment="MyCustomMenuSet comment">
-						<UUID modifications="0" userName="Mislav" accountName="Admin" timestamp="2025-05-04T09:29:10">1AC1705B-731F-4ECF-A4F6-DE36B00C948D</UUID>
+						<UUID modifications="1" userName="Mislav" accountName="admin" timestamp="2025-07-24T16:25:25">1AC1705B-731F-4ECF-A4F6-DE36B00C948D</UUID>
+						<TagList></TagList>
+						<CustomMenuList membercount="2">
+							<CustomMenuReference name="MyCustomMenu" id="26"></CustomMenuReference>
+							<CustomMenuReference name="[Spelling]" id="18"></CustomMenuReference>
+						</CustomMenuList>
+					</CustomMenuSet>
+					<CustomMenuSet name="SecondCustomMenuSet" id="3" comment="For fun">
+						<UUID modifications="0" userName="Mislav" accountName="admin" timestamp="2025-07-24T16:28:10">8646B957-12AC-4139-B162-869FA1C5B059</UUID>
 						<TagList></TagList>
 						<CustomMenuList membercount="1">
 							<CustomMenuReference name="MyCustomMenu" id="26"></CustomMenuReference>
@@ -1318,7 +1400,7 @@
 				</ObjectList>
 			</CustomMenuSetCatalog>
 			<ScriptCatalog membercount="36">
-				<UUID modifications="183" userName="Mislav" accountName="admin" timestamp="2025-07-16T07:56:40">AA81A957-0AB6-4210-A369-DC734FE0BC11</UUID>
+				<UUID modifications="189" userName="Mislav" accountName="admin" timestamp="2025-07-26T18:19:02">AA81A957-0AB6-4210-A369-DC734FE0BC11</UUID>
 				<TagList></TagList>
 				<Script id="14" name="About" isFolder="True">
 					<UUID modifications="1" userName="Mislav" accountName="admin" timestamp="2025-06-20T18:10:24">4FB8D085-23E1-4870-8710-FC6EAB83835C</UUID>
@@ -1331,7 +1413,7 @@
 					<TagList></TagList>
 				</Script>
 				<Script id="17" name="Release Notes">
-					<UUID modifications="13" userName="Mislav" accountName="admin" timestamp="2025-07-16T07:56:40">C59FC9BA-BB08-4E8D-8A7F-1380F07D1E83</UUID>
+					<UUID modifications="18" userName="Mislav" accountName="admin" timestamp="2025-07-26T18:19:02">C59FC9BA-BB08-4E8D-8A7F-1380F07D1E83</UUID>
 					<Options hidden="True" access="ReadWrite" SiriShortcutVisible="False" runwithfullaccess="False" compatibility="0">8</Options>
 					<TagList></TagList>
 				</Script>
@@ -1341,7 +1423,7 @@
 					<TagList></TagList>
 				</Script>
 				<Script id="1" name="Hello world">
-					<UUID modifications="5" userName="Mislav" accountName="admin" timestamp="2025-06-11T17:13:05">41D78F84-E8F2-4E2D-90F3-A3C380F22F7E</UUID>
+					<UUID modifications="6" userName="Mislav" accountName="admin" timestamp="2025-07-24T16:15:33">41D78F84-E8F2-4E2D-90F3-A3C380F22F7E</UUID>
 					<Options hidden="False" access="ReadWrite" SiriShortcutVisible="False" runwithfullaccess="False" compatibility="0">0</Options>
 					<TagList></TagList>
 				</Script>
@@ -13330,7 +13412,7 @@ part.white_part:normal .self
 				</Theme>
 			</ThemeCatalog>
 			<LayoutCatalog membercount="10">
-				<UUID modifications="207" userName="Mislav" accountName="admin" timestamp="2025-06-20T17:59:43">5E337BAB-42BC-4E8A-878B-9656140CE086</UUID>
+				<UUID modifications="208" userName="Mislav" accountName="admin" timestamp="2025-06-20T17:59:43">5E337BAB-42BC-4E8A-878B-9656140CE086</UUID>
 				<TagList></TagList>
 				<Layout id="11" name="File Open" width="740">
 					<TableOccurrenceReference id="1065095" name="blank" UUID="724748F0-F1A7-4448-A85F-FE2E0FE58A83"></TableOccurrenceReference>
@@ -13339,14 +13421,14 @@ part.white_part:normal .self
 						<Part type="Body" kind="4">
 							<Definition type="Body" kind="4" size="450" absolute="0" Options="1024"></Definition>
 							<ObjectList membercount="3">
-								<LayoutObject hash="67DC159146967E6C8703E020C8802B54" id="3" type="Text" name="" kind="2">
+								<LayoutObject hash="5D6ED5B5ACE714ACB6284993B5F4DB45" id="3" type="Text" name="" kind="2">
 									<UUID>7814854E-DEB5-423E-84B9-1B61690EB315</UUID>
 									<Bounds top="145" left="20" bottom="435" right="720"></Bounds>
 									<Options>0</Options>
 									<Text>
 										<Options>2</Options>
 										<StyledText>
-											<Data><![CDATA[This file endeavors to have an example of One Of Everything (Ooe)—one of every possible configuration of every kind of solution element.For example, every kind of layout part or layout object, every kind of value list, every kind of script step, etc.Achieving 100% coverage is not a realistic goal, but the hope is that over time we can add examples of all these different permutations to this file.Last updated: 2025-07-16]]></Data>
+											<Data><![CDATA[This file endeavors to have an example of One Of Everything (Ooe)—one of every possible configuration of every kind of solution element.For example, every kind of layout part or layout object, every kind of value list, every kind of script step, etc.Achieving 100% coverage is not a realistic goal, but the hope is that over time we can add examples of all these different permutations to this file.Last updated: 2025-07-24]]></Data>
 										</StyledText>
 									</Text>
 									<LocalCSS name="" displayName=""><![CDATA[self:normal .self
@@ -13456,7 +13538,7 @@ part.white_part:normal .self
 							</ObjectList>
 						</Part>
 					</PartsList>
-					<UUID modifications="40" userName="Mislav" accountName="admin" timestamp="2025-07-16T07:55:37">227FE5E4-D9F1-474B-A744-4E5715FE5DDB</UUID>
+					<UUID modifications="41" userName="Mislav" accountName="admin" timestamp="2025-07-24T16:14:31">227FE5E4-D9F1-474B-A744-4E5715FE5DDB</UUID>
 					<TagList></TagList>
 					<GridStyle>
 						<Color red="0.500000" green="0.500000" blue="0.500000" alpha="1.000000"></Color>
@@ -15691,10 +15773,10 @@ self:normal .icon
 					</StreamList>
 				</BinaryData>
 			</LibraryCatalog>
-			<PrivilegeSetsCatalog membercount="4">
-				<UUID modifications="5" userName="Mislav" accountName="admin" timestamp="2025-06-20T17:33:50">98B2706A-36C6-40D8-906C-6BC2B456A80F</UUID>
+			<PrivilegeSetsCatalog membercount="6">
+				<UUID modifications="8" userName="Mislav" accountName="admin" timestamp="2025-07-24T23:48:35">98B2706A-36C6-40D8-906C-6BC2B456A80F</UUID>
 				<TagList></TagList>
-				<ObjectList membercount="4">
+				<ObjectList membercount="6">
 					<PrivilegeSet id="1" name="[Full Access]">
 						<UUID modifications="0" userName="Mislav" accountName="" timestamp="2025-04-16T17:58:46">2EBC929A-2C0F-4505-83E2-1212F41AD278</UUID>
 						<Description>access to everything</Description>
@@ -15735,7 +15817,7 @@ self:normal .icon
 						</access>
 					</PrivilegeSet>
 					<PrivilegeSet id="4" name="MyRestrictedPrivilegeSet">
-						<UUID modifications="0" userName="Mislav" accountName="Admin" timestamp="2025-05-04T09:23:45">0C57BEEB-9CDD-4995-8F4C-9146819D6806</UUID>
+						<UUID modifications="5" userName="Mislav" accountName="admin" timestamp="2025-07-24T23:48:33">0C57BEEB-9CDD-4995-8F4C-9146819D6806</UUID>
 						<Description>MyRestrictedPrivilegeSetDescription</Description>
 						<access>
 							<Records Custom="True">
@@ -15767,7 +15849,7 @@ self:normal .icon
 											<Delete access="Calculation">
 												<Calculation>
 													<TableOccurrenceReference id="1065091" name="Contacts" UUID="E8E43577-C015-43EC-A455-99DD51B56BF2"></TableOccurrenceReference>
-													<Text><![CDATA[True]]></Text>
+													<Text><![CDATA[Name = Contacts_TestTable::MyGlobal_g]]></Text>
 												</Calculation>
 											</Delete>
 											<Fields access="Custom">
@@ -15888,16 +15970,156 @@ self:normal .icon
 									</ObjectList>
 								</Custom>
 							</ValueLists>
-							<Scripts Create="True" Edit="True" Delete="True"></Scripts>
+							<Scripts Custom="True">
+								<Custom Create="True">
+									<ObjectList membercount="37">
+										<Script type="existing" access="NoAccess">
+											<ScriptReference id="1" name="Hello world" UUID="41D78F84-E8F2-4E2D-90F3-A3C380F22F7E"></ScriptReference>
+										</Script>
+										<Script type="existing" access="ReadWrite">
+											<ScriptReference id="2" name="noop" UUID="07F73D91-BCD7-4842-AEA8-93AE9D742C6F"></ScriptReference>
+										</Script>
+										<Script type="existing" access="ReadWrite">
+											<ScriptReference id="3" name="MyScriptFolder" UUID="20DCD875-4321-4E50-A032-BBB3CA9B8958"></ScriptReference>
+										</Script>
+										<Script type="existing" access="ReadWrite">
+											<ScriptReference id="4" name="--" UUID="641CE32E-C3AA-4CF7-ABB5-9274B4863A85"></ScriptReference>
+										</Script>
+										<Script type="existing" access="ReadWrite">
+											<ScriptReference id="5" name="Circular Reference" UUID="FCE13863-A635-4F4C-A0B8-AB7FC05ABC78"></ScriptReference>
+										</Script>
+										<Script type="existing" access="ReadWrite">
+											<ScriptReference id="6" name="MyScriptSubfolder" UUID="4D3BA7A0-53F4-4023-A08B-F63B1FBDDC7A"></ScriptReference>
+										</Script>
+										<Script type="existing" access="ReadWrite">
+											<ScriptReference id="7" name="--" UUID="85119086-9842-4292-959A-3A32ED207A66"></ScriptReference>
+										</Script>
+										<Script type="existing" access="ReadWrite">
+											<ScriptReference id="8" name="-" UUID="3CDC3DF2-BD4C-4FC2-897B-5FFAAC930D42"></ScriptReference>
+										</Script>
+										<Script type="existing" access="ReadWrite">
+											<ScriptReference id="9" name="Decode base64 image" UUID="6B3E4942-979B-4200-AEE0-A4103DD28CEC"></ScriptReference>
+										</Script>
+										<Script type="existing" access="ReadWrite">
+											<ScriptReference id="10" name="EmptyScriptFolder" UUID="30F5FD8E-00DB-4BCC-A67E-ED6989334C93"></ScriptReference>
+										</Script>
+										<Script type="existing" access="ReadWrite">
+											<ScriptReference id="11" name="--" UUID="33E67CDD-4303-4D79-B621-7BA15673508D"></ScriptReference>
+										</Script>
+										<Script type="existing" access="ReadWrite">
+											<ScriptReference id="12" name="Constrain without indexes" UUID="1066D7B7-EAE9-48FB-BB7A-525C83E91AD7"></ScriptReference>
+										</Script>
+										<Script type="existing" access="ReadWrite">
+											<ScriptReference id="14" name="About" UUID="4FB8D085-23E1-4870-8710-FC6EAB83835C"></ScriptReference>
+										</Script>
+										<Script type="existing" access="ReadOnly">
+											<ScriptReference id="16" name="LICENSE" UUID="9F31DEA0-145D-4400-8F59-9A312AD6FB6E"></ScriptReference>
+										</Script>
+										<Script type="existing" access="ReadWrite">
+											<ScriptReference id="17" name="Release Notes" UUID="C59FC9BA-BB08-4E8D-8A7F-1380F07D1E83"></ScriptReference>
+										</Script>
+										<Script type="existing" access="ReadWrite">
+											<ScriptReference id="18" name="--" UUID="40DF4CE6-B970-4B11-A663-98FF828DB01E"></ScriptReference>
+										</Script>
+										<Script type="existing" access="ReadWrite">
+											<ScriptReference id="20" name="Control" UUID="85C09F94-BC0D-46BC-AE0F-BEE278F6FF4F"></ScriptReference>
+										</Script>
+										<Script type="existing" access="ReadWrite">
+											<ScriptReference id="21" name="Scripts With Everything" UUID="F4418354-45E7-45CD-B884-0AE04E19121D"></ScriptReference>
+										</Script>
+										<Script type="existing" access="ReadWrite">
+											<ScriptReference id="22" name="--" UUID="7FA52F63-E6BB-4C9A-8865-5403FE45403D"></ScriptReference>
+										</Script>
+										<Script type="existing" access="ReadWrite">
+											<ScriptReference id="23" name="Navigation" UUID="ACEA98B7-0A1C-4657-93DF-64A820A03471"></ScriptReference>
+										</Script>
+										<Script type="existing" access="ReadWrite">
+											<ScriptReference id="24" name="Editing" UUID="2AB37828-C884-483A-96D4-556CB1FF49D9"></ScriptReference>
+										</Script>
+										<Script type="existing" access="ReadWrite">
+											<ScriptReference id="25" name="Fields" UUID="89BCD2CC-B945-4CA7-B1B2-D37B2EC74DD3"></ScriptReference>
+										</Script>
+										<Script type="existing" access="ReadWrite">
+											<ScriptReference id="26" name="Records" UUID="6C16E55C-DCC8-44D8-B79D-8D79AA9D4973"></ScriptReference>
+										</Script>
+										<Script type="existing" access="ReadWrite">
+											<ScriptReference id="27" name="Found Sets" UUID="857693FC-C65F-4362-817A-E914C60A35A5"></ScriptReference>
+										</Script>
+										<Script type="existing" access="ReadWrite">
+											<ScriptReference id="28" name="Windows" UUID="EE73BC4A-A9EC-4054-AF58-AFAE5775AF4E"></ScriptReference>
+										</Script>
+										<Script type="existing" access="ReadWrite">
+											<ScriptReference id="29" name="Files" UUID="163B7AA2-C6E2-4D85-B9AC-D73AF8A5D5F6"></ScriptReference>
+										</Script>
+										<Script type="existing" access="ReadWrite">
+											<ScriptReference id="30" name="Accounts" UUID="5D8583E9-201F-4B93-9A84-4991B1A8A837"></ScriptReference>
+										</Script>
+										<Script type="existing" access="ReadWrite">
+											<ScriptReference id="31" name="Artificial Intelligence" UUID="B4770AB5-E3B4-4906-A470-621423C1540F"></ScriptReference>
+										</Script>
+										<Script type="existing" access="ReadWrite">
+											<ScriptReference id="32" name="Spelling" UUID="8035073C-2907-44CE-B1D3-766A5CFBBE8A"></ScriptReference>
+										</Script>
+										<Script type="existing" access="ReadWrite">
+											<ScriptReference id="33" name="Open Menu Item" UUID="A81A544D-4EF5-47F6-8E5B-CAA965E78F87"></ScriptReference>
+										</Script>
+										<Script type="existing" access="ReadWrite">
+											<ScriptReference id="34" name="Miscellaneous" UUID="B152F577-1246-4D19-A208-1028F505F3EE"></ScriptReference>
+										</Script>
+										<Script type="existing" access="ReadWrite">
+											<ScriptReference id="35" name="IP" UUID="405E115A-D180-4AF7-AAEF-6CE9DAEDC7E8"></ScriptReference>
+										</Script>
+										<Script type="existing" access="ReadWrite">
+											<ScriptReference id="36" name="MBS Plug-In" UUID="903DFD53-07FD-4FF9-9E82-B29E209AEE03"></ScriptReference>
+										</Script>
+										<Script type="existing" access="ReadWrite">
+											<ScriptReference id="37" name="Script from fmSyntaxColorizer" UUID="1F6975F7-D0A1-44AD-8B85-728FC0E611F0"></ScriptReference>
+										</Script>
+										<Script type="existing" access="ReadWrite">
+											<ScriptReference id="38" name="--" UUID="98082719-DA79-4ECC-9D4E-5BC973AA6411"></ScriptReference>
+										</Script>
+										<Script type="existing" access="ReadWrite">
+											<ScriptReference id="39" name="All script steps and all options" UUID="FAA08335-C7A3-40E8-BC55-9861B70612E2"></ScriptReference>
+										</Script>
+										<Script type="New" access="ReadWrite"></Script>
+									</ObjectList>
+								</Custom>
+							</Scripts>
 							<Other value="61213" Print="True" Export="True" manageAccounts="True" manageExtPrivs="True" allowOverride="True" allowOpenQuickly="True" disconnectIdle="True" commands="All">
 								<Password prohibitModification="False" interval="30" Minimum="5"></Password>
+							</Other>
+						</access>
+					</PrivilegeSet>
+					<PrivilegeSet id="5" name="MyPrivSet2">
+						<UUID modifications="3" userName="Mislav" accountName="admin" timestamp="2025-07-24T23:38:31">776CCB00-3B8A-42AA-8014-961FE543F0CE</UUID>
+						<Description></Description>
+						<access>
+							<Records Create="True" Edit="True" Delete="False"></Records>
+							<Layouts View="ReadOnly"></Layouts>
+							<ValueLists View="ReadOnly"></ValueLists>
+							<Scripts View="ReadOnly"></Scripts>
+							<Other value="8194" Print="False" Export="False" manageAccounts="False" manageExtPrivs="False" allowOverride="False" allowOpenQuickly="False" disconnectIdle="False" commands="Edit">
+								<Password prohibitModification="True"></Password>
+							</Other>
+						</access>
+					</PrivilegeSet>
+					<PrivilegeSet id="6" name="NoAccessPrivSet">
+						<UUID modifications="0" userName="Mislav" accountName="admin" timestamp="2025-07-24T23:38:24">AB18D6D3-ED7B-4591-A430-8964E9C68E4E</UUID>
+						<Description></Description>
+						<access>
+							<Records Create="False" Edit="False" Delete="False"></Records>
+							<Layouts Create="False" Edit="False" Delete="False"></Layouts>
+							<ValueLists Create="False" Edit="False" Delete="False"></ValueLists>
+							<Scripts Create="False" Edit="False" Delete="False"></Scripts>
+							<Other value="2" Print="False" Export="False" manageAccounts="False" manageExtPrivs="False" allowOverride="False" allowOpenQuickly="False" disconnectIdle="False" commands="Minimal">
+								<Password prohibitModification="True"></Password>
 							</Other>
 						</access>
 					</PrivilegeSet>
 				</ObjectList>
 			</PrivilegeSetsCatalog>
 			<ExtendedPrivilegesCatalog membercount="12">
-				<UUID modifications="6" userName="Mislav" accountName="admin" timestamp="2025-06-20T17:33:50">8068CE1F-72AC-417A-BDB1-549379941552</UUID>
+				<UUID modifications="9" userName="Mislav" accountName="admin" timestamp="2025-07-24T23:48:35">8068CE1F-72AC-417A-BDB1-549379941552</UUID>
 				<ObjectList membercount="12">
 					<ExtendedPrivilege id="1" name="fmwebdirect">
 						<Description>Access via FileMaker WebDirect</Description>
@@ -15928,7 +16150,7 @@ self:normal .icon
 					</ExtendedPrivilege>
 					<ExtendedPrivilege id="4" name="fmreauthenticate10">
 						<Description>Require re-authentication after the specified minutes in sleep/background.</Description>
-						<UUID modifications="1" userName="Mislav" accountName="Admin" timestamp="2025-05-04T09:20:58">192C57BF-930D-418D-AE02-2C751416F80A</UUID>
+						<UUID modifications="5" userName="Mislav" accountName="admin" timestamp="2025-07-24T23:38:24">192C57BF-930D-418D-AE02-2C751416F80A</UUID>
 						<TagList></TagList>
 						<ObjectList membercount="4">
 							<PrivilegeSetReference id="1" name="[Full Access]"></PrivilegeSetReference>
@@ -16014,7 +16236,7 @@ self:normal .icon
 				</ObjectList>
 			</ExtendedPrivilegesCatalog>
 			<AccountsCatalog membercount="11">
-				<UUID modifications="15" userName="Mislav" accountName="admin" timestamp="2025-06-20T17:34:26">D22C37DC-BA62-4D8A-8132-1E49B1F4085A</UUID>
+				<UUID modifications="16" userName="Mislav" accountName="admin" timestamp="2025-07-24T23:39:06">D22C37DC-BA62-4D8A-8132-1E49B1F4085A</UUID>
 				<Options>4</Options>
 				<ObjectList membercount="11">
 					<Account id="1" kind="0" type="FileMaker" enable="False">
@@ -16157,7 +16379,7 @@ self:normal .icon
 				</Script>
 				<Script>
 					<ScriptReference id="17" name="Release Notes" UUID="C59FC9BA-BB08-4E8D-8A7F-1380F07D1E83"></ScriptReference>
-					<ObjectList membercount="16">
+					<ObjectList membercount="19">
 						<Step hash="8D4D4FEFA658026D454F9575E8B1AF7A" index="0" id="89" name="# (comment)" enable="True">
 							<UUID>FC8E3958-34A0-499C-B1D0-DB364CBC2F81</UUID>
 							<OwnerID></OwnerID>
@@ -16168,7 +16390,37 @@ self:normal .icon
 								</Parameter>
 							</ParameterValues>
 						</Step>
-						<Step hash="6A34424EB8DF88B6C1EAFA05140502C4" index="1" id="89" name="# (comment)" enable="True">
+						<Step hash="86236BBB72F73C9385FFF20E2946F048" index="1" id="89" name="# (comment)" enable="True">
+							<UUID>A32A8E68-26EE-436E-B0D8-17B2F9830AB6</UUID>
+							<OwnerID></OwnerID>
+							<Options>4</Options>
+							<ParameterValues membercount="1">
+								<Parameter type="Comment">
+									<Comment value="2025-07-24 Mislav Kos"></Comment>
+								</Parameter>
+							</ParameterValues>
+						</Step>
+						<Step hash="BF410BED14D51633BE281A3DDF8D62B5" index="2" id="89" name="# (comment)" enable="True">
+							<UUID>D5887B16-25DD-4098-A19B-9115A6800D37</UUID>
+							<OwnerID></OwnerID>
+							<Options>4</Options>
+							<ParameterValues membercount="1">
+								<Parameter type="Comment">
+									<Comment value="Renamed Ooe2 to Two&#13;Added multiple fields to Contacts_TestTable relationship sort&#13;Added second predicate to Contacts_TestTable relationship&#13;Added second relationship graph note&#13;Made OrderOfOperations custom function calc more complex&#13;Added/updated custom menus&#13;Added/updated privilege sets"></Comment>
+								</Parameter>
+							</ParameterValues>
+						</Step>
+						<Step hash="30FBDCC7D6B41ACC9707C40758E38DC5" index="3" id="89" name="# (comment)" enable="True">
+							<UUID>0F0E9972-8EC9-4090-9CF7-FE8EDD65CEFE</UUID>
+							<OwnerID></OwnerID>
+							<Options>0</Options>
+							<ParameterValues membercount="1">
+								<Parameter type="Comment">
+									<Comment></Comment>
+								</Parameter>
+							</ParameterValues>
+						</Step>
+						<Step hash="C27C2E52786245C75E40DCAAA4CA0BCD" index="4" id="89" name="# (comment)" enable="True">
 							<UUID>62FF0B16-1DEA-4DBF-9021-B0AEC4F7964A</UUID>
 							<OwnerID></OwnerID>
 							<Options>4</Options>
@@ -16178,7 +16430,7 @@ self:normal .icon
 								</Parameter>
 							</ParameterValues>
 						</Step>
-						<Step hash="A6E701572599BF622C5E37302F995060" index="2" id="89" name="# (comment)" enable="True">
+						<Step hash="54FE4F6934D1191AE0AFABC7490D1EA5" index="5" id="89" name="# (comment)" enable="True">
 							<UUID>20131764-DE5A-402F-B3A2-222AB9F8560F</UUID>
 							<OwnerID></OwnerID>
 							<Options>4</Options>
@@ -16188,7 +16440,7 @@ self:normal .icon
 								</Parameter>
 							</ParameterValues>
 						</Step>
-						<Step hash="08A9E97D61B2B65C26246BF88549C906" index="3" id="89" name="# (comment)" enable="True">
+						<Step hash="C9B8DA3E1492B0436EEC97C429E13298" index="6" id="89" name="# (comment)" enable="True">
 							<UUID>4D3DFF00-C74F-4DFA-B0DF-3F738C0EEBA6</UUID>
 							<OwnerID></OwnerID>
 							<Options>4</Options>
@@ -16198,7 +16450,7 @@ self:normal .icon
 								</Parameter>
 							</ParameterValues>
 						</Step>
-						<Step hash="86A9D2FF5EDB7030A9D00A4618B9606E" index="4" id="89" name="# (comment)" enable="True">
+						<Step hash="120E7559AA7BF8CBC2FC648D0815D751" index="7" id="89" name="# (comment)" enable="True">
 							<UUID>46E82AAD-921A-4230-8637-75F279BFBC9B</UUID>
 							<OwnerID></OwnerID>
 							<Options>0</Options>
@@ -16208,7 +16460,7 @@ self:normal .icon
 								</Parameter>
 							</ParameterValues>
 						</Step>
-						<Step hash="09ACCFC91E737308F8FB540410B76DF0" index="5" id="89" name="# (comment)" enable="True">
+						<Step hash="8F90872230993512494E674C82E48F3E" index="8" id="89" name="# (comment)" enable="True">
 							<UUID>F6B64043-5B08-44A5-A525-036C3666BEAE</UUID>
 							<OwnerID></OwnerID>
 							<Options>4</Options>
@@ -16218,7 +16470,7 @@ self:normal .icon
 								</Parameter>
 							</ParameterValues>
 						</Step>
-						<Step hash="0B898A731B99DA9098972FB87481DBFE" index="6" id="89" name="# (comment)" enable="True">
+						<Step hash="34D1FF493969CD5828C6545D08174EAE" index="9" id="89" name="# (comment)" enable="True">
 							<UUID>B9313C04-3F5F-4907-AD53-FAE71D2E2CFA</UUID>
 							<OwnerID></OwnerID>
 							<Options>4</Options>
@@ -16228,7 +16480,7 @@ self:normal .icon
 								</Parameter>
 							</ParameterValues>
 						</Step>
-						<Step hash="3FA0A74E5FAE1E38CD565B35A866BE2B" index="7" id="89" name="# (comment)" enable="True">
+						<Step hash="49F9671627C503E2198F522FAE596CCA" index="10" id="89" name="# (comment)" enable="True">
 							<UUID>BAF729FC-F31E-45FB-8685-AE5D80F18EC6</UUID>
 							<OwnerID></OwnerID>
 							<Options>4</Options>
@@ -16238,7 +16490,7 @@ self:normal .icon
 								</Parameter>
 							</ParameterValues>
 						</Step>
-						<Step hash="141C6C2BF006C31B3AD80A23DD2D50BE" index="8" id="89" name="# (comment)" enable="True">
+						<Step hash="04897BB962A47F46FFA2A14BA3992941" index="11" id="89" name="# (comment)" enable="True">
 							<UUID>8A404868-0312-4D4C-8824-3BDCC569BB64</UUID>
 							<OwnerID></OwnerID>
 							<Options>0</Options>
@@ -16248,7 +16500,7 @@ self:normal .icon
 								</Parameter>
 							</ParameterValues>
 						</Step>
-						<Step hash="1DE8761D4F1FE5610328F85DABC1B60C" index="9" id="89" name="# (comment)" enable="True">
+						<Step hash="DF41A95746275C8A9BEAE534DF6E2F3B" index="12" id="89" name="# (comment)" enable="True">
 							<UUID>8FF011E6-F95E-41BA-96BC-66809C32FBF0</UUID>
 							<OwnerID></OwnerID>
 							<Options>4</Options>
@@ -16258,7 +16510,7 @@ self:normal .icon
 								</Parameter>
 							</ParameterValues>
 						</Step>
-						<Step hash="CD0B04FBB2F3E3F0DFC33FA52D2131A3" index="10" id="89" name="# (comment)" enable="True">
+						<Step hash="3785B2D7F7D2ADC00A0109E6EEFE604D" index="13" id="89" name="# (comment)" enable="True">
 							<UUID>0DE7DD92-DB2A-4275-A3FF-F62F631CD841</UUID>
 							<OwnerID></OwnerID>
 							<Options>4</Options>
@@ -16268,7 +16520,7 @@ self:normal .icon
 								</Parameter>
 							</ParameterValues>
 						</Step>
-						<Step hash="3DABCBBA9534B059CC773C7CDBDD956C" index="11" id="89" name="# (comment)" enable="True">
+						<Step hash="E971FCD518C6B720EC6551BA19798618" index="14" id="89" name="# (comment)" enable="True">
 							<UUID>237E6919-BAA8-450E-B1D5-1524F06C22D0</UUID>
 							<OwnerID></OwnerID>
 							<Options>4</Options>
@@ -16278,7 +16530,7 @@ self:normal .icon
 								</Parameter>
 							</ParameterValues>
 						</Step>
-						<Step hash="156B35A5F36F985E9B7A2D91AAD115FD" index="12" id="89" name="# (comment)" enable="True">
+						<Step hash="B7E0495C1B78F064BF80728C07784C8B" index="15" id="89" name="# (comment)" enable="True">
 							<UUID>70F584F4-A1C4-4CB4-92A3-5B3B04D714C7</UUID>
 							<OwnerID></OwnerID>
 							<Options>0</Options>
@@ -16288,7 +16540,7 @@ self:normal .icon
 								</Parameter>
 							</ParameterValues>
 						</Step>
-						<Step hash="A89344B28AA3451CEB82D1A2E36ACC13" index="13" id="89" name="# (comment)" enable="True">
+						<Step hash="D9D931058C1783E0F13FC011380B9644" index="16" id="89" name="# (comment)" enable="True">
 							<UUID>D0D7B7DD-E386-4B70-929D-156481A7E97E</UUID>
 							<OwnerID></OwnerID>
 							<Options>4</Options>
@@ -16298,7 +16550,7 @@ self:normal .icon
 								</Parameter>
 							</ParameterValues>
 						</Step>
-						<Step hash="5F931D092BC9D559E4E863115F6A08DA" index="14" id="89" name="# (comment)" enable="True">
+						<Step hash="BDB9BB71D9D57DA907785814FEF97C97" index="17" id="89" name="# (comment)" enable="True">
 							<UUID>19D037B6-8480-4943-92D2-3E8993483A86</UUID>
 							<OwnerID></OwnerID>
 							<Options>4</Options>
@@ -16308,7 +16560,7 @@ self:normal .icon
 								</Parameter>
 							</ParameterValues>
 						</Step>
-						<Step hash="E3887E0D1911AB7ED8198F124DB6E99E" index="15" id="89" name="# (comment)" enable="True">
+						<Step hash="03DFE4089ADCBCEDBB593667484320D9" index="18" id="89" name="# (comment)" enable="True">
 							<UUID>2B0274FF-832F-477B-850D-5A7DEB9C5C46</UUID>
 							<OwnerID></OwnerID>
 							<Options>0</Options>
@@ -16346,26 +16598,17 @@ self:normal .icon
 								</Parameter>
 							</ParameterValues>
 						</Step>
-						<Step hash="2FCFB6637C3C80A924B58A37467F7ABB" index="1" id="87" name="Show Custom Dialog" enable="True">
-							<UUID>CC094DFE-72F3-44CC-A5FB-647309ACA305</UUID>
+						<Step hash="CBE67300C7E40792363FB2D590F9E501" index="1" id="103" name="Exit Script" enable="True">
+							<UUID>3CC776EC-8D04-4A94-9CB0-786EB546315C</UUID>
 							<OwnerID></OwnerID>
-							<Options>16389</Options>
-							<ParameterValues membercount="4">
-								<Parameter type="Message">
-									<Calculation datatype="1" position="1">
+							<Options>16384</Options>
+							<ParameterValues membercount="1">
+								<Parameter type="Calculation">
+									<Calculation datatype="1" position="0">
 										<Calculation>
-											<Text><![CDATA["Hello " & Get ( ScriptParameter )]]></Text>
+											<Text><![CDATA[0]]></Text>
 										</Calculation>
 									</Calculation>
-								</Parameter>
-								<Parameter type="Button1" value="OK">
-									<Boolean type="Commit" value="True"></Boolean>
-								</Parameter>
-								<Parameter type="Button2">
-									<Boolean type="Commit" value="False"></Boolean>
-								</Parameter>
-								<Parameter type="Button3">
-									<Boolean type="Commit" value="False"></Boolean>
 								</Parameter>
 							</ParameterValues>
 						</Step>

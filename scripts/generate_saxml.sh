@@ -68,7 +68,7 @@ for var in $(compgen -v | grep '^FMDEVELOPERTOOL'); do
         # Run the FMDeveloperTool to generate XML
         echo
         echo "Converting $input_file to $output_xml using $saxml_version"
-        command="\"$fmdevelopertool_path\" saveAsXML \"$input_file\" $DB_ACCOUNT_NAME $DB_PASSWORD -target_filename \"$output_xml\" -f"
+        command="\"$fmdevelopertool_path\" saveAsXML \"$input_file\" $DB_ACCOUNT_NAME $DB_PASSWORD -encryption_key $EAR_PASSWORD -target_filename \"$output_xml\" -f"
         echo "$command"
         eval "$command"
         
@@ -82,7 +82,7 @@ for var in $(compgen -v | grep '^FMDEVELOPERTOOL'); do
             # Append __ddr_info to the output file name
             output_xml_ddr="$output_folder/${base_name}${version_tag}__ddr_info.xml"
             
-            command="\"$fmdevelopertool_path\" saveAsXML \"$input_file\" $DB_ACCOUNT_NAME $DB_PASSWORD -target_filename \"$output_xml_ddr\" -f -include_ddrinfo"
+            command="\"$fmdevelopertool_path\" saveAsXML \"$input_file\" $DB_ACCOUNT_NAME $DB_PASSWORD -encryption_key $EAR_PASSWORD -target_filename \"$output_xml_ddr\" -f -include_ddrinfo"
             
             # Run the FMDeveloperTool to generate XML with -include_ddrinfo
             echo
