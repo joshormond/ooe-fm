@@ -2,7 +2,7 @@
 
 ## About
 
-`ooe-fm` provies a sample FileMaker file with __One Of Everything__ (Ooe).
+`ooe-fm` provides a sample FileMaker file with __One Of Everything__ (Ooe).
 
 `Ooe.fmp12` endeavors to have an example of one of every possible configuration of every kind of solution element.
 
