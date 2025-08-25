@@ -67,7 +67,7 @@ for var in $(compgen -v | grep '^FMDEVELOPERTOOL'); do
         
         # Run the FMDeveloperTool to generate XML
         echo
-        echo "Converting $input_file to $output_xml using $saxml_version"
+        echo "Generating $input_file SaXML to $output_xml using $saxml_version"
         command="\"$fmdevelopertool_path\" saveAsXML \"$input_file\" $DB_ACCOUNT_NAME $DB_PASSWORD -encryption_key $EAR_PASSWORD -target_filename \"$output_xml\" -f"
         echo "$command"
         eval "$command"

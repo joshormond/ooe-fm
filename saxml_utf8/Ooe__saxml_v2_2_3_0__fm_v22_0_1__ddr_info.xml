@@ -48,7 +48,7 @@
 				</ObjectList>
 			</FileAccessCatalog>
 			<ExternalDataSourceCatalog membercount="3">
-				<UUID modifications="9" userName="Mislav" accountName="admin" timestamp="2025-07-26T18:02:22">417E47B0-60CC-434B-A30B-1E49B790D800</UUID>
+				<UUID modifications="10" userName="Mislav" accountName="admin" timestamp="2025-08-25T10:07:05">417E47B0-60CC-434B-A30B-1E49B790D800</UUID>
 				<TagList></TagList>
 				<ExternalDataSource name="Ooe_dev" type="FileMaker" id="1">
 					<File>
@@ -64,11 +64,11 @@
 					<UUID modifications="1" userName="SC NXP2R99WWT" accountName="Admin" timestamp="2025-06-09T10:19:00">AC01FBF7-68A1-4C6A-B51A-AFC4A24C8BDE</UUID>
 					<TagList></TagList>
 				</ExternalDataSource>
-				<ExternalDataSource name="Two" type="FileMaker" id="4">
+				<ExternalDataSource name="BrojDva" type="FileMaker" id="4">
 					<File>
-						<UniversalPathList>file:Two</UniversalPathList>
+						<UniversalPathList>file:BrojDva</UniversalPathList>
 					</File>
-					<UUID modifications="1" userName="Mislav" accountName="admin" timestamp="2025-07-26T18:02:06">6D667462-7EFB-4D54-AA43-06E9B16716BF</UUID>
+					<UUID modifications="2" userName="Mislav" accountName="admin" timestamp="2025-08-25T10:06:59">6D667462-7EFB-4D54-AA43-06E9B16716BF</UUID>
 					<TagList></TagList>
 				</ExternalDataSource>
 			</ExternalDataSourceCatalog>

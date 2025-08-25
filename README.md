@@ -19,7 +19,7 @@ Among other possible use cases, having these examples available makes it easier 
 ## Credentials
 
 - Log in for both files: admin / admin
-- EAR password for Two.fmp12: admin
+- EAR password for BrojDva.fmp12: admin
 
 ## SaXML encoding
 
