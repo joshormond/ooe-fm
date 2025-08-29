@@ -18,7 +18,9 @@ Among other possible use cases, having these examples available makes it easier 
 
 ## Credentials
 
-- Log in for both files: admin / admin
+- Logins for both files:
+  - admin / admin
+  - restapi / restapi
 - EAR password for BrojDva.fmp12: admin
 
 ## SaXML encoding

@@ -6610,10 +6610,10 @@ part.white_part:normal .self
 					</StreamList>
 				</BinaryData>
 			</LibraryCatalog>
-			<PrivilegeSetsCatalog membercount="3">
-				<UUID modifications="0" userName="Mislav" accountName="" timestamp="2025-07-16T07:44:03">21EBA7D2-6A14-4BF3-9BC5-73C1D2F953EF</UUID>
+			<PrivilegeSetsCatalog membercount="4">
+				<UUID modifications="1" userName="Mislav" accountName="admin" timestamp="2025-08-29T18:37:16">21EBA7D2-6A14-4BF3-9BC5-73C1D2F953EF</UUID>
 				<TagList></TagList>
-				<ObjectList membercount="3">
+				<ObjectList membercount="4">
 					<PrivilegeSet id="1" name="[Full Access]">
 						<UUID modifications="0" userName="Mislav" accountName="" timestamp="2025-07-16T07:44:03">0EEEC8D3-9669-4167-9D16-CC8AE04738A6</UUID>
 						<Description>access to everything</Description>
@@ -6653,10 +6653,23 @@ part.white_part:normal .self
 							</Other>
 						</access>
 					</PrivilegeSet>
+					<PrivilegeSet id="4" name="restapi">
+						<UUID modifications="1" userName="Mislav" accountName="admin" timestamp="2025-08-29T18:37:13">8B91BC3A-F67D-4587-87D7-DC1EAAD06EDE</UUID>
+						<Description>Intended for use by Data API and OData</Description>
+						<access>
+							<Records Create="True" Edit="True" Delete="True"></Records>
+							<Layouts Create="True" Edit="True" Delete="True"></Layouts>
+							<ValueLists Create="True" Edit="True" Delete="True"></ValueLists>
+							<Scripts View="ReadOnly"></Scripts>
+							<Other value="28673" Print="False" Export="False" manageAccounts="False" manageExtPrivs="False" allowOverride="False" allowOpenQuickly="False" disconnectIdle="True" commands="All">
+								<Password prohibitModification="True"></Password>
+							</Other>
+						</access>
+					</PrivilegeSet>
 				</ObjectList>
 			</PrivilegeSetsCatalog>
 			<ExtendedPrivilegesCatalog membercount="11">
-				<UUID modifications="0" userName="Mislav" accountName="" timestamp="2025-07-16T07:44:03">716174C4-C475-498E-988A-C3E9322848C1</UUID>
+				<UUID modifications="2" userName="Mislav" accountName="admin" timestamp="2025-08-29T18:37:16">716174C4-C475-498E-988A-C3E9322848C1</UUID>
 				<ObjectList membercount="11">
 					<ExtendedPrivilege id="1" name="fmwebdirect">
 						<Description>Access via FileMaker WebDirect</Description>
@@ -6675,7 +6688,7 @@ part.white_part:normal .self
 					</ExtendedPrivilege>
 					<ExtendedPrivilege id="4" name="fmreauthenticate10">
 						<Description>Require re-authentication after the specified minutes in sleep/background.</Description>
-						<UUID modifications="0" userName="Mislav" accountName="" timestamp="2025-07-16T07:44:03">583A1B25-1833-460D-9398-4BC87428B151</UUID>
+						<UUID modifications="2" userName="Mislav" accountName="admin" timestamp="2025-08-29T18:36:58">583A1B25-1833-460D-9398-4BC87428B151</UUID>
 						<TagList></TagList>
 						<ObjectList membercount="3">
 							<PrivilegeSetReference id="1" name="[Full Access]"></PrivilegeSetReference>
@@ -6705,13 +6718,19 @@ part.white_part:normal .self
 					</ExtendedPrivilege>
 					<ExtendedPrivilege id="9" name="fmrest">
 						<Description>Access via FileMaker Data API</Description>
-						<UUID modifications="0" userName="Mislav" accountName="" timestamp="2025-07-16T07:44:03">399F054F-91F8-474D-85A9-D724FA2DE360</UUID>
+						<UUID modifications="1" userName="Mislav" accountName="admin" timestamp="2025-08-29T18:36:58">399F054F-91F8-474D-85A9-D724FA2DE360</UUID>
 						<TagList></TagList>
+						<ObjectList membercount="1">
+							<PrivilegeSetReference id="4" name="restapi"></PrivilegeSetReference>
+						</ObjectList>
 					</ExtendedPrivilege>
 					<ExtendedPrivilege id="10" name="fmodata">
 						<Description>Access via OData</Description>
-						<UUID modifications="0" userName="Mislav" accountName="" timestamp="2025-07-16T07:44:03">9C131E71-7AE4-4FA4-87B8-BFFEA2026B56</UUID>
+						<UUID modifications="1" userName="Mislav" accountName="admin" timestamp="2025-08-29T18:36:58">9C131E71-7AE4-4FA4-87B8-BFFEA2026B56</UUID>
 						<TagList></TagList>
+						<ObjectList membercount="1">
+							<PrivilegeSetReference id="4" name="restapi"></PrivilegeSetReference>
+						</ObjectList>
 					</ExtendedPrivilege>
 					<ExtendedPrivilege id="11" name="fmplugin">
 						<Description>Validate cross-file plug-in access</Description>
@@ -6720,10 +6739,10 @@ part.white_part:normal .self
 					</ExtendedPrivilege>
 				</ObjectList>
 			</ExtendedPrivilegesCatalog>
-			<AccountsCatalog membercount="2">
-				<UUID modifications="1" userName="Mislav" accountName="Admin" timestamp="2025-07-16T07:51:08">AFDFB892-A9A7-4238-9670-795F61706ED1</UUID>
+			<AccountsCatalog membercount="3">
+				<UUID modifications="2" userName="Mislav" accountName="admin" timestamp="2025-08-29T18:38:38">AFDFB892-A9A7-4238-9670-795F61706ED1</UUID>
 				<Options>4</Options>
-				<ObjectList membercount="2">
+				<ObjectList membercount="3">
 					<Account id="1" kind="0" type="FileMaker" enable="False">
 						<UUID modifications="1" userName="Mislav" accountName="Admin" timestamp="2025-07-16T07:51:08">BF0EDEE5-8379-4B40-8549-E81422A30F5F</UUID>
 						<TagList></TagList>
@@ -6743,6 +6762,16 @@ part.white_part:normal .self
 							<PasswordEncrypted>X555IiyBC18lnA==</PasswordEncrypted>
 						</Authentication>
 						<PrivilegeSetReference id="1" name="[Full Access]"></PrivilegeSetReference>
+					</Account>
+					<Account id="3" kind="0" type="FileMaker" enable="True">
+						<UUID modifications="3" userName="Mislav" accountName="admin" timestamp="2025-08-29T18:38:37">33615CD8-D993-4351-953B-58D98E01145F</UUID>
+						<TagList></TagList>
+						<Description></Description>
+						<Authentication>
+							<AccountName>restapi</AccountName>
+							<PasswordEncrypted>FsZNPLMq+qoI9Q==</PasswordEncrypted>
+						</Authentication>
+						<PrivilegeSetReference id="4" name="restapi"></PrivilegeSetReference>
 					</Account>
 				</ObjectList>
 			</AccountsCatalog>
