@@ -8963,7 +8963,7 @@ self:droptarget .inner_border
 				</BinaryData>
 			</LibraryCatalog>
 			<PrivilegeSetsCatalog membercount="4">
-				<UUID modifications="1" userName="Mislav" accountName="admin" timestamp="2025-08-29T18:37:16">21EBA7D2-6A14-4BF3-9BC5-73C1D2F953EF</UUID>
+				<UUID modifications="2" userName="Mislav" accountName="admin" timestamp="2025-09-02T14:26:33">21EBA7D2-6A14-4BF3-9BC5-73C1D2F953EF</UUID>
 				<TagList></TagList>
 				<ObjectList membercount="4">
 					<PrivilegeSet id="1" name="[Full Access]">
@@ -9021,7 +9021,7 @@ self:droptarget .inner_border
 				</ObjectList>
 			</PrivilegeSetsCatalog>
 			<ExtendedPrivilegesCatalog membercount="11">
-				<UUID modifications="2" userName="Mislav" accountName="admin" timestamp="2025-08-29T18:37:16">716174C4-C475-498E-988A-C3E9322848C1</UUID>
+				<UUID modifications="3" userName="Mislav" accountName="admin" timestamp="2025-09-02T14:26:33">716174C4-C475-498E-988A-C3E9322848C1</UUID>
 				<ObjectList membercount="11">
 					<ExtendedPrivilege id="1" name="fmwebdirect">
 						<Description>Access via FileMaker WebDirect</Description>
@@ -9035,8 +9035,11 @@ self:droptarget .inner_border
 					</ExtendedPrivilege>
 					<ExtendedPrivilege id="3" name="fmapp">
 						<Description>Access via FileMaker Network</Description>
-						<UUID modifications="0" userName="Mislav" accountName="" timestamp="2025-07-16T07:44:03">55474530-E78B-423A-940E-2E8D60669A68</UUID>
+						<UUID modifications="1" userName="Mislav" accountName="admin" timestamp="2025-09-02T14:26:33">55474530-E78B-423A-940E-2E8D60669A68</UUID>
 						<TagList></TagList>
+						<ObjectList membercount="1">
+							<PrivilegeSetReference id="1" name="[Full Access]"></PrivilegeSetReference>
+						</ObjectList>
 					</ExtendedPrivilege>
 					<ExtendedPrivilege id="4" name="fmreauthenticate10">
 						<Description>Require re-authentication after the specified minutes in sleep/background.</Description>
