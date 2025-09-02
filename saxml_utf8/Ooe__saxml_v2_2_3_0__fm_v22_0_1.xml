@@ -1546,7 +1546,7 @@
 				</ObjectList>
 			</CustomMenuSetCatalog>
 			<ScriptCatalog membercount="41">
-				<UUID modifications="198" userName="Mislav" accountName="admin" timestamp="2025-08-30T09:34:31">AA81A957-0AB6-4210-A369-DC734FE0BC11</UUID>
+				<UUID modifications="200" userName="Mislav" accountName="admin" timestamp="2025-09-02T16:19:59">AA81A957-0AB6-4210-A369-DC734FE0BC11</UUID>
 				<TagList></TagList>
 				<Script id="14" name="About" isFolder="True">
 					<UUID modifications="1" userName="Mislav" accountName="admin" timestamp="2025-06-20T18:10:24">4FB8D085-23E1-4870-8710-FC6EAB83835C</UUID>
@@ -1735,7 +1735,7 @@
 					<TagList></TagList>
 				</Script>
 				<Script id="46" name="saxmlDelivery_createXml">
-					<UUID modifications="2" userName="Mislav" accountName="admin" timestamp="2025-08-30T09:34:31">A58F555B-B312-4320-B1DA-34138E2D3310</UUID>
+					<UUID modifications="3" userName="Mislav" accountName="admin" timestamp="2025-09-02T16:19:55">A58F555B-B312-4320-B1DA-34138E2D3310</UUID>
 					<SourceUUID>ECD24827-D415-48BF-828B-20B1F82E4304</SourceUUID>
 					<Options hidden="True" access="ReadWrite" SiriShortcutVisible="False" runwithfullaccess="True" compatibility="0">8</Options>
 					<TagList></TagList>
@@ -1747,7 +1747,7 @@
 					<TagList></TagList>
 				</Script>
 				<Script id="48" name="saxmlDelivery_runPipeline">
-					<UUID modifications="2" userName="Mislav" accountName="admin" timestamp="2025-08-30T09:34:31">AC309861-3672-44DF-99C0-F6B857A597F9</UUID>
+					<UUID modifications="3" userName="Mislav" accountName="admin" timestamp="2025-09-02T16:19:59">AC309861-3672-44DF-99C0-F6B857A597F9</UUID>
 					<SourceUUID>D646E4CE-C3A1-4EC8-BACF-9E61E0846D3E</SourceUUID>
 					<Options hidden="True" access="ReadWrite" SiriShortcutVisible="False" runwithfullaccess="False" compatibility="0">8</Options>
 					<TagList></TagList>
@@ -43849,13 +43849,13 @@ self:droptarget .inner_border
 								</Parameter>
 							</ParameterValues>
 						</Step>
-						<Step hash="0E4C61624467E493285D7DAB7E75AEF7" index="80" id="86" name="Set Error Capture" enable="True">
+						<Step hash="B22F779977B0859421919A005FBE7FF3" index="80" id="86" name="Set Error Capture" enable="True">
 							<UUID>9006EC77-71CA-49A8-B5E9-BB44723F251A</UUID>
 							<SourceUUID>CC279BB0-F3C3-4C60-AEF3-61B0073497D3</SourceUUID>
-							<Options>0</Options>
+							<Options>196608</Options>
 							<ParameterValues membercount="1">
 								<Parameter type="Boolean">
-									<Boolean id="131072" value="False"></Boolean>
+									<Boolean id="131072" value="True"></Boolean>
 								</Parameter>
 							</ParameterValues>
 						</Step>
@@ -46148,13 +46148,13 @@ self:droptarget .inner_border
 								</Parameter>
 							</ParameterValues>
 						</Step>
-						<Step hash="1BEDD66F993F8105006A5FBDE252AA1D" index="63" id="86" name="Set Error Capture" enable="True">
+						<Step hash="B3F5F671EC80062079E9ED0E0BCB8E48" index="63" id="86" name="Set Error Capture" enable="True">
 							<UUID>63048B36-9500-4C4E-9885-29B25604FB7A</UUID>
 							<SourceUUID>37B62144-5AE3-4A1F-814A-D5BCA2EEE74A</SourceUUID>
-							<Options>0</Options>
+							<Options>196608</Options>
 							<ParameterValues membercount="1">
 								<Parameter type="Boolean">
-									<Boolean id="131072" value="False"></Boolean>
+									<Boolean id="131072" value="True"></Boolean>
 								</Parameter>
 							</ParameterValues>
 						</Step>

@@ -1605,7 +1605,7 @@
 				</ObjectList>
 			</CustomMenuSetCatalog>
 			<ScriptCatalog membercount="41">
-				<UUID modifications="198" userName="Mislav" accountName="admin" timestamp="2025-08-30T09:34:31">AA81A957-0AB6-4210-A369-DC734FE0BC11</UUID>
+				<UUID modifications="200" userName="Mislav" accountName="admin" timestamp="2025-09-02T16:19:59">AA81A957-0AB6-4210-A369-DC734FE0BC11</UUID>
 				<TagList></TagList>
 				<Script id="14" name="About" isFolder="True">
 					<UUID modifications="1" userName="Mislav" accountName="admin" timestamp="2025-06-20T18:10:24">4FB8D085-23E1-4870-8710-FC6EAB83835C</UUID>
@@ -1794,7 +1794,7 @@
 					<TagList></TagList>
 				</Script>
 				<Script id="46" name="saxmlDelivery_createXml">
-					<UUID modifications="2" userName="Mislav" accountName="admin" timestamp="2025-08-30T09:34:31">A58F555B-B312-4320-B1DA-34138E2D3310</UUID>
+					<UUID modifications="3" userName="Mislav" accountName="admin" timestamp="2025-09-02T16:19:55">A58F555B-B312-4320-B1DA-34138E2D3310</UUID>
 					<SourceUUID>ECD24827-D415-48BF-828B-20B1F82E4304</SourceUUID>
 					<Options hidden="True" access="ReadWrite" SiriShortcutVisible="False" runwithfullaccess="True" compatibility="0">8</Options>
 					<TagList></TagList>
@@ -1806,7 +1806,7 @@
 					<TagList></TagList>
 				</Script>
 				<Script id="48" name="saxmlDelivery_runPipeline">
-					<UUID modifications="2" userName="Mislav" accountName="admin" timestamp="2025-08-30T09:34:31">AC309861-3672-44DF-99C0-F6B857A597F9</UUID>
+					<UUID modifications="3" userName="Mislav" accountName="admin" timestamp="2025-09-02T16:19:59">AC309861-3672-44DF-99C0-F6B857A597F9</UUID>
 					<SourceUUID>D646E4CE-C3A1-4EC8-BACF-9E61E0846D3E</SourceUUID>
 					<Options hidden="True" access="ReadWrite" SiriShortcutVisible="False" runwithfullaccess="False" compatibility="0">8</Options>
 					<TagList></TagList>
@@ -45922,14 +45922,14 @@ self:droptarget .inner_border
 								</Parameter>
 							</ParameterValues>
 						</Step>
-						<Step hash="BDB677BFEF92955DE054BA114B046C2D" index="80" id="86" name="Set Error Capture" enable="True">
+						<Step hash="D9D583B5C942E6539B0F7F67A7D00C98" index="80" id="86" name="Set Error Capture" enable="True">
 							<UUID>9006EC77-71CA-49A8-B5E9-BB44723F251A</UUID>
 							<SourceUUID>CC279BB0-F3C3-4C60-AEF3-61B0073497D3</SourceUUID>
-							<Options>0</Options>
-							<DDRREF kind="StepText" hash="75AEEC9CB7A3A14DA5DE5BEF58B6CE64">_9006EC77-71CA-49A8-B5E9-BB44723F251A</DDRREF>
+							<Options>196608</Options>
+							<DDRREF kind="StepText" hash="675641341241178FFBA02D290B8A7408">_9006EC77-71CA-49A8-B5E9-BB44723F251A</DDRREF>
 							<ParameterValues membercount="1">
 								<Parameter type="Boolean">
-									<Boolean id="131072" value="False"></Boolean>
+									<Boolean id="131072" value="True"></Boolean>
 								</Parameter>
 							</ParameterValues>
 						</Step>
@@ -48471,14 +48471,14 @@ self:droptarget .inner_border
 								</Parameter>
 							</ParameterValues>
 						</Step>
-						<Step hash="A73112C910BB0AAA618E19F90C6EE3D0" index="63" id="86" name="Set Error Capture" enable="True">
+						<Step hash="13044F29CE92786C9F1AA1B90A619488" index="63" id="86" name="Set Error Capture" enable="True">
 							<UUID>63048B36-9500-4C4E-9885-29B25604FB7A</UUID>
 							<SourceUUID>37B62144-5AE3-4A1F-814A-D5BCA2EEE74A</SourceUUID>
-							<Options>0</Options>
-							<DDRREF kind="StepText" hash="3411E70A6539AD26A83E1F6E76B6F24A">_63048B36-9500-4C4E-9885-29B25604FB7A</DDRREF>
+							<Options>196608</Options>
+							<DDRREF kind="StepText" hash="98E90B7E132930ECDE2D569899DB810B">_63048B36-9500-4C4E-9885-29B25604FB7A</DDRREF>
 							<ParameterValues membercount="1">
 								<Parameter type="Boolean">
-									<Boolean id="131072" value="False"></Boolean>
+									<Boolean id="131072" value="True"></Boolean>
 								</Parameter>
 							</ParameterValues>
 						</Step>
@@ -58398,7 +58398,7 @@ self:droptarget .inner_border
 				<_7C2876C8-1571-4FC0-9BF1-2A94749EEF65 hash="CBB44A532F548F7D6E4E8B920611DBA3" datatype="StepText"></_7C2876C8-1571-4FC0-9BF1-2A94749EEF65>
 				<_953DA493-8E42-4F11-8B1C-EC3EA4F0F15F hash="3F1A1C61FCE48C350ED952B5085D4CDA" datatype="StepText">#Remember parent script&apos;s error capture state</_953DA493-8E42-4F11-8B1C-EC3EA4F0F15F>
 				<_69566DE7-A1EF-4315-9FC7-28B80CF3F49C hash="6FC850476DA92D3CEFCA6E38996EF785" datatype="StepText">Set Variable [ $parentScriptErrorCaptureState; Value:Get ( ErrorCaptureState ) ]</_69566DE7-A1EF-4315-9FC7-28B80CF3F49C>
-				<_9006EC77-71CA-49A8-B5E9-BB44723F251A hash="75AEEC9CB7A3A14DA5DE5BEF58B6CE64" datatype="StepText">Set Error Capture</_9006EC77-71CA-49A8-B5E9-BB44723F251A>
+				<_9006EC77-71CA-49A8-B5E9-BB44723F251A hash="675641341241178FFBA02D290B8A7408" datatype="StepText">Set Error Capture [ On ]</_9006EC77-71CA-49A8-B5E9-BB44723F251A>
 				<_643E44A0-894B-4B15-9E40-A11949CBEC31 hash="4D2E4340B811001F4FF86ECC51C11F4E" datatype="StepText"></_643E44A0-894B-4B15-9E40-A11949CBEC31>
 				<_EAB5E537-A1C8-4D93-9BB3-3E46307CC447 hash="FFBE21A810F5D3E389B2E25699AD168E" datatype="StepText">#====================================================================================================</_EAB5E537-A1C8-4D93-9BB3-3E46307CC447>
 				<_119F2F7F-E209-4319-A245-EB7C205727E9 hash="18C3E6050A00BA2A527954301E8C9259" datatype="StepText">#PROCESS</_119F2F7F-E209-4319-A245-EB7C205727E9>
@@ -58580,7 +58580,7 @@ self:droptarget .inner_border
 				<_8535E763-DCD9-40D3-804E-F33FC5D5AC31 hash="1356015CA6001286F552713036FEBC28" datatype="StepText"></_8535E763-DCD9-40D3-804E-F33FC5D5AC31>
 				<_405A2128-03CE-4FA8-90FA-89B4D4CBB3AD hash="CCD6DC61D2BA09C36BA1EE05F5C524FC" datatype="StepText">#Remember parent script&apos;s error capture state</_405A2128-03CE-4FA8-90FA-89B4D4CBB3AD>
 				<_88A32AF2-3C50-4660-ABDC-852B5E271113 hash="20A3A2785B4B295E2B8854ADD0353B8E" datatype="StepText">Set Variable [ $parentScriptErrorCaptureState; Value:Get ( ErrorCaptureState ) ]</_88A32AF2-3C50-4660-ABDC-852B5E271113>
-				<_63048B36-9500-4C4E-9885-29B25604FB7A hash="3411E70A6539AD26A83E1F6E76B6F24A" datatype="StepText">Set Error Capture</_63048B36-9500-4C4E-9885-29B25604FB7A>
+				<_63048B36-9500-4C4E-9885-29B25604FB7A hash="98E90B7E132930ECDE2D569899DB810B" datatype="StepText">Set Error Capture [ On ]</_63048B36-9500-4C4E-9885-29B25604FB7A>
 				<_0F09B2FC-E08B-4487-A4D8-1882A9E0BF38 hash="F671313F1DE8BC7473B98BC0945DBFBF" datatype="StepText"></_0F09B2FC-E08B-4487-A4D8-1882A9E0BF38>
 				<_8D81911C-A345-447E-B905-A5078EEA8E18 hash="E6D369460C4D11A12ED50AC7656940C9" datatype="StepText">#====================================================================================================</_8D81911C-A345-447E-B905-A5078EEA8E18>
 				<_BF2DD7BC-BD31-4333-87F5-CAE2BBEB1117 hash="14E122AF4ADFB4F1CBF6FFB13EFF6027" datatype="StepText">#PROCESS</_BF2DD7BC-BD31-4333-87F5-CAE2BBEB1117>
