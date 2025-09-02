@@ -47381,12 +47381,12 @@ self:droptarget .inner_border
 			<IconData type="999" scale="1">
 				<Mini>
 					<BinaryData>
-						<LibraryReference id="0" key="3C5720579EDBA9F5A25A831752213409"></LibraryReference>
+						<LibraryReference id="0" key="FFBE5730E8D72DDFBC4EBB62F286D795"></LibraryReference>
 					</BinaryData>
 				</Mini>
 				<Small>
 					<BinaryData>
-						<LibraryReference id="0" key="87413A1B696480D0B781D5476C36B2F1"></LibraryReference>
+						<LibraryReference id="0" key="65C10CD9D1ECF8C2FF6DC3EA4203EBD5"></LibraryReference>
 					</BinaryData>
 				</Small>
 				<Large>
@@ -47396,7 +47396,7 @@ self:droptarget .inner_border
 				</Large>
 				<Original>
 					<BinaryData>
-						<LibraryReference id="0" key="CA570D6BA5B6BFC0A3647D9CE7A8037B"></LibraryReference>
+						<LibraryReference id="0" key="B5361E6A191A221E9C9CC394F0B78C9C"></LibraryReference>
 					</BinaryData>
 				</Original>
 			</IconData>

@@ -9092,7 +9092,7 @@ self:droptarget .inner_border
 				</ObjectList>
 			</ExtendedPrivilegesCatalog>
 			<AccountsCatalog membercount="3">
-				<UUID modifications="2" userName="Mislav" accountName="admin" timestamp="2025-08-29T18:38:38">AFDFB892-A9A7-4238-9670-795F61706ED1</UUID>
+				<UUID modifications="3" userName="Mislav" accountName="admin" timestamp="2025-09-02T13:56:06">AFDFB892-A9A7-4238-9670-795F61706ED1</UUID>
 				<Options>4</Options>
 				<ObjectList membercount="3">
 					<Account id="1" kind="0" type="FileMaker" enable="False">
@@ -13850,19 +13850,34 @@ self:droptarget .inner_border
 		</AddAction>
 	</Structure>
 	<Metadata membercount="1">
-		<AddAction membercount="5">
+		<AddAction membercount="6">
 			<Encryption type="1"></Encryption>
 			<Minimum version="12.0" value="1208"></Minimum>
-			<Login type="1">
-				<UserName>
-					<INSECURE_TEXT>Admin</INSECURE_TEXT>
-				</UserName>
-				<INSECURE_PASSWORD>
-					<INSECURE_TEXT></INSECURE_TEXT>
-				</INSECURE_PASSWORD>
-			</Login>
+			<Login type="-1"></Login>
 			<SavePassword keychain="True" requireMobile="False"></SavePassword>
 			<ShowSignInFields enable="True"></ShowSignInFields>
+			<IconData type="999" scale="1">
+				<Mini>
+					<BinaryData>
+						<LibraryReference id="0" key="FFBE5730E8D72DDFBC4EBB62F286D795"></LibraryReference>
+					</BinaryData>
+				</Mini>
+				<Small>
+					<BinaryData>
+						<LibraryReference id="0" key="65C10CD9D1ECF8C2FF6DC3EA4203EBD5"></LibraryReference>
+					</BinaryData>
+				</Small>
+				<Large>
+					<BinaryData>
+						<LibraryReference id="0" key="B5361E6A191A221E9C9CC394F0B78C9C"></LibraryReference>
+					</BinaryData>
+				</Large>
+				<Original>
+					<BinaryData>
+						<LibraryReference id="0" key="B5361E6A191A221E9C9CC394F0B78C9C"></LibraryReference>
+					</BinaryData>
+				</Original>
+			</IconData>
 		</AddAction>
 	</Metadata>
 </FMSaveAsXML>
