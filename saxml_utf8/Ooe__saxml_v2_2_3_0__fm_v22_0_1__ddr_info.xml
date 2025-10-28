@@ -113,7 +113,7 @@
 				</BaseTable>
 			</BaseTableCatalog>
 			<TableOccurrenceCatalog membercount="7">
-				<UUID modifications="40" userName="Mislav" accountName="admin" timestamp="2025-10-19T00:08:58">4EF01E87-25C8-468E-939E-BE82841BA6B9</UUID>
+				<UUID modifications="41" userName="Mislav" accountName="admin" timestamp="2025-10-28T11:12:01">4EF01E87-25C8-468E-939E-BE82841BA6B9</UUID>
 				<TagList></TagList>
 				<TableOccurrenceNotes>
 					<ObjectList membercount="2">
@@ -333,10 +333,10 @@
 			</ValueListCatalog>
 			<FieldsForTables membercount="4">
 				<FieldCatalog>
-					<UUID modifications="35" userName="Mislav" accountName="admin" timestamp="2025-10-19T00:09:00">2F865027-544A-4969-BCC1-DC7B4D7B1FEA</UUID>
+					<UUID modifications="36" userName="Mislav" accountName="admin" timestamp="2025-10-28T11:12:01">2F865027-544A-4969-BCC1-DC7B4D7B1FEA</UUID>
 					<TagList></TagList>
 					<BaseTableReference id="129" name="TestTable" UUID="471CCAC6-9046-4B2E-BD66-03EEAE88170B"></BaseTableReference>
-					<ObjectList membercount="18">
+					<ObjectList membercount="24">
 						<Field id="6" name="TextField1" fieldtype="Normal" datatype="Text" comment="">
 							<UUID modifications="10" userName="Mislav" accountName="Admin" timestamp="2025-06-09T09:50:25">0EC666FE-F018-4229-A068-104C00599D7F</UUID>
 							<SourceUUID>0EC666FE-F018-4229-A068-104C00599D7F</SourceUUID>
@@ -560,6 +560,116 @@
 							<UUID modifications="3" userName="Mislav" accountName="admin" timestamp="2025-10-19T00:08:53">661C857A-150C-44CD-B712-A363267313C1</UUID>
 							<AutoEnter type="SerialNumber" prohibitModification="False">
 								<SerialNumber increment="10" nextvalue="1" generate="OnCreation"></SerialNumber>
+							</AutoEnter>
+							<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+							<Storage autoIndex="True" index="None" global="False" maxRepetitions="1">
+								<LanguageReference name="English" id="21"></LanguageReference>
+							</Storage>
+							<TagList></TagList>
+						</Field>
+						<Field id="24" name="Lookup0_default" fieldtype="Normal" datatype="Text" comment="">
+							<UUID modifications="1" userName="Mislav" accountName="admin" timestamp="2025-10-28T11:11:54">BEE33964-B1FB-4A01-B87C-CC8E0CE4E21F</UUID>
+							<AutoEnter type="Looked_up" prohibitModification="False">
+								<Looked_up dontCopyIfEmpty="True" noMatchCopyOption="DoNotCopy">
+									<FieldReference id="6" name="Name" UUID="CDA37349-D2D9-4ACA-B58C-9F8272B51F9D">
+										<TableOccurrenceReference id="1065094" name="TestTable_Contacts" UUID="34F19F48-2BB3-48DB-8C03-44DD5FBF74F4"></TableOccurrenceReference>
+									</FieldReference>
+									<Context>
+										<TableOccurrenceReference id="1065089" name="TestTable" UUID="4908496C-B0B9-4840-9BFC-6C2D42719F0C"></TableOccurrenceReference>
+									</Context>
+								</Looked_up>
+							</AutoEnter>
+							<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+							<Storage autoIndex="True" index="None" global="False" maxRepetitions="1">
+								<LanguageReference name="English" id="21"></LanguageReference>
+							</Storage>
+							<TagList></TagList>
+						</Field>
+						<Field id="25" name="Lookup1_copy_empty" fieldtype="Normal" datatype="Text" comment="">
+							<UUID modifications="1" userName="Mislav" accountName="admin" timestamp="2025-10-28T11:11:54">57C2F8DC-9910-44D5-8EC6-053FC88D69B1</UUID>
+							<AutoEnter type="Looked_up" prohibitModification="False">
+								<Looked_up dontCopyIfEmpty="False" noMatchCopyOption="DoNotCopy">
+									<FieldReference id="6" name="Name" UUID="CDA37349-D2D9-4ACA-B58C-9F8272B51F9D">
+										<TableOccurrenceReference id="1065094" name="TestTable_Contacts" UUID="34F19F48-2BB3-48DB-8C03-44DD5FBF74F4"></TableOccurrenceReference>
+									</FieldReference>
+									<Context>
+										<TableOccurrenceReference id="1065089" name="TestTable" UUID="4908496C-B0B9-4840-9BFC-6C2D42719F0C"></TableOccurrenceReference>
+									</Context>
+								</Looked_up>
+							</AutoEnter>
+							<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+							<Storage autoIndex="True" index="None" global="False" maxRepetitions="1">
+								<LanguageReference name="English" id="21"></LanguageReference>
+							</Storage>
+							<TagList></TagList>
+						</Field>
+						<Field id="26" name="Lookup2_copy_empty_on_no_match_copy_next_lower_value" fieldtype="Normal" datatype="Text" comment="">
+							<UUID modifications="1" userName="Mislav" accountName="admin" timestamp="2025-10-28T11:11:54">DF5B4A7F-8003-4653-BBFE-BAFD4646E6A6</UUID>
+							<AutoEnter type="Looked_up" prohibitModification="False">
+								<Looked_up dontCopyIfEmpty="False" noMatchCopyOption="NextLower">
+									<FieldReference id="6" name="Name" UUID="CDA37349-D2D9-4ACA-B58C-9F8272B51F9D">
+										<TableOccurrenceReference id="1065094" name="TestTable_Contacts" UUID="34F19F48-2BB3-48DB-8C03-44DD5FBF74F4"></TableOccurrenceReference>
+									</FieldReference>
+									<Context>
+										<TableOccurrenceReference id="1065089" name="TestTable" UUID="4908496C-B0B9-4840-9BFC-6C2D42719F0C"></TableOccurrenceReference>
+									</Context>
+								</Looked_up>
+							</AutoEnter>
+							<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+							<Storage autoIndex="True" index="None" global="False" maxRepetitions="1">
+								<LanguageReference name="English" id="21"></LanguageReference>
+							</Storage>
+							<TagList></TagList>
+						</Field>
+						<Field id="27" name="Lookup3_copy_empty_on_no_match_copy_next_higher_value" fieldtype="Normal" datatype="Text" comment="">
+							<UUID modifications="1" userName="Mislav" accountName="admin" timestamp="2025-10-28T11:11:54">94CCFE04-619A-408C-931D-90CA320A7F74</UUID>
+							<AutoEnter type="Looked_up" prohibitModification="False">
+								<Looked_up dontCopyIfEmpty="False" noMatchCopyOption="NextHigher">
+									<FieldReference id="6" name="Name" UUID="CDA37349-D2D9-4ACA-B58C-9F8272B51F9D">
+										<TableOccurrenceReference id="1065094" name="TestTable_Contacts" UUID="34F19F48-2BB3-48DB-8C03-44DD5FBF74F4"></TableOccurrenceReference>
+									</FieldReference>
+									<Context>
+										<TableOccurrenceReference id="1065089" name="TestTable" UUID="4908496C-B0B9-4840-9BFC-6C2D42719F0C"></TableOccurrenceReference>
+									</Context>
+								</Looked_up>
+							</AutoEnter>
+							<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+							<Storage autoIndex="True" index="None" global="False" maxRepetitions="1">
+								<LanguageReference name="English" id="21"></LanguageReference>
+							</Storage>
+							<TagList></TagList>
+						</Field>
+						<Field id="28" name="Lookup4_copy_empty_on_no_match_use_blank" fieldtype="Normal" datatype="Text" comment="">
+							<UUID modifications="1" userName="Mislav" accountName="admin" timestamp="2025-10-28T11:11:54">01FEF43D-1E6F-491F-BCFE-EEB98B72C983</UUID>
+							<AutoEnter type="Looked_up" prohibitModification="False">
+								<Looked_up dontCopyIfEmpty="False" noMatchCopyOption="ConstantData">
+									<ConstantData></ConstantData>
+									<FieldReference id="6" name="Name" UUID="CDA37349-D2D9-4ACA-B58C-9F8272B51F9D">
+										<TableOccurrenceReference id="1065094" name="TestTable_Contacts" UUID="34F19F48-2BB3-48DB-8C03-44DD5FBF74F4"></TableOccurrenceReference>
+									</FieldReference>
+									<Context>
+										<TableOccurrenceReference id="1065089" name="TestTable" UUID="4908496C-B0B9-4840-9BFC-6C2D42719F0C"></TableOccurrenceReference>
+									</Context>
+								</Looked_up>
+							</AutoEnter>
+							<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+							<Storage autoIndex="True" index="None" global="False" maxRepetitions="1">
+								<LanguageReference name="English" id="21"></LanguageReference>
+							</Storage>
+							<TagList></TagList>
+						</Field>
+						<Field id="29" name="Lookup5_copy_empty_on_no_match_use_value" fieldtype="Normal" datatype="Text" comment="">
+							<UUID modifications="1" userName="Mislav" accountName="admin" timestamp="2025-10-28T11:11:54">A598F8CF-2718-49B3-ADCE-1D1A39CF1896</UUID>
+							<AutoEnter type="Looked_up" prohibitModification="False">
+								<Looked_up dontCopyIfEmpty="False" noMatchCopyOption="ConstantData">
+									<ConstantData>«missing»</ConstantData>
+									<FieldReference id="6" name="Name" UUID="CDA37349-D2D9-4ACA-B58C-9F8272B51F9D">
+										<TableOccurrenceReference id="1065094" name="TestTable_Contacts" UUID="34F19F48-2BB3-48DB-8C03-44DD5FBF74F4"></TableOccurrenceReference>
+									</FieldReference>
+									<Context>
+										<TableOccurrenceReference id="1065089" name="TestTable" UUID="4908496C-B0B9-4840-9BFC-6C2D42719F0C"></TableOccurrenceReference>
+									</Context>
+								</Looked_up>
 							</AutoEnter>
 							<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
 							<Storage autoIndex="True" index="None" global="False" maxRepetitions="1">
@@ -1638,7 +1748,7 @@
 				</ObjectList>
 			</CustomMenuSetCatalog>
 			<ScriptCatalog membercount="41">
-				<UUID modifications="207" userName="Mislav" accountName="admin" timestamp="2025-10-19T00:24:27">AA81A957-0AB6-4210-A369-DC734FE0BC11</UUID>
+				<UUID modifications="209" userName="Mislav" accountName="admin" timestamp="2025-10-28T11:12:50">AA81A957-0AB6-4210-A369-DC734FE0BC11</UUID>
 				<TagList></TagList>
 				<Script id="14" name="About" isFolder="True">
 					<UUID modifications="1" userName="Mislav" accountName="admin" timestamp="2025-06-20T18:10:24">4FB8D085-23E1-4870-8710-FC6EAB83835C</UUID>
@@ -1651,7 +1761,7 @@
 					<TagList></TagList>
 				</Script>
 				<Script id="17" name="Release Notes">
-					<UUID modifications="26" userName="Mislav" accountName="admin" timestamp="2025-10-19T00:24:26">C59FC9BA-BB08-4E8D-8A7F-1380F07D1E83</UUID>
+					<UUID modifications="28" userName="Mislav" accountName="admin" timestamp="2025-10-28T11:12:50">C59FC9BA-BB08-4E8D-8A7F-1380F07D1E83</UUID>
 					<Options hidden="True" access="ReadWrite" SiriShortcutVisible="False" runwithfullaccess="False" compatibility="0">8</Options>
 					<TagList></TagList>
 				</Script>
@@ -14921,7 +15031,7 @@ field:normal .baseline
 				</Theme>
 			</ThemeCatalog>
 			<LayoutCatalog membercount="13">
-				<UUID modifications="264" userName="Mislav" accountName="admin" timestamp="2025-10-18T23:47:36">5E337BAB-42BC-4E8A-878B-9656140CE086</UUID>
+				<UUID modifications="265" userName="Mislav" accountName="admin" timestamp="2025-10-18T23:47:36">5E337BAB-42BC-4E8A-878B-9656140CE086</UUID>
 				<TagList></TagList>
 				<Layout id="11" name="File Open" width="740">
 					<TableOccurrenceReference id="1065095" name="blank" UUID="724748F0-F1A7-4448-A85F-FE2E0FE58A83"></TableOccurrenceReference>
@@ -14930,14 +15040,14 @@ field:normal .baseline
 						<Part type="Body" kind="4">
 							<Definition type="Body" kind="4" size="450" absolute="0" Options="1024"></Definition>
 							<ObjectList membercount="3">
-								<LayoutObject hash="19224C2CF1D9644E75CDB8B1202D34AD" id="3" type="Text" name="" kind="2">
+								<LayoutObject hash="DE68147BEB933937A44FB4CFC5F1EACC" id="3" type="Text" name="" kind="2">
 									<UUID>7814854E-DEB5-423E-84B9-1B61690EB315</UUID>
 									<Bounds top="145" left="20" bottom="435" right="720"></Bounds>
 									<Options>0</Options>
 									<Text>
 										<Options>2</Options>
 										<StyledText>
-											<Data><![CDATA[This file endeavors to have an example of One Of Everything (Ooe)—one of every possible configuration of every kind of solution element.For example, every kind of layout part or layout object, every kind of value list, every kind of script step, etc.Achieving 100% coverage is not a realistic goal, but the hope is that over time we can add examples of all these different permutations to this file.Last updated: 2025-10-18]]></Data>
+											<Data><![CDATA[This file endeavors to have an example of One Of Everything (Ooe)—one of every possible configuration of every kind of solution element.For example, every kind of layout part or layout object, every kind of value list, every kind of script step, etc.Achieving 100% coverage is not a realistic goal, but the hope is that over time we can add examples of all these different permutations to this file.Last updated: 2025-10-28]]></Data>
 										</StyledText>
 									</Text>
 									<LocalCSS name="" displayName=""><![CDATA[self:normal .self
@@ -15052,7 +15162,7 @@ field:normal .baseline
 							</ObjectList>
 						</Part>
 					</PartsList>
-					<UUID modifications="44" userName="Mislav" accountName="admin" timestamp="2025-10-18T23:46:19">227FE5E4-D9F1-474B-A744-4E5715FE5DDB</UUID>
+					<UUID modifications="45" userName="Mislav" accountName="admin" timestamp="2025-10-28T11:12:13">227FE5E4-D9F1-474B-A744-4E5715FE5DDB</UUID>
 					<TagList></TagList>
 					<GridStyle>
 						<Color red="0.500000" green="0.500000" blue="0.500000" alpha="1.000000"></Color>
@@ -19568,7 +19678,7 @@ self:droptarget .inner_border
 				</Script>
 				<Script>
 					<ScriptReference id="17" name="Release Notes" UUID="C59FC9BA-BB08-4E8D-8A7F-1380F07D1E83"></ScriptReference>
-					<ObjectList membercount="31">
+					<ObjectList membercount="34">
 						<Step hash="BE6189C8D1DA39A25A391503F1A79776" index="0" id="89" name="# (comment)" enable="True">
 							<UUID>FC8E3958-34A0-499C-B1D0-DB364CBC2F81</UUID>
 							<OwnerID></OwnerID>
@@ -19580,330 +19690,363 @@ self:droptarget .inner_border
 								</Parameter>
 							</ParameterValues>
 						</Step>
-						<Step hash="7E59EC5527506AEF8A8D04D3A0F5A797" index="1" id="89" name="# (comment)" enable="True">
+						<Step hash="E8E4A99234CB8D520EC99E3B1E6E40F2" index="1" id="89" name="# (comment)" enable="True">
+							<UUID>8F6D9A3A-0B39-4109-A70E-EE920743DF07</UUID>
+							<OwnerID></OwnerID>
+							<Options>4</Options>
+							<DDRREF kind="StepText" hash="7756E84DBE783B32FB88FD92EF4C9F27">_8F6D9A3A-0B39-4109-A70E-EE920743DF07</DDRREF>
+							<ParameterValues membercount="1">
+								<Parameter type="Comment">
+									<Comment value="2025-10-28 Mislav Kos"></Comment>
+								</Parameter>
+							</ParameterValues>
+						</Step>
+						<Step hash="0F0F773B4B729788CC589E5BC9726DF3" index="2" id="89" name="# (comment)" enable="True">
+							<UUID>0A1B338E-1F04-488E-9A54-EC42FB60F80D</UUID>
+							<OwnerID></OwnerID>
+							<Options>4</Options>
+							<DDRREF kind="StepText" hash="4B751E3472B0278CA7AA98BC8EF2FB74">_0A1B338E-1F04-488E-9A54-EC42FB60F80D</DDRREF>
+							<ParameterValues membercount="1">
+								<Parameter type="Comment">
+									<Comment value="https://github.com/mislavkos/ooe-fm/issues/6: Added lookup fields in the TestTable"></Comment>
+								</Parameter>
+							</ParameterValues>
+						</Step>
+						<Step hash="4517D38653A99825E834C6DC880AE89F" index="3" id="89" name="# (comment)" enable="True">
+							<UUID>AF78BDA8-DC8B-4DD6-9819-DE3E2341FEDD</UUID>
+							<OwnerID></OwnerID>
+							<Options>0</Options>
+							<DDRREF kind="StepText" hash="DE7C6E7C8FD9A2ACB29CD8DEB24C1B4E">_AF78BDA8-DC8B-4DD6-9819-DE3E2341FEDD</DDRREF>
+							<ParameterValues membercount="1">
+								<Parameter type="Comment">
+									<Comment></Comment>
+								</Parameter>
+							</ParameterValues>
+						</Step>
+						<Step hash="1129D90A086641479AB1B5889DD87D98" index="4" id="89" name="# (comment)" enable="True">
 							<UUID>C6E5094C-DDD1-4947-9B45-FAA8D8DD137E</UUID>
 							<OwnerID></OwnerID>
 							<Options>4</Options>
-							<DDRREF kind="StepText" hash="61CAB0044915F05FB5CA91DDF9A4CBC2">_C6E5094C-DDD1-4947-9B45-FAA8D8DD137E</DDRREF>
+							<DDRREF kind="StepText" hash="2CE67DBF4016B6678F0A179695432C8C">_C6E5094C-DDD1-4947-9B45-FAA8D8DD137E</DDRREF>
 							<ParameterValues membercount="1">
 								<Parameter type="Comment">
 									<Comment value="2025-10-18 Mislav Kos"></Comment>
 								</Parameter>
 							</ParameterValues>
 						</Step>
-						<Step hash="05A854A9974E41F6AB0CE34C792C28F1" index="2" id="89" name="# (comment)" enable="True">
+						<Step hash="9686C5F314C071AB123E33601DE197CE" index="5" id="89" name="# (comment)" enable="True">
 							<UUID>4BBBF62B-A1CA-4721-A039-18BC8723D086</UUID>
 							<OwnerID></OwnerID>
 							<Options>4</Options>
-							<DDRREF kind="StepText" hash="EA3FF587F5BAB9C5559AF2293E0CE4B0">_4BBBF62B-A1CA-4721-A039-18BC8723D086</DDRREF>
+							<DDRREF kind="StepText" hash="ED8550712655601A0D562D593BC3AC7A">_4BBBF62B-A1CA-4721-A039-18BC8723D086</DDRREF>
 							<ParameterValues membercount="1">
 								<Parameter type="Comment">
 									<Comment value="https://github.com/mislavkos/ooe-fm/issues/1: Added SerialNumberOnCommitIncBy1, SerialNumberOnCommitIncBy10 fields to TestTable&#13;https://github.com/mislavkos/ooe-fm/issues/3: Added placeholder text to all fields on &quot;My Layout for TestTable&quot;&#13;https://github.com/mislavkos/ooe-fm/issues/3: Added additional field control styles: dropdown calendar, dropdown list, popup menu, concealed edit box, radio button, checkbox&#13;https://github.com/mislavkos/ooe-fm/issues/4: Added Self external data source&#13;Updated SaXMLDelivery add-on to v0.1.9"></Comment>
 								</Parameter>
 							</ParameterValues>
 						</Step>
-						<Step hash="CCEC6AE8CFAD2A9E3D38B513A4515FEA" index="3" id="89" name="# (comment)" enable="True">
+						<Step hash="6B4B72862F2EAC47D0ADE74253B03CA4" index="6" id="89" name="# (comment)" enable="True">
 							<UUID>5A05F8A3-8227-4A24-AC92-F0D894DE1065</UUID>
 							<OwnerID></OwnerID>
 							<Options>0</Options>
-							<DDRREF kind="StepText" hash="DE7C6E7C8FD9A2ACB29CD8DEB24C1B4E">_5A05F8A3-8227-4A24-AC92-F0D894DE1065</DDRREF>
+							<DDRREF kind="StepText" hash="C2CA9996951DF2435A5641211BD37424">_5A05F8A3-8227-4A24-AC92-F0D894DE1065</DDRREF>
 							<ParameterValues membercount="1">
 								<Parameter type="Comment">
 									<Comment></Comment>
 								</Parameter>
 							</ParameterValues>
 						</Step>
-						<Step hash="D8384244D32494FB0AE33301F7A681CE" index="4" id="89" name="# (comment)" enable="True">
+						<Step hash="0133051595C7BA36EE7FD35E57C3B496" index="7" id="89" name="# (comment)" enable="True">
 							<UUID>A32A8E68-26EE-436E-B0D8-17B2F9830AB6</UUID>
 							<OwnerID></OwnerID>
 							<Options>4</Options>
-							<DDRREF kind="StepText" hash="06249E3DB9AD69AC574EAC61A966CE02">_A32A8E68-26EE-436E-B0D8-17B2F9830AB6</DDRREF>
+							<DDRREF kind="StepText" hash="A365F7593C80FB00007B1F46C3D24741">_A32A8E68-26EE-436E-B0D8-17B2F9830AB6</DDRREF>
 							<ParameterValues membercount="1">
 								<Parameter type="Comment">
 									<Comment value="2025-08-29 Mislav Kos"></Comment>
 								</Parameter>
 							</ParameterValues>
 						</Step>
-						<Step hash="C66FC92FC131821AE9C1D956D03A1A98" index="5" id="89" name="# (comment)" enable="True">
+						<Step hash="5A583D1E85FDE83F4E5E637A306D33C3" index="8" id="89" name="# (comment)" enable="True">
 							<UUID>38F98321-E90F-402A-A79B-56706DD9260D</UUID>
 							<OwnerID></OwnerID>
 							<Options>4</Options>
-							<DDRREF kind="StepText" hash="1A6143D2B14805F819EC13E7621CCBD1">_38F98321-E90F-402A-A79B-56706DD9260D</DDRREF>
+							<DDRREF kind="StepText" hash="7650E97B2E65A87E7C909B7C8E93BB63">_38F98321-E90F-402A-A79B-56706DD9260D</DDRREF>
 							<ParameterValues membercount="1">
 								<Parameter type="Comment">
 									<Comment value="Added restapi account and privilege set"></Comment>
 								</Parameter>
 							</ParameterValues>
 						</Step>
-						<Step hash="2ACFA5166762E033B7625AE2E2A1C098" index="6" id="89" name="# (comment)" enable="True">
+						<Step hash="858B1579BECE25F2AA87B36D31A81DA1" index="9" id="89" name="# (comment)" enable="True">
 							<UUID>301FBAB5-6CDB-461F-B22A-CE8A1A3E6F08</UUID>
 							<OwnerID></OwnerID>
 							<Options>0</Options>
-							<DDRREF kind="StepText" hash="C2CA9996951DF2435A5641211BD37424">_301FBAB5-6CDB-461F-B22A-CE8A1A3E6F08</DDRREF>
+							<DDRREF kind="StepText" hash="58B5E46AF63FB35969B8AC9B47B49B5B">_301FBAB5-6CDB-461F-B22A-CE8A1A3E6F08</DDRREF>
 							<ParameterValues membercount="1">
 								<Parameter type="Comment">
 									<Comment></Comment>
 								</Parameter>
 							</ParameterValues>
 						</Step>
-						<Step hash="55D1FF5461E18D1DC3AB36D65A8FF6F0" index="7" id="89" name="# (comment)" enable="True">
+						<Step hash="57ED1F3AD8EBE1B5BEDBCE204FA9C8D5" index="10" id="89" name="# (comment)" enable="True">
 							<UUID>10C05A17-DD03-47BF-BC82-E6FCE86A6A06</UUID>
 							<OwnerID></OwnerID>
 							<Options>4</Options>
-							<DDRREF kind="StepText" hash="A365F7593C80FB00007B1F46C3D24741">_10C05A17-DD03-47BF-BC82-E6FCE86A6A06</DDRREF>
+							<DDRREF kind="StepText" hash="AD6FD123D813192C56DCE4C0C56D4AD9">_10C05A17-DD03-47BF-BC82-E6FCE86A6A06</DDRREF>
 							<ParameterValues membercount="1">
 								<Parameter type="Comment">
 									<Comment value="2025-08-29 Mislav Kos"></Comment>
 								</Parameter>
 							</ParameterValues>
 						</Step>
-						<Step hash="42F4FB70CF1F8ED27F8D4B5E74C66275" index="8" id="89" name="# (comment)" enable="True">
+						<Step hash="82843CE4EC4F943150145F9FB988E80D" index="11" id="89" name="# (comment)" enable="True">
 							<UUID>4B6B9892-3C12-47CB-ABB4-640B3261B5D7</UUID>
 							<OwnerID></OwnerID>
 							<Options>4</Options>
-							<DDRREF kind="StepText" hash="2B940B8E632AF44ECFD22EE4C84DB093">_4B6B9892-3C12-47CB-ABB4-640B3261B5D7</DDRREF>
+							<DDRREF kind="StepText" hash="F90762D204B63067E939B7D3944628F0">_4B6B9892-3C12-47CB-ABB4-640B3261B5D7</DDRREF>
 							<ParameterValues membercount="1">
 								<Parameter type="Comment">
 									<Comment value="Inactivated &quot;dev&quot; account which doesn&apos;t have a password set, so that the file can be hosted on FMS servers that doen&apos;t allow insecure files"></Comment>
 								</Parameter>
 							</ParameterValues>
 						</Step>
-						<Step hash="8EB90C6DC51EC64D21BE353376517CA6" index="9" id="89" name="# (comment)" enable="True">
+						<Step hash="C8313581950C65AB9B3060296896F1D1" index="12" id="89" name="# (comment)" enable="True">
 							<UUID>0C90448B-2456-4EE2-B51E-3C33436AB42A</UUID>
 							<OwnerID></OwnerID>
 							<Options>0</Options>
-							<DDRREF kind="StepText" hash="58B5E46AF63FB35969B8AC9B47B49B5B">_0C90448B-2456-4EE2-B51E-3C33436AB42A</DDRREF>
+							<DDRREF kind="StepText" hash="5A04315E96C34FD4B819425655F9118F">_0C90448B-2456-4EE2-B51E-3C33436AB42A</DDRREF>
 							<ParameterValues membercount="1">
 								<Parameter type="Comment">
 									<Comment></Comment>
 								</Parameter>
 							</ParameterValues>
 						</Step>
-						<Step hash="53CB3CEF3DA2A89428217096AFE8AB6A" index="10" id="89" name="# (comment)" enable="True">
+						<Step hash="9222AB1E9C049CE3FA83A2F1CC9ED2C8" index="13" id="89" name="# (comment)" enable="True">
 							<UUID>4C4C17D4-0895-4D72-91C2-73000C2F36DD</UUID>
 							<OwnerID></OwnerID>
 							<Options>4</Options>
-							<DDRREF kind="StepText" hash="351583F3BA2851D29281A4193C406EE3">_4C4C17D4-0895-4D72-91C2-73000C2F36DD</DDRREF>
+							<DDRREF kind="StepText" hash="D1FC624D8E494EBC8E24099F02D34E44">_4C4C17D4-0895-4D72-91C2-73000C2F36DD</DDRREF>
 							<ParameterValues membercount="1">
 								<Parameter type="Comment">
 									<Comment value="2025-08-25 Mislav Kos"></Comment>
 								</Parameter>
 							</ParameterValues>
 						</Step>
-						<Step hash="DBC8A403328CEABCF80F0B565133D810" index="11" id="89" name="# (comment)" enable="True">
+						<Step hash="119CA629F4D81C346A8D6453C4A66986" index="14" id="89" name="# (comment)" enable="True">
 							<UUID>0CAE7BB9-095C-46E5-9804-D58DD38E8794</UUID>
 							<OwnerID></OwnerID>
 							<Options>4</Options>
-							<DDRREF kind="StepText" hash="238534486EAF7E96A9A6C5BE6C75EFDD">_0CAE7BB9-095C-46E5-9804-D58DD38E8794</DDRREF>
+							<DDRREF kind="StepText" hash="58CDC7E16C605E76C04C67FDEB5ADB84">_0CAE7BB9-095C-46E5-9804-D58DD38E8794</DDRREF>
 							<ParameterValues membercount="1">
 								<Parameter type="Comment">
 									<Comment value="Renamed Two to BrojDva"></Comment>
 								</Parameter>
 							</ParameterValues>
 						</Step>
-						<Step hash="8074152819E6A06C6D5CF1FBEE9A0843" index="12" id="89" name="# (comment)" enable="True">
+						<Step hash="FED8753B780075E938A4D50180FC21C8" index="15" id="89" name="# (comment)" enable="True">
 							<UUID>3F54BB15-DA39-4FC6-A99D-1BFF5ED8FBB3</UUID>
 							<OwnerID></OwnerID>
 							<Options>0</Options>
-							<DDRREF kind="StepText" hash="5A04315E96C34FD4B819425655F9118F">_3F54BB15-DA39-4FC6-A99D-1BFF5ED8FBB3</DDRREF>
+							<DDRREF kind="StepText" hash="350AB1210010ED9410880E9667B3217B">_3F54BB15-DA39-4FC6-A99D-1BFF5ED8FBB3</DDRREF>
 							<ParameterValues membercount="1">
 								<Parameter type="Comment">
 									<Comment></Comment>
 								</Parameter>
 							</ParameterValues>
 						</Step>
-						<Step hash="71FCBC70913DCD1783CFBCEA7B3F63E4" index="13" id="89" name="# (comment)" enable="True">
+						<Step hash="910357732F9B4A0A86334A513FB59F5E" index="16" id="89" name="# (comment)" enable="True">
 							<UUID>1EC08427-D385-417F-BD92-F89E8F0E3B24</UUID>
 							<OwnerID></OwnerID>
 							<Options>4</Options>
-							<DDRREF kind="StepText" hash="8EE85CB0899416674E4ECB05BEAA1928">_1EC08427-D385-417F-BD92-F89E8F0E3B24</DDRREF>
+							<DDRREF kind="StepText" hash="A385F022469F62B9AF9E4A7F800347F1">_1EC08427-D385-417F-BD92-F89E8F0E3B24</DDRREF>
 							<ParameterValues membercount="1">
 								<Parameter type="Comment">
 									<Comment value="2025-07-24 Mislav Kos"></Comment>
 								</Parameter>
 							</ParameterValues>
 						</Step>
-						<Step hash="8F324F0966A717528C82B84C8AA4DF3C" index="14" id="89" name="# (comment)" enable="True">
+						<Step hash="94E77EE0682BCC3D904E7A9D31314455" index="17" id="89" name="# (comment)" enable="True">
 							<UUID>D5887B16-25DD-4098-A19B-9115A6800D37</UUID>
 							<OwnerID></OwnerID>
 							<Options>4</Options>
-							<DDRREF kind="StepText" hash="7E2520E958A9CDE18A9C7D92DCDF80F3">_D5887B16-25DD-4098-A19B-9115A6800D37</DDRREF>
+							<DDRREF kind="StepText" hash="A11E9470B111B8437CEA7D732A53ABFF">_D5887B16-25DD-4098-A19B-9115A6800D37</DDRREF>
 							<ParameterValues membercount="1">
 								<Parameter type="Comment">
 									<Comment value="Renamed Ooe2 to Two&#13;Added multiple fields to Contacts_TestTable relationship sort&#13;Added second predicate to Contacts_TestTable relationship&#13;Added second relationship graph note&#13;Made OrderOfOperations custom function calc more complex&#13;Added/updated custom menus&#13;Added/updated privilege sets"></Comment>
 								</Parameter>
 							</ParameterValues>
 						</Step>
-						<Step hash="347CB2317AF0C44EEF2D40461D30D0CE" index="15" id="89" name="# (comment)" enable="True">
+						<Step hash="F527A7F94D329883F87E5E20BEB8AE50" index="18" id="89" name="# (comment)" enable="True">
 							<UUID>0F0E9972-8EC9-4090-9CF7-FE8EDD65CEFE</UUID>
 							<OwnerID></OwnerID>
 							<Options>0</Options>
-							<DDRREF kind="StepText" hash="350AB1210010ED9410880E9667B3217B">_0F0E9972-8EC9-4090-9CF7-FE8EDD65CEFE</DDRREF>
+							<DDRREF kind="StepText" hash="13BD1622A2EAEEC29D1E7D2B2556AA16">_0F0E9972-8EC9-4090-9CF7-FE8EDD65CEFE</DDRREF>
 							<ParameterValues membercount="1">
 								<Parameter type="Comment">
 									<Comment></Comment>
 								</Parameter>
 							</ParameterValues>
 						</Step>
-						<Step hash="17CE2ED259631236A8B101E5FEA82F17" index="16" id="89" name="# (comment)" enable="True">
+						<Step hash="C4708D31BE66F2138984F6C4E59170F0" index="19" id="89" name="# (comment)" enable="True">
 							<UUID>62FF0B16-1DEA-4DBF-9021-B0AEC4F7964A</UUID>
 							<OwnerID></OwnerID>
 							<Options>4</Options>
-							<DDRREF kind="StepText" hash="95CC5C358C88F6F0D006F5D46C5AC843">_62FF0B16-1DEA-4DBF-9021-B0AEC4F7964A</DDRREF>
+							<DDRREF kind="StepText" hash="7881C448CD30DB31FD776A43D3943D6F">_62FF0B16-1DEA-4DBF-9021-B0AEC4F7964A</DDRREF>
 							<ParameterValues membercount="1">
 								<Parameter type="Comment">
 									<Comment value="2025-07-16 Mislav Kos"></Comment>
 								</Parameter>
 							</ParameterValues>
 						</Step>
-						<Step hash="231152AD3E613C657F1BAC50DD31950E" index="17" id="89" name="# (comment)" enable="True">
+						<Step hash="10A9C8E9CDF6EA42CFACBD0D39E50AB5" index="20" id="89" name="# (comment)" enable="True">
 							<UUID>20131764-DE5A-402F-B3A2-222AB9F8560F</UUID>
 							<OwnerID></OwnerID>
 							<Options>4</Options>
-							<DDRREF kind="StepText" hash="BA1679C30760737144B59E3BE590EF6D">_20131764-DE5A-402F-B3A2-222AB9F8560F</DDRREF>
+							<DDRREF kind="StepText" hash="30FCF0AED4C1A65389B0993A7AD9BA4B">_20131764-DE5A-402F-B3A2-222AB9F8560F</DDRREF>
 							<ParameterValues membercount="1">
 								<Parameter type="Comment">
 									<Comment value="Added second file (Ooe2.fmp12) to the mix"></Comment>
 								</Parameter>
 							</ParameterValues>
 						</Step>
-						<Step hash="2774D9F328D3D503302EF031DE64AD96" index="18" id="89" name="# (comment)" enable="True">
+						<Step hash="DC890EAEECE1263CD5A42FC74501ED17" index="21" id="89" name="# (comment)" enable="True">
 							<UUID>4D3DFF00-C74F-4DFA-B0DF-3F738C0EEBA6</UUID>
 							<OwnerID></OwnerID>
 							<Options>4</Options>
-							<DDRREF kind="StepText" hash="3EA1EDD84DE50441BD844FC9A5CDC47B">_4D3DFF00-C74F-4DFA-B0DF-3F738C0EEBA6</DDRREF>
+							<DDRREF kind="StepText" hash="8C6E0FE17C7971ABA5B7AACA9A80E4AC">_4D3DFF00-C74F-4DFA-B0DF-3F738C0EEBA6</DDRREF>
 							<ParameterValues membercount="1">
 								<Parameter type="Comment">
 									<Comment value="Added table occurrence to &quot;Invoice&quot; table from Ooe2 to Ooe relationship graph"></Comment>
 								</Parameter>
 							</ParameterValues>
 						</Step>
-						<Step hash="DFBD4797613B6144BF8D1C688C7E0A83" index="19" id="89" name="# (comment)" enable="True">
+						<Step hash="98DF890EE9B30D5B0258182114C97B2D" index="22" id="89" name="# (comment)" enable="True">
 							<UUID>46E82AAD-921A-4230-8637-75F279BFBC9B</UUID>
 							<OwnerID></OwnerID>
 							<Options>0</Options>
-							<DDRREF kind="StepText" hash="A5803D7226296131917B298C365CE7EA">_46E82AAD-921A-4230-8637-75F279BFBC9B</DDRREF>
+							<DDRREF kind="StepText" hash="1692665E0C7DEE365FE76D7F4C14F6DB">_46E82AAD-921A-4230-8637-75F279BFBC9B</DDRREF>
 							<ParameterValues membercount="1">
 								<Parameter type="Comment">
 									<Comment></Comment>
 								</Parameter>
 							</ParameterValues>
 						</Step>
-						<Step hash="72E52E123701266A748C83DBEFE2BA47" index="20" id="89" name="# (comment)" enable="True">
+						<Step hash="EE04931730AEE897E26E3558A800B35E" index="23" id="89" name="# (comment)" enable="True">
 							<UUID>F6B64043-5B08-44A5-A525-036C3666BEAE</UUID>
 							<OwnerID></OwnerID>
 							<Options>4</Options>
-							<DDRREF kind="StepText" hash="EFDA8CED618D102DBF7A0B2F0C65060A">_F6B64043-5B08-44A5-A525-036C3666BEAE</DDRREF>
+							<DDRREF kind="StepText" hash="FAEA9EFB65506A7B2BDF54772A4488CA">_F6B64043-5B08-44A5-A525-036C3666BEAE</DDRREF>
 							<ParameterValues membercount="1">
 								<Parameter type="Comment">
 									<Comment value="2025-07-03 Mislav Kos"></Comment>
 								</Parameter>
 							</ParameterValues>
 						</Step>
-						<Step hash="31394E221644F0854F90E8000028AF64" index="21" id="89" name="# (comment)" enable="True">
+						<Step hash="5D7867D3F7C98650644142217A7C4B32" index="24" id="89" name="# (comment)" enable="True">
 							<UUID>B9313C04-3F5F-4907-AD53-FAE71D2E2CFA</UUID>
 							<OwnerID></OwnerID>
 							<Options>4</Options>
-							<DDRREF kind="StepText" hash="9D0FAC40EEA07CF5D500E489447D39FB">_B9313C04-3F5F-4907-AD53-FAE71D2E2CFA</DDRREF>
+							<DDRREF kind="StepText" hash="CD3BC1C21A119C956F884C75B19EAE33">_B9313C04-3F5F-4907-AD53-FAE71D2E2CFA</DDRREF>
 							<ParameterValues membercount="1">
 								<Parameter type="Comment">
 									<Comment value="Added these layout objects:"></Comment>
 								</Parameter>
 							</ParameterValues>
 						</Step>
-						<Step hash="12FE81B42E8B0475ED43E47F6205F7E2" index="22" id="89" name="# (comment)" enable="True">
+						<Step hash="DFF29E5EB0EFC957846EF132FBFCAC95" index="25" id="89" name="# (comment)" enable="True">
 							<UUID>BAF729FC-F31E-45FB-8685-AE5D80F18EC6</UUID>
 							<OwnerID></OwnerID>
 							<Options>4</Options>
-							<DDRREF kind="StepText" hash="3AC96B340DB0E9124E5474260FC0FB13">_BAF729FC-F31E-45FB-8685-AE5D80F18EC6</DDRREF>
+							<DDRREF kind="StepText" hash="DF6DDD39C662F2CA8C133E0885266F0D">_BAF729FC-F31E-45FB-8685-AE5D80F18EC6</DDRREF>
 							<ParameterValues membercount="1">
 								<Parameter type="Comment">
 									<Comment value="Merge Field&#13;Merge Symbol&#13;Layout Calculation&#13;Button with a PNG image&#13;Table occurrence color&#13;Relationship graph note&#13;Hide object when&#13;Placeholder text&#13;Master detail portal&#13;Hide when printing&#13;Conditional formatting&#13;Quick find&#13;Tooltip"></Comment>
 								</Parameter>
 							</ParameterValues>
 						</Step>
-						<Step hash="3719C2D3638321FE34FA941CC72CD628" index="23" id="89" name="# (comment)" enable="True">
+						<Step hash="9EC943E965B112CC301C3073EDF3F12B" index="26" id="89" name="# (comment)" enable="True">
 							<UUID>8A404868-0312-4D4C-8824-3BDCC569BB64</UUID>
 							<OwnerID></OwnerID>
 							<Options>0</Options>
-							<DDRREF kind="StepText" hash="53364F3755A9AF674F2D9BDAB63DFE69">_8A404868-0312-4D4C-8824-3BDCC569BB64</DDRREF>
+							<DDRREF kind="StepText" hash="6F6D35E98A45F94B8CAA4428229BDAD0">_8A404868-0312-4D4C-8824-3BDCC569BB64</DDRREF>
 							<ParameterValues membercount="1">
 								<Parameter type="Comment">
 									<Comment></Comment>
 								</Parameter>
 							</ParameterValues>
 						</Step>
-						<Step hash="4410726C3C37A96AE4E311766804B6DE" index="24" id="89" name="# (comment)" enable="True">
+						<Step hash="624330529A0D8E8D1F2BFEC490C552FA" index="27" id="89" name="# (comment)" enable="True">
 							<UUID>8FF011E6-F95E-41BA-96BC-66809C32FBF0</UUID>
 							<OwnerID></OwnerID>
 							<Options>4</Options>
-							<DDRREF kind="StepText" hash="1BE6A6AED61A8BB779CCAB5544CC14A5">_8FF011E6-F95E-41BA-96BC-66809C32FBF0</DDRREF>
+							<DDRREF kind="StepText" hash="B0257D709E654CB51B3C93CB93D5BA3E">_8FF011E6-F95E-41BA-96BC-66809C32FBF0</DDRREF>
 							<ParameterValues membercount="1">
 								<Parameter type="Comment">
 									<Comment value="2025-06-23 Mislav Kos"></Comment>
 								</Parameter>
 							</ParameterValues>
 						</Step>
-						<Step hash="7AC9E05B98DF2397B5163B8247F4182B" index="25" id="89" name="# (comment)" enable="True">
+						<Step hash="B65C5296A069E52CF00F64397A90098A" index="28" id="89" name="# (comment)" enable="True">
 							<UUID>0DE7DD92-DB2A-4275-A3FF-F62F631CD841</UUID>
 							<OwnerID></OwnerID>
 							<Options>4</Options>
-							<DDRREF kind="StepText" hash="1DF23FF4DA185CD6B0360AE7FF6F9B22">_0DE7DD92-DB2A-4275-A3FF-F62F631CD841</DDRREF>
+							<DDRREF kind="StepText" hash="3B05716A4DFBB6D9A12932DD341039E5">_0DE7DD92-DB2A-4275-A3FF-F62F631CD841</DDRREF>
 							<ParameterValues membercount="1">
 								<Parameter type="Comment">
 									<Comment value="Copied &quot;All script steps and all options&quot; script from https://github.com/mrwatson-de/fmSyntaxColorizer to &quot;Script from fmSyntaxColorizer&quot; folder"></Comment>
 								</Parameter>
 							</ParameterValues>
 						</Step>
-						<Step hash="8833F9D63740B1D9CE5AFE0B58FC3DDB" index="26" id="89" name="# (comment)" enable="True">
+						<Step hash="AF278BD0D96AAD6BA9AEFA55DF45AEE8" index="29" id="89" name="# (comment)" enable="True">
 							<UUID>237E6919-BAA8-450E-B1D5-1524F06C22D0</UUID>
 							<OwnerID></OwnerID>
 							<Options>4</Options>
-							<DDRREF kind="StepText" hash="B9DFF474CACB630DC9302D28A36FACB4">_237E6919-BAA8-450E-B1D5-1524F06C22D0</DDRREF>
+							<DDRREF kind="StepText" hash="243B10C13EE8AAE8D485CD0179F7F625">_237E6919-BAA8-450E-B1D5-1524F06C22D0</DDRREF>
 							<ParameterValues membercount="1">
 								<Parameter type="Comment">
 									<Comment value="Updated &quot;Miscellaneous&quot; script to include multiple variants of the Send Mail step"></Comment>
 								</Parameter>
 							</ParameterValues>
 						</Step>
-						<Step hash="E4F3326563B182740244F83EC926DE93" index="27" id="89" name="# (comment)" enable="True">
+						<Step hash="ADAC1BC126179B36FD9BA40FECD16971" index="30" id="89" name="# (comment)" enable="True">
 							<UUID>70F584F4-A1C4-4CB4-92A3-5B3B04D714C7</UUID>
 							<OwnerID></OwnerID>
 							<Options>0</Options>
-							<DDRREF kind="StepText" hash="ECFB88F986CFA3AF818859B0D6F1308C">_70F584F4-A1C4-4CB4-92A3-5B3B04D714C7</DDRREF>
+							<DDRREF kind="StepText" hash="0D1D08D77622BC288B8779226C151DCD">_70F584F4-A1C4-4CB4-92A3-5B3B04D714C7</DDRREF>
 							<ParameterValues membercount="1">
 								<Parameter type="Comment">
 									<Comment></Comment>
 								</Parameter>
 							</ParameterValues>
 						</Step>
-						<Step hash="E9E6EAA69622F8882BFB131D1AFBA52B" index="28" id="89" name="# (comment)" enable="True">
+						<Step hash="0006163F796460E4A3F4042B4D9A06F5" index="31" id="89" name="# (comment)" enable="True">
 							<UUID>D0D7B7DD-E386-4B70-929D-156481A7E97E</UUID>
 							<OwnerID></OwnerID>
 							<Options>4</Options>
-							<DDRREF kind="StepText" hash="5E9B49524311C7AAD79AC45E420EB127">_D0D7B7DD-E386-4B70-929D-156481A7E97E</DDRREF>
+							<DDRREF kind="StepText" hash="9731C7F79C2DDD5E12DEFB7DA689219E">_D0D7B7DD-E386-4B70-929D-156481A7E97E</DDRREF>
 							<ParameterValues membercount="1">
 								<Parameter type="Comment">
 									<Comment value="2025-06-20 Mislav Kos"></Comment>
 								</Parameter>
 							</ParameterValues>
 						</Step>
-						<Step hash="7C091CA09F7C5BD10207DF8A8120B87B" index="29" id="89" name="# (comment)" enable="True">
+						<Step hash="BA7F2BBB1DA68576E5D66A231F584A69" index="32" id="89" name="# (comment)" enable="True">
 							<UUID>19D037B6-8480-4943-92D2-3E8993483A86</UUID>
 							<OwnerID></OwnerID>
 							<Options>4</Options>
-							<DDRREF kind="StepText" hash="190DABC72904BB6B96F3C205224F9744">_19D037B6-8480-4943-92D2-3E8993483A86</DDRREF>
+							<DDRREF kind="StepText" hash="6B98D65CA6216DE11F6EEB89712BD46A">_19D037B6-8480-4943-92D2-3E8993483A86</DDRREF>
 							<ParameterValues membercount="1">
 								<Parameter type="Comment">
 									<Comment value="Initial release"></Comment>
 								</Parameter>
 							</ParameterValues>
 						</Step>
-						<Step hash="38DBD90C570F86C0C69C45C37A6DBFE2" index="30" id="89" name="# (comment)" enable="True">
+						<Step hash="5D1E478EB81969C4783F6C8CE12848F1" index="33" id="89" name="# (comment)" enable="True">
 							<UUID>2B0274FF-832F-477B-850D-5A7DEB9C5C46</UUID>
 							<OwnerID></OwnerID>
 							<Options>0</Options>
-							<DDRREF kind="StepText" hash="0D1D08D77622BC288B8779226C151DCD">_2B0274FF-832F-477B-850D-5A7DEB9C5C46</DDRREF>
+							<DDRREF kind="StepText" hash="42C25A902A02D8E4DDEAFBA92F8BE443">_2B0274FF-832F-477B-850D-5A7DEB9C5C46</DDRREF>
 							<ParameterValues membercount="1">
 								<Parameter type="Comment">
 									<Comment></Comment>
@@ -50945,7 +51088,7 @@ self:droptarget .inner_border
 			</StepsForScripts>
 		</AddAction>
 		<ModifyAction membercount="2">
-			<FieldsForTables membercount="3">
+			<FieldsForTables membercount="9">
 				<FieldCatalog>
 					<BaseTableReference id="129" name="TestTable" UUID="471CCAC6-9046-4B2E-BD66-03EEAE88170B"></BaseTableReference>
 					<ObjectList membercount="1">
@@ -50971,6 +51114,128 @@ self:droptarget .inner_border
 									<DDRREF kind="ChunkList" hash="">_8CECBA1F-83C0-4CBB-9777-F904D132CEDC_0</DDRREF>
 									<Text><![CDATA[List ( TestTable_Contacts::Name )]]></Text>
 								</Calculation>
+								<BaseTableReference id="129" name="TestTable" UUID="471CCAC6-9046-4B2E-BD66-03EEAE88170B"></BaseTableReference>
+							</FieldReference>
+						</Field>
+					</ObjectList>
+				</FieldCatalog>
+				<FieldCatalog>
+					<BaseTableReference id="129" name="TestTable" UUID="471CCAC6-9046-4B2E-BD66-03EEAE88170B"></BaseTableReference>
+					<ObjectList membercount="1">
+						<Field>
+							<FieldReference id="24" name="Lookup0_default" repetition="1" UUID="BEE33964-B1FB-4A01-B87C-CC8E0CE4E21F">
+								<AutoEnter>
+									<Looked_up dontCopyIfEmpty="True" noMatchCopyOption="DoNotCopy">
+										<FieldReference id="6" name="Name" UUID="CDA37349-D2D9-4ACA-B58C-9F8272B51F9D">
+											<TableOccurrenceReference id="1065094" name="TestTable_Contacts" UUID="34F19F48-2BB3-48DB-8C03-44DD5FBF74F4"></TableOccurrenceReference>
+										</FieldReference>
+										<Context>
+											<TableOccurrenceReference id="1065089" name="TestTable" UUID="4908496C-B0B9-4840-9BFC-6C2D42719F0C"></TableOccurrenceReference>
+										</Context>
+									</Looked_up>
+								</AutoEnter>
+								<BaseTableReference id="129" name="TestTable" UUID="471CCAC6-9046-4B2E-BD66-03EEAE88170B"></BaseTableReference>
+							</FieldReference>
+						</Field>
+					</ObjectList>
+				</FieldCatalog>
+				<FieldCatalog>
+					<BaseTableReference id="129" name="TestTable" UUID="471CCAC6-9046-4B2E-BD66-03EEAE88170B"></BaseTableReference>
+					<ObjectList membercount="1">
+						<Field>
+							<FieldReference id="25" name="Lookup1_copy_empty" repetition="1" UUID="57C2F8DC-9910-44D5-8EC6-053FC88D69B1">
+								<AutoEnter>
+									<Looked_up dontCopyIfEmpty="False" noMatchCopyOption="DoNotCopy">
+										<FieldReference id="6" name="Name" UUID="CDA37349-D2D9-4ACA-B58C-9F8272B51F9D">
+											<TableOccurrenceReference id="1065094" name="TestTable_Contacts" UUID="34F19F48-2BB3-48DB-8C03-44DD5FBF74F4"></TableOccurrenceReference>
+										</FieldReference>
+										<Context>
+											<TableOccurrenceReference id="1065089" name="TestTable" UUID="4908496C-B0B9-4840-9BFC-6C2D42719F0C"></TableOccurrenceReference>
+										</Context>
+									</Looked_up>
+								</AutoEnter>
+								<BaseTableReference id="129" name="TestTable" UUID="471CCAC6-9046-4B2E-BD66-03EEAE88170B"></BaseTableReference>
+							</FieldReference>
+						</Field>
+					</ObjectList>
+				</FieldCatalog>
+				<FieldCatalog>
+					<BaseTableReference id="129" name="TestTable" UUID="471CCAC6-9046-4B2E-BD66-03EEAE88170B"></BaseTableReference>
+					<ObjectList membercount="1">
+						<Field>
+							<FieldReference id="26" name="Lookup2_copy_empty_on_no_match_copy_next_lower_value" repetition="1" UUID="DF5B4A7F-8003-4653-BBFE-BAFD4646E6A6">
+								<AutoEnter>
+									<Looked_up dontCopyIfEmpty="False" noMatchCopyOption="NextLower">
+										<FieldReference id="6" name="Name" UUID="CDA37349-D2D9-4ACA-B58C-9F8272B51F9D">
+											<TableOccurrenceReference id="1065094" name="TestTable_Contacts" UUID="34F19F48-2BB3-48DB-8C03-44DD5FBF74F4"></TableOccurrenceReference>
+										</FieldReference>
+										<Context>
+											<TableOccurrenceReference id="1065089" name="TestTable" UUID="4908496C-B0B9-4840-9BFC-6C2D42719F0C"></TableOccurrenceReference>
+										</Context>
+									</Looked_up>
+								</AutoEnter>
+								<BaseTableReference id="129" name="TestTable" UUID="471CCAC6-9046-4B2E-BD66-03EEAE88170B"></BaseTableReference>
+							</FieldReference>
+						</Field>
+					</ObjectList>
+				</FieldCatalog>
+				<FieldCatalog>
+					<BaseTableReference id="129" name="TestTable" UUID="471CCAC6-9046-4B2E-BD66-03EEAE88170B"></BaseTableReference>
+					<ObjectList membercount="1">
+						<Field>
+							<FieldReference id="27" name="Lookup3_copy_empty_on_no_match_copy_next_higher_value" repetition="1" UUID="94CCFE04-619A-408C-931D-90CA320A7F74">
+								<AutoEnter>
+									<Looked_up dontCopyIfEmpty="False" noMatchCopyOption="NextHigher">
+										<FieldReference id="6" name="Name" UUID="CDA37349-D2D9-4ACA-B58C-9F8272B51F9D">
+											<TableOccurrenceReference id="1065094" name="TestTable_Contacts" UUID="34F19F48-2BB3-48DB-8C03-44DD5FBF74F4"></TableOccurrenceReference>
+										</FieldReference>
+										<Context>
+											<TableOccurrenceReference id="1065089" name="TestTable" UUID="4908496C-B0B9-4840-9BFC-6C2D42719F0C"></TableOccurrenceReference>
+										</Context>
+									</Looked_up>
+								</AutoEnter>
+								<BaseTableReference id="129" name="TestTable" UUID="471CCAC6-9046-4B2E-BD66-03EEAE88170B"></BaseTableReference>
+							</FieldReference>
+						</Field>
+					</ObjectList>
+				</FieldCatalog>
+				<FieldCatalog>
+					<BaseTableReference id="129" name="TestTable" UUID="471CCAC6-9046-4B2E-BD66-03EEAE88170B"></BaseTableReference>
+					<ObjectList membercount="1">
+						<Field>
+							<FieldReference id="28" name="Lookup4_copy_empty_on_no_match_use_blank" repetition="1" UUID="01FEF43D-1E6F-491F-BCFE-EEB98B72C983">
+								<AutoEnter>
+									<Looked_up dontCopyIfEmpty="False" noMatchCopyOption="ConstantData">
+										<ConstantData></ConstantData>
+										<FieldReference id="6" name="Name" UUID="CDA37349-D2D9-4ACA-B58C-9F8272B51F9D">
+											<TableOccurrenceReference id="1065094" name="TestTable_Contacts" UUID="34F19F48-2BB3-48DB-8C03-44DD5FBF74F4"></TableOccurrenceReference>
+										</FieldReference>
+										<Context>
+											<TableOccurrenceReference id="1065089" name="TestTable" UUID="4908496C-B0B9-4840-9BFC-6C2D42719F0C"></TableOccurrenceReference>
+										</Context>
+									</Looked_up>
+								</AutoEnter>
+								<BaseTableReference id="129" name="TestTable" UUID="471CCAC6-9046-4B2E-BD66-03EEAE88170B"></BaseTableReference>
+							</FieldReference>
+						</Field>
+					</ObjectList>
+				</FieldCatalog>
+				<FieldCatalog>
+					<BaseTableReference id="129" name="TestTable" UUID="471CCAC6-9046-4B2E-BD66-03EEAE88170B"></BaseTableReference>
+					<ObjectList membercount="1">
+						<Field>
+							<FieldReference id="29" name="Lookup5_copy_empty_on_no_match_use_value" repetition="1" UUID="A598F8CF-2718-49B3-ADCE-1D1A39CF1896">
+								<AutoEnter>
+									<Looked_up dontCopyIfEmpty="False" noMatchCopyOption="ConstantData">
+										<ConstantData>«missing»</ConstantData>
+										<FieldReference id="6" name="Name" UUID="CDA37349-D2D9-4ACA-B58C-9F8272B51F9D">
+											<TableOccurrenceReference id="1065094" name="TestTable_Contacts" UUID="34F19F48-2BB3-48DB-8C03-44DD5FBF74F4"></TableOccurrenceReference>
+										</FieldReference>
+										<Context>
+											<TableOccurrenceReference id="1065089" name="TestTable" UUID="4908496C-B0B9-4840-9BFC-6C2D42719F0C"></TableOccurrenceReference>
+										</Context>
+									</Looked_up>
+								</AutoEnter>
 								<BaseTableReference id="129" name="TestTable" UUID="471CCAC6-9046-4B2E-BD66-03EEAE88170B"></BaseTableReference>
 							</FieldReference>
 						</Field>
@@ -57811,36 +58076,39 @@ self:droptarget .inner_border
 				<_7BE9A234-3BCE-4AF3-AAF5-98B03785C76E hash="A0AB7C225973F94A7DFC43C7F8E3DEAD" datatype="StepText">#2025-07-14 mkos: Added new step 1</_7BE9A234-3BCE-4AF3-AAF5-98B03785C76E>
 				<_47F62A0C-398F-4BF8-81CF-139F9928179B hash="B4B3FDCD305DA2AFC170EA30C4E8108C" datatype="StepText">#MIT License&#13;&#13;Copyright (c) 2025 Mislav Kos&#13;&#13;Permission is hereby granted, free of charge, to any person obtaining a copy&#13;of this software and associated documentation files (the &quot;Software&quot;), to deal&#13;in the Software without restriction, including without limitation the rights&#13;to use, copy, modify, merge, publish, distribute, sublicense, and/or sell&#13;copies of the Software, and to permit persons to whom the Software is&#13;furnished to do so, subject to the following conditions:&#13;&#13;The above copyright notice and this permission notice shall be included in all&#13;copies or substantial portions of the Software.&#13;&#13;THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR&#13;IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,&#13;FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE&#13;AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER&#13;LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,&#13;OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE&#13;SOFTWARE.</_47F62A0C-398F-4BF8-81CF-139F9928179B>
 				<_FC8E3958-34A0-499C-B1D0-DB364CBC2F81 hash="F2528CB0863A60B45C3C91693604B187" datatype="StepText"></_FC8E3958-34A0-499C-B1D0-DB364CBC2F81>
-				<_C6E5094C-DDD1-4947-9B45-FAA8D8DD137E hash="61CAB0044915F05FB5CA91DDF9A4CBC2" datatype="StepText">#2025-10-18 Mislav Kos</_C6E5094C-DDD1-4947-9B45-FAA8D8DD137E>
-				<_4BBBF62B-A1CA-4721-A039-18BC8723D086 hash="EA3FF587F5BAB9C5559AF2293E0CE4B0" datatype="StepText">#https://github.com/mislavkos/ooe-fm/issues/1: Added SerialNumberOnCommitIncBy1, SerialNumberOnCommitIncBy10 fields to TestTable&#13;https://github.com/mislavkos/ooe-fm/issues/3: Added placeholder text to all fields on &quot;My Layout for TestTable&quot;&#13;https://github.com/mislavkos/ooe-fm/issues/3: Added additional field control styles: dropdown calendar, dropdown list, popup menu, concealed edit box, radio button, checkbox&#13;https://github.com/mislavkos/ooe-fm/issues/4: Added Self external data source&#13;Updated SaXMLDelivery add-on to v0.1.9</_4BBBF62B-A1CA-4721-A039-18BC8723D086>
-				<_5A05F8A3-8227-4A24-AC92-F0D894DE1065 hash="DE7C6E7C8FD9A2ACB29CD8DEB24C1B4E" datatype="StepText"></_5A05F8A3-8227-4A24-AC92-F0D894DE1065>
-				<_A32A8E68-26EE-436E-B0D8-17B2F9830AB6 hash="06249E3DB9AD69AC574EAC61A966CE02" datatype="StepText">#2025-08-29 Mislav Kos</_A32A8E68-26EE-436E-B0D8-17B2F9830AB6>
-				<_38F98321-E90F-402A-A79B-56706DD9260D hash="1A6143D2B14805F819EC13E7621CCBD1" datatype="StepText">#Added restapi account and privilege set</_38F98321-E90F-402A-A79B-56706DD9260D>
-				<_301FBAB5-6CDB-461F-B22A-CE8A1A3E6F08 hash="C2CA9996951DF2435A5641211BD37424" datatype="StepText"></_301FBAB5-6CDB-461F-B22A-CE8A1A3E6F08>
-				<_10C05A17-DD03-47BF-BC82-E6FCE86A6A06 hash="A365F7593C80FB00007B1F46C3D24741" datatype="StepText">#2025-08-29 Mislav Kos</_10C05A17-DD03-47BF-BC82-E6FCE86A6A06>
-				<_4B6B9892-3C12-47CB-ABB4-640B3261B5D7 hash="2B940B8E632AF44ECFD22EE4C84DB093" datatype="StepText">#Inactivated &quot;dev&quot; account which doesn&apos;t have a password set, so that the file can be hosted on FMS servers that doen&apos;t allow insecure files</_4B6B9892-3C12-47CB-ABB4-640B3261B5D7>
-				<_0C90448B-2456-4EE2-B51E-3C33436AB42A hash="58B5E46AF63FB35969B8AC9B47B49B5B" datatype="StepText"></_0C90448B-2456-4EE2-B51E-3C33436AB42A>
-				<_4C4C17D4-0895-4D72-91C2-73000C2F36DD hash="351583F3BA2851D29281A4193C406EE3" datatype="StepText">#2025-08-25 Mislav Kos</_4C4C17D4-0895-4D72-91C2-73000C2F36DD>
-				<_0CAE7BB9-095C-46E5-9804-D58DD38E8794 hash="238534486EAF7E96A9A6C5BE6C75EFDD" datatype="StepText">#Renamed Two to BrojDva</_0CAE7BB9-095C-46E5-9804-D58DD38E8794>
-				<_3F54BB15-DA39-4FC6-A99D-1BFF5ED8FBB3 hash="5A04315E96C34FD4B819425655F9118F" datatype="StepText"></_3F54BB15-DA39-4FC6-A99D-1BFF5ED8FBB3>
-				<_1EC08427-D385-417F-BD92-F89E8F0E3B24 hash="8EE85CB0899416674E4ECB05BEAA1928" datatype="StepText">#2025-07-24 Mislav Kos</_1EC08427-D385-417F-BD92-F89E8F0E3B24>
-				<_D5887B16-25DD-4098-A19B-9115A6800D37 hash="7E2520E958A9CDE18A9C7D92DCDF80F3" datatype="StepText">#Renamed Ooe2 to Two&#13;Added multiple fields to Contacts_TestTable relationship sort&#13;Added second predicate to Contacts_TestTable relationship&#13;Added second relationship graph note&#13;Made OrderOfOperations custom function calc more complex&#13;Added/updated custom menus&#13;Added/updated privilege sets</_D5887B16-25DD-4098-A19B-9115A6800D37>
-				<_0F0E9972-8EC9-4090-9CF7-FE8EDD65CEFE hash="350AB1210010ED9410880E9667B3217B" datatype="StepText"></_0F0E9972-8EC9-4090-9CF7-FE8EDD65CEFE>
-				<_62FF0B16-1DEA-4DBF-9021-B0AEC4F7964A hash="95CC5C358C88F6F0D006F5D46C5AC843" datatype="StepText">#2025-07-16 Mislav Kos</_62FF0B16-1DEA-4DBF-9021-B0AEC4F7964A>
-				<_20131764-DE5A-402F-B3A2-222AB9F8560F hash="BA1679C30760737144B59E3BE590EF6D" datatype="StepText">#Added second file (Ooe2.fmp12) to the mix</_20131764-DE5A-402F-B3A2-222AB9F8560F>
-				<_4D3DFF00-C74F-4DFA-B0DF-3F738C0EEBA6 hash="3EA1EDD84DE50441BD844FC9A5CDC47B" datatype="StepText">#Added table occurrence to &quot;Invoice&quot; table from Ooe2 to Ooe relationship graph</_4D3DFF00-C74F-4DFA-B0DF-3F738C0EEBA6>
-				<_46E82AAD-921A-4230-8637-75F279BFBC9B hash="A5803D7226296131917B298C365CE7EA" datatype="StepText"></_46E82AAD-921A-4230-8637-75F279BFBC9B>
-				<_F6B64043-5B08-44A5-A525-036C3666BEAE hash="EFDA8CED618D102DBF7A0B2F0C65060A" datatype="StepText">#2025-07-03 Mislav Kos</_F6B64043-5B08-44A5-A525-036C3666BEAE>
-				<_B9313C04-3F5F-4907-AD53-FAE71D2E2CFA hash="9D0FAC40EEA07CF5D500E489447D39FB" datatype="StepText">#Added these layout objects:</_B9313C04-3F5F-4907-AD53-FAE71D2E2CFA>
-				<_BAF729FC-F31E-45FB-8685-AE5D80F18EC6 hash="3AC96B340DB0E9124E5474260FC0FB13" datatype="StepText">#Merge Field&#13;Merge Symbol&#13;Layout Calculation&#13;Button with a PNG image&#13;Table occurrence color&#13;Relationship graph note&#13;Hide object when&#13;Placeholder text&#13;Master detail portal&#13;Hide when printing&#13;Conditional formatting&#13;Quick find&#13;Tooltip</_BAF729FC-F31E-45FB-8685-AE5D80F18EC6>
-				<_8A404868-0312-4D4C-8824-3BDCC569BB64 hash="53364F3755A9AF674F2D9BDAB63DFE69" datatype="StepText"></_8A404868-0312-4D4C-8824-3BDCC569BB64>
-				<_8FF011E6-F95E-41BA-96BC-66809C32FBF0 hash="1BE6A6AED61A8BB779CCAB5544CC14A5" datatype="StepText">#2025-06-23 Mislav Kos</_8FF011E6-F95E-41BA-96BC-66809C32FBF0>
-				<_0DE7DD92-DB2A-4275-A3FF-F62F631CD841 hash="1DF23FF4DA185CD6B0360AE7FF6F9B22" datatype="StepText">#Copied &quot;All script steps and all options&quot; script from https://github.com/mrwatson-de/fmSyntaxColorizer to &quot;Script from fmSyntaxColorizer&quot; folder</_0DE7DD92-DB2A-4275-A3FF-F62F631CD841>
-				<_237E6919-BAA8-450E-B1D5-1524F06C22D0 hash="B9DFF474CACB630DC9302D28A36FACB4" datatype="StepText">#Updated &quot;Miscellaneous&quot; script to include multiple variants of the Send Mail step</_237E6919-BAA8-450E-B1D5-1524F06C22D0>
-				<_70F584F4-A1C4-4CB4-92A3-5B3B04D714C7 hash="ECFB88F986CFA3AF818859B0D6F1308C" datatype="StepText"></_70F584F4-A1C4-4CB4-92A3-5B3B04D714C7>
-				<_D0D7B7DD-E386-4B70-929D-156481A7E97E hash="5E9B49524311C7AAD79AC45E420EB127" datatype="StepText">#2025-06-20 Mislav Kos</_D0D7B7DD-E386-4B70-929D-156481A7E97E>
-				<_19D037B6-8480-4943-92D2-3E8993483A86 hash="190DABC72904BB6B96F3C205224F9744" datatype="StepText">#Initial release</_19D037B6-8480-4943-92D2-3E8993483A86>
-				<_2B0274FF-832F-477B-850D-5A7DEB9C5C46 hash="0D1D08D77622BC288B8779226C151DCD" datatype="StepText"></_2B0274FF-832F-477B-850D-5A7DEB9C5C46>
+				<_8F6D9A3A-0B39-4109-A70E-EE920743DF07 hash="7756E84DBE783B32FB88FD92EF4C9F27" datatype="StepText">#2025-10-28 Mislav Kos</_8F6D9A3A-0B39-4109-A70E-EE920743DF07>
+				<_0A1B338E-1F04-488E-9A54-EC42FB60F80D hash="4B751E3472B0278CA7AA98BC8EF2FB74" datatype="StepText">#https://github.com/mislavkos/ooe-fm/issues/6: Added lookup fields in the TestTable</_0A1B338E-1F04-488E-9A54-EC42FB60F80D>
+				<_AF78BDA8-DC8B-4DD6-9819-DE3E2341FEDD hash="DE7C6E7C8FD9A2ACB29CD8DEB24C1B4E" datatype="StepText"></_AF78BDA8-DC8B-4DD6-9819-DE3E2341FEDD>
+				<_C6E5094C-DDD1-4947-9B45-FAA8D8DD137E hash="2CE67DBF4016B6678F0A179695432C8C" datatype="StepText">#2025-10-18 Mislav Kos</_C6E5094C-DDD1-4947-9B45-FAA8D8DD137E>
+				<_4BBBF62B-A1CA-4721-A039-18BC8723D086 hash="ED8550712655601A0D562D593BC3AC7A" datatype="StepText">#https://github.com/mislavkos/ooe-fm/issues/1: Added SerialNumberOnCommitIncBy1, SerialNumberOnCommitIncBy10 fields to TestTable&#13;https://github.com/mislavkos/ooe-fm/issues/3: Added placeholder text to all fields on &quot;My Layout for TestTable&quot;&#13;https://github.com/mislavkos/ooe-fm/issues/3: Added additional field control styles: dropdown calendar, dropdown list, popup menu, concealed edit box, radio button, checkbox&#13;https://github.com/mislavkos/ooe-fm/issues/4: Added Self external data source&#13;Updated SaXMLDelivery add-on to v0.1.9</_4BBBF62B-A1CA-4721-A039-18BC8723D086>
+				<_5A05F8A3-8227-4A24-AC92-F0D894DE1065 hash="C2CA9996951DF2435A5641211BD37424" datatype="StepText"></_5A05F8A3-8227-4A24-AC92-F0D894DE1065>
+				<_A32A8E68-26EE-436E-B0D8-17B2F9830AB6 hash="A365F7593C80FB00007B1F46C3D24741" datatype="StepText">#2025-08-29 Mislav Kos</_A32A8E68-26EE-436E-B0D8-17B2F9830AB6>
+				<_38F98321-E90F-402A-A79B-56706DD9260D hash="7650E97B2E65A87E7C909B7C8E93BB63" datatype="StepText">#Added restapi account and privilege set</_38F98321-E90F-402A-A79B-56706DD9260D>
+				<_301FBAB5-6CDB-461F-B22A-CE8A1A3E6F08 hash="58B5E46AF63FB35969B8AC9B47B49B5B" datatype="StepText"></_301FBAB5-6CDB-461F-B22A-CE8A1A3E6F08>
+				<_10C05A17-DD03-47BF-BC82-E6FCE86A6A06 hash="AD6FD123D813192C56DCE4C0C56D4AD9" datatype="StepText">#2025-08-29 Mislav Kos</_10C05A17-DD03-47BF-BC82-E6FCE86A6A06>
+				<_4B6B9892-3C12-47CB-ABB4-640B3261B5D7 hash="F90762D204B63067E939B7D3944628F0" datatype="StepText">#Inactivated &quot;dev&quot; account which doesn&apos;t have a password set, so that the file can be hosted on FMS servers that doen&apos;t allow insecure files</_4B6B9892-3C12-47CB-ABB4-640B3261B5D7>
+				<_0C90448B-2456-4EE2-B51E-3C33436AB42A hash="5A04315E96C34FD4B819425655F9118F" datatype="StepText"></_0C90448B-2456-4EE2-B51E-3C33436AB42A>
+				<_4C4C17D4-0895-4D72-91C2-73000C2F36DD hash="D1FC624D8E494EBC8E24099F02D34E44" datatype="StepText">#2025-08-25 Mislav Kos</_4C4C17D4-0895-4D72-91C2-73000C2F36DD>
+				<_0CAE7BB9-095C-46E5-9804-D58DD38E8794 hash="58CDC7E16C605E76C04C67FDEB5ADB84" datatype="StepText">#Renamed Two to BrojDva</_0CAE7BB9-095C-46E5-9804-D58DD38E8794>
+				<_3F54BB15-DA39-4FC6-A99D-1BFF5ED8FBB3 hash="350AB1210010ED9410880E9667B3217B" datatype="StepText"></_3F54BB15-DA39-4FC6-A99D-1BFF5ED8FBB3>
+				<_1EC08427-D385-417F-BD92-F89E8F0E3B24 hash="A385F022469F62B9AF9E4A7F800347F1" datatype="StepText">#2025-07-24 Mislav Kos</_1EC08427-D385-417F-BD92-F89E8F0E3B24>
+				<_D5887B16-25DD-4098-A19B-9115A6800D37 hash="A11E9470B111B8437CEA7D732A53ABFF" datatype="StepText">#Renamed Ooe2 to Two&#13;Added multiple fields to Contacts_TestTable relationship sort&#13;Added second predicate to Contacts_TestTable relationship&#13;Added second relationship graph note&#13;Made OrderOfOperations custom function calc more complex&#13;Added/updated custom menus&#13;Added/updated privilege sets</_D5887B16-25DD-4098-A19B-9115A6800D37>
+				<_0F0E9972-8EC9-4090-9CF7-FE8EDD65CEFE hash="13BD1622A2EAEEC29D1E7D2B2556AA16" datatype="StepText"></_0F0E9972-8EC9-4090-9CF7-FE8EDD65CEFE>
+				<_62FF0B16-1DEA-4DBF-9021-B0AEC4F7964A hash="7881C448CD30DB31FD776A43D3943D6F" datatype="StepText">#2025-07-16 Mislav Kos</_62FF0B16-1DEA-4DBF-9021-B0AEC4F7964A>
+				<_20131764-DE5A-402F-B3A2-222AB9F8560F hash="30FCF0AED4C1A65389B0993A7AD9BA4B" datatype="StepText">#Added second file (Ooe2.fmp12) to the mix</_20131764-DE5A-402F-B3A2-222AB9F8560F>
+				<_4D3DFF00-C74F-4DFA-B0DF-3F738C0EEBA6 hash="8C6E0FE17C7971ABA5B7AACA9A80E4AC" datatype="StepText">#Added table occurrence to &quot;Invoice&quot; table from Ooe2 to Ooe relationship graph</_4D3DFF00-C74F-4DFA-B0DF-3F738C0EEBA6>
+				<_46E82AAD-921A-4230-8637-75F279BFBC9B hash="1692665E0C7DEE365FE76D7F4C14F6DB" datatype="StepText"></_46E82AAD-921A-4230-8637-75F279BFBC9B>
+				<_F6B64043-5B08-44A5-A525-036C3666BEAE hash="FAEA9EFB65506A7B2BDF54772A4488CA" datatype="StepText">#2025-07-03 Mislav Kos</_F6B64043-5B08-44A5-A525-036C3666BEAE>
+				<_B9313C04-3F5F-4907-AD53-FAE71D2E2CFA hash="CD3BC1C21A119C956F884C75B19EAE33" datatype="StepText">#Added these layout objects:</_B9313C04-3F5F-4907-AD53-FAE71D2E2CFA>
+				<_BAF729FC-F31E-45FB-8685-AE5D80F18EC6 hash="DF6DDD39C662F2CA8C133E0885266F0D" datatype="StepText">#Merge Field&#13;Merge Symbol&#13;Layout Calculation&#13;Button with a PNG image&#13;Table occurrence color&#13;Relationship graph note&#13;Hide object when&#13;Placeholder text&#13;Master detail portal&#13;Hide when printing&#13;Conditional formatting&#13;Quick find&#13;Tooltip</_BAF729FC-F31E-45FB-8685-AE5D80F18EC6>
+				<_8A404868-0312-4D4C-8824-3BDCC569BB64 hash="6F6D35E98A45F94B8CAA4428229BDAD0" datatype="StepText"></_8A404868-0312-4D4C-8824-3BDCC569BB64>
+				<_8FF011E6-F95E-41BA-96BC-66809C32FBF0 hash="B0257D709E654CB51B3C93CB93D5BA3E" datatype="StepText">#2025-06-23 Mislav Kos</_8FF011E6-F95E-41BA-96BC-66809C32FBF0>
+				<_0DE7DD92-DB2A-4275-A3FF-F62F631CD841 hash="3B05716A4DFBB6D9A12932DD341039E5" datatype="StepText">#Copied &quot;All script steps and all options&quot; script from https://github.com/mrwatson-de/fmSyntaxColorizer to &quot;Script from fmSyntaxColorizer&quot; folder</_0DE7DD92-DB2A-4275-A3FF-F62F631CD841>
+				<_237E6919-BAA8-450E-B1D5-1524F06C22D0 hash="243B10C13EE8AAE8D485CD0179F7F625" datatype="StepText">#Updated &quot;Miscellaneous&quot; script to include multiple variants of the Send Mail step</_237E6919-BAA8-450E-B1D5-1524F06C22D0>
+				<_70F584F4-A1C4-4CB4-92A3-5B3B04D714C7 hash="0D1D08D77622BC288B8779226C151DCD" datatype="StepText"></_70F584F4-A1C4-4CB4-92A3-5B3B04D714C7>
+				<_D0D7B7DD-E386-4B70-929D-156481A7E97E hash="9731C7F79C2DDD5E12DEFB7DA689219E" datatype="StepText">#2025-06-20 Mislav Kos</_D0D7B7DD-E386-4B70-929D-156481A7E97E>
+				<_19D037B6-8480-4943-92D2-3E8993483A86 hash="6B98D65CA6216DE11F6EEB89712BD46A" datatype="StepText">#Initial release</_19D037B6-8480-4943-92D2-3E8993483A86>
+				<_2B0274FF-832F-477B-850D-5A7DEB9C5C46 hash="42C25A902A02D8E4DDEAFBA92F8BE443" datatype="StepText"></_2B0274FF-832F-477B-850D-5A7DEB9C5C46>
 				<_6F72FB27-1286-4E7A-B9DF-B286D72F4BA0 hash="F651A2E18887A154C922FA7BCEFD6943" datatype="StepText">Show Custom Dialog [ Message: &quot;Hello &quot; &amp; Get ( ScriptParameter ); Default Button: “OK”, Commit: “Yes” ]</_6F72FB27-1286-4E7A-B9DF-B286D72F4BA0>
 				<_3CC776EC-8D04-4A94-9CB0-786EB546315C hash="1313EDF9D6787B4861ADBF40AA1B3010" datatype="StepText">Exit Script [ Result: 0 ]</_3CC776EC-8D04-4A94-9CB0-786EB546315C>
 				<_AF932B35-E2B7-492C-8E5E-504D1FED0AB6 hash="F2528CB0863A60B45C3C91693604B187" datatype="StepText"></_AF932B35-E2B7-492C-8E5E-504D1FED0AB6>

@@ -113,7 +113,7 @@
 				</BaseTable>
 			</BaseTableCatalog>
 			<TableOccurrenceCatalog membercount="7">
-				<UUID modifications="40" userName="Mislav" accountName="admin" timestamp="2025-10-19T00:08:58">4EF01E87-25C8-468E-939E-BE82841BA6B9</UUID>
+				<UUID modifications="41" userName="Mislav" accountName="admin" timestamp="2025-10-28T11:12:01">4EF01E87-25C8-468E-939E-BE82841BA6B9</UUID>
 				<TagList></TagList>
 				<TableOccurrenceNotes>
 					<ObjectList membercount="2">
@@ -309,10 +309,10 @@
 			</CustomFunctionsCatalog>
 			<FieldsForTables membercount="4">
 				<FieldCatalog>
-					<UUID modifications="35" userName="Mislav" accountName="admin" timestamp="2025-10-19T00:09:00">2F865027-544A-4969-BCC1-DC7B4D7B1FEA</UUID>
+					<UUID modifications="36" userName="Mislav" accountName="admin" timestamp="2025-10-28T11:12:01">2F865027-544A-4969-BCC1-DC7B4D7B1FEA</UUID>
 					<TagList></TagList>
 					<BaseTableReference id="129" name="TestTable" UUID="471CCAC6-9046-4B2E-BD66-03EEAE88170B"></BaseTableReference>
-					<ObjectList membercount="18">
+					<ObjectList membercount="24">
 						<Field DefaultStyle="" id="6" name="TextField1" fieldtype="Normal" datatype="Text" comment="">
 							<UUID modifications="10" userName="Mislav" accountName="Admin" timestamp="2025-06-09T09:50:25">0EC666FE-F018-4229-A068-104C00599D7F</UUID>
 							<SourceUUID>0EC666FE-F018-4229-A068-104C00599D7F</SourceUUID>
@@ -576,6 +576,116 @@
 							<UUID modifications="3" userName="Mislav" accountName="admin" timestamp="2025-10-19T00:08:53">661C857A-150C-44CD-B712-A363267313C1</UUID>
 							<AutoEnter type="SerialNumber" prohibitModification="False">
 								<SerialNumber increment="10" nextvalue="1" generate="OnCreation"></SerialNumber>
+							</AutoEnter>
+							<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+							<Storage autoIndex="True" index="None" global="False" maxRepetitions="1">
+								<LanguageReference name="English" id="21"></LanguageReference>
+							</Storage>
+							<TagList></TagList>
+						</Field>
+						<Field DefaultStyle="" id="24" name="Lookup0_default" fieldtype="Normal" datatype="Text" comment="">
+							<UUID modifications="1" userName="Mislav" accountName="admin" timestamp="2025-10-28T11:11:54">BEE33964-B1FB-4A01-B87C-CC8E0CE4E21F</UUID>
+							<AutoEnter type="Looked_up" prohibitModification="False">
+								<Looked_up dontCopyIfEmpty="True" noMatchCopyOption="DoNotCopy">
+									<FieldReference id="6" name="Name" UUID="CDA37349-D2D9-4ACA-B58C-9F8272B51F9D">
+										<TableOccurrenceReference id="1065094" name="TestTable_Contacts" UUID="34F19F48-2BB3-48DB-8C03-44DD5FBF74F4"></TableOccurrenceReference>
+									</FieldReference>
+									<Context>
+										<TableOccurrenceReference id="1065089" name="TestTable" UUID="4908496C-B0B9-4840-9BFC-6C2D42719F0C"></TableOccurrenceReference>
+									</Context>
+								</Looked_up>
+							</AutoEnter>
+							<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+							<Storage autoIndex="True" index="None" global="False" maxRepetitions="1">
+								<LanguageReference name="English" id="21"></LanguageReference>
+							</Storage>
+							<TagList></TagList>
+						</Field>
+						<Field DefaultStyle="" id="25" name="Lookup1_copy_empty" fieldtype="Normal" datatype="Text" comment="">
+							<UUID modifications="1" userName="Mislav" accountName="admin" timestamp="2025-10-28T11:11:54">57C2F8DC-9910-44D5-8EC6-053FC88D69B1</UUID>
+							<AutoEnter type="Looked_up" prohibitModification="False">
+								<Looked_up dontCopyIfEmpty="False" noMatchCopyOption="DoNotCopy">
+									<FieldReference id="6" name="Name" UUID="CDA37349-D2D9-4ACA-B58C-9F8272B51F9D">
+										<TableOccurrenceReference id="1065094" name="TestTable_Contacts" UUID="34F19F48-2BB3-48DB-8C03-44DD5FBF74F4"></TableOccurrenceReference>
+									</FieldReference>
+									<Context>
+										<TableOccurrenceReference id="1065089" name="TestTable" UUID="4908496C-B0B9-4840-9BFC-6C2D42719F0C"></TableOccurrenceReference>
+									</Context>
+								</Looked_up>
+							</AutoEnter>
+							<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+							<Storage autoIndex="True" index="None" global="False" maxRepetitions="1">
+								<LanguageReference name="English" id="21"></LanguageReference>
+							</Storage>
+							<TagList></TagList>
+						</Field>
+						<Field DefaultStyle="" id="26" name="Lookup2_copy_empty_on_no_match_copy_next_lower_value" fieldtype="Normal" datatype="Text" comment="">
+							<UUID modifications="1" userName="Mislav" accountName="admin" timestamp="2025-10-28T11:11:54">DF5B4A7F-8003-4653-BBFE-BAFD4646E6A6</UUID>
+							<AutoEnter type="Looked_up" prohibitModification="False">
+								<Looked_up dontCopyIfEmpty="False" noMatchCopyOption="NextLower">
+									<FieldReference id="6" name="Name" UUID="CDA37349-D2D9-4ACA-B58C-9F8272B51F9D">
+										<TableOccurrenceReference id="1065094" name="TestTable_Contacts" UUID="34F19F48-2BB3-48DB-8C03-44DD5FBF74F4"></TableOccurrenceReference>
+									</FieldReference>
+									<Context>
+										<TableOccurrenceReference id="1065089" name="TestTable" UUID="4908496C-B0B9-4840-9BFC-6C2D42719F0C"></TableOccurrenceReference>
+									</Context>
+								</Looked_up>
+							</AutoEnter>
+							<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+							<Storage autoIndex="True" index="None" global="False" maxRepetitions="1">
+								<LanguageReference name="English" id="21"></LanguageReference>
+							</Storage>
+							<TagList></TagList>
+						</Field>
+						<Field DefaultStyle="" id="27" name="Lookup3_copy_empty_on_no_match_copy_next_higher_value" fieldtype="Normal" datatype="Text" comment="">
+							<UUID modifications="1" userName="Mislav" accountName="admin" timestamp="2025-10-28T11:11:54">94CCFE04-619A-408C-931D-90CA320A7F74</UUID>
+							<AutoEnter type="Looked_up" prohibitModification="False">
+								<Looked_up dontCopyIfEmpty="False" noMatchCopyOption="NextHigher">
+									<FieldReference id="6" name="Name" UUID="CDA37349-D2D9-4ACA-B58C-9F8272B51F9D">
+										<TableOccurrenceReference id="1065094" name="TestTable_Contacts" UUID="34F19F48-2BB3-48DB-8C03-44DD5FBF74F4"></TableOccurrenceReference>
+									</FieldReference>
+									<Context>
+										<TableOccurrenceReference id="1065089" name="TestTable" UUID="4908496C-B0B9-4840-9BFC-6C2D42719F0C"></TableOccurrenceReference>
+									</Context>
+								</Looked_up>
+							</AutoEnter>
+							<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+							<Storage autoIndex="True" index="None" global="False" maxRepetitions="1">
+								<LanguageReference name="English" id="21"></LanguageReference>
+							</Storage>
+							<TagList></TagList>
+						</Field>
+						<Field DefaultStyle="" id="28" name="Lookup4_copy_empty_on_no_match_use_blank" fieldtype="Normal" datatype="Text" comment="">
+							<UUID modifications="1" userName="Mislav" accountName="admin" timestamp="2025-10-28T11:11:54">01FEF43D-1E6F-491F-BCFE-EEB98B72C983</UUID>
+							<AutoEnter type="Looked_up" prohibitModification="False">
+								<Looked_up dontCopyIfEmpty="False" noMatchCopyOption="ConstantData">
+									<ConstantData></ConstantData>
+									<FieldReference id="6" name="Name" UUID="CDA37349-D2D9-4ACA-B58C-9F8272B51F9D">
+										<TableOccurrenceReference id="1065094" name="TestTable_Contacts" UUID="34F19F48-2BB3-48DB-8C03-44DD5FBF74F4"></TableOccurrenceReference>
+									</FieldReference>
+									<Context>
+										<TableOccurrenceReference id="1065089" name="TestTable" UUID="4908496C-B0B9-4840-9BFC-6C2D42719F0C"></TableOccurrenceReference>
+									</Context>
+								</Looked_up>
+							</AutoEnter>
+							<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+							<Storage autoIndex="True" index="None" global="False" maxRepetitions="1">
+								<LanguageReference name="English" id="21"></LanguageReference>
+							</Storage>
+							<TagList></TagList>
+						</Field>
+						<Field DefaultStyle="" id="29" name="Lookup5_copy_empty_on_no_match_use_value" fieldtype="Normal" datatype="Text" comment="">
+							<UUID modifications="1" userName="Mislav" accountName="admin" timestamp="2025-10-28T11:11:54">A598F8CF-2718-49B3-ADCE-1D1A39CF1896</UUID>
+							<AutoEnter type="Looked_up" prohibitModification="False">
+								<Looked_up dontCopyIfEmpty="False" noMatchCopyOption="ConstantData">
+									<ConstantData>«missing»</ConstantData>
+									<FieldReference id="6" name="Name" UUID="CDA37349-D2D9-4ACA-B58C-9F8272B51F9D">
+										<TableOccurrenceReference id="1065094" name="TestTable_Contacts" UUID="34F19F48-2BB3-48DB-8C03-44DD5FBF74F4"></TableOccurrenceReference>
+									</FieldReference>
+									<Context>
+										<TableOccurrenceReference id="1065089" name="TestTable" UUID="4908496C-B0B9-4840-9BFC-6C2D42719F0C"></TableOccurrenceReference>
+									</Context>
+								</Looked_up>
 							</AutoEnter>
 							<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
 							<Storage autoIndex="True" index="None" global="False" maxRepetitions="1">
@@ -1189,7 +1299,7 @@
 				</ObjectList>
 			</CalcsForCustomFunctions>
 			<ScriptCatalog membercount="41">
-				<UUID modifications="207" userName="Mislav" accountName="admin" timestamp="2025-10-19T00:24:27">AA81A957-0AB6-4210-A369-DC734FE0BC11</UUID>
+				<UUID modifications="209" userName="Mislav" accountName="admin" timestamp="2025-10-28T11:12:50">AA81A957-0AB6-4210-A369-DC734FE0BC11</UUID>
 				<TagList></TagList>
 				<Script id="14" name="About" isFolder="True">
 					<UUID modifications="1" userName="Mislav" accountName="admin" timestamp="2025-06-20T18:10:24">4FB8D085-23E1-4870-8710-FC6EAB83835C</UUID>
@@ -1202,7 +1312,7 @@
 					<TagList></TagList>
 				</Script>
 				<Script id="17" name="Release Notes">
-					<UUID modifications="26" userName="Mislav" accountName="admin" timestamp="2025-10-19T00:24:26">C59FC9BA-BB08-4E8D-8A7F-1380F07D1E83</UUID>
+					<UUID modifications="28" userName="Mislav" accountName="admin" timestamp="2025-10-28T11:12:50">C59FC9BA-BB08-4E8D-8A7F-1380F07D1E83</UUID>
 					<Options hidden="True" access="ReadWrite" SiriShortcutVisible="False" runwithfullaccess="False" compatibility="0">8</Options>
 					<TagList></TagList>
 				</Script>
@@ -14472,7 +14582,7 @@ field:normal .baseline
 				</Theme>
 			</ThemeCatalog>
 			<LayoutCatalog membercount="13">
-				<UUID modifications="264" userName="Mislav" accountName="admin" timestamp="2025-10-18T23:47:36">5E337BAB-42BC-4E8A-878B-9656140CE086</UUID>
+				<UUID modifications="265" userName="Mislav" accountName="admin" timestamp="2025-10-18T23:47:36">5E337BAB-42BC-4E8A-878B-9656140CE086</UUID>
 				<TagList></TagList>
 				<Layout id="11" name="File Open" width="740">
 					<TableOccurrenceReference id="1065095" name="blank" UUID="724748F0-F1A7-4448-A85F-FE2E0FE58A83"></TableOccurrenceReference>
@@ -14488,7 +14598,7 @@ field:normal .baseline
 									<Text>
 										<Options>2</Options>
 										<StyledText>
-											<Data><![CDATA[This file endeavors to have an example of One Of Everything (Ooe)—one of every possible configuration of every kind of solution element.For example, every kind of layout part or layout object, every kind of value list, every kind of script step, etc.Achieving 100% coverage is not a realistic goal, but the hope is that over time we can add examples of all these different permutations to this file.Last updated: 2025-10-18]]></Data>
+											<Data><![CDATA[This file endeavors to have an example of One Of Everything (Ooe)—one of every possible configuration of every kind of solution element.For example, every kind of layout part or layout object, every kind of value list, every kind of script step, etc.Achieving 100% coverage is not a realistic goal, but the hope is that over time we can add examples of all these different permutations to this file.Last updated: 2025-10-28]]></Data>
 										</StyledText>
 									</Text>
 									<LocalCSS name=""><![CDATA[self:normal .self
@@ -14600,7 +14710,7 @@ field:normal .baseline
 							</ObjectList>
 						</Part>
 					</PartsList>
-					<UUID modifications="44" userName="Mislav" accountName="admin" timestamp="2025-10-18T23:46:19">227FE5E4-D9F1-474B-A744-4E5715FE5DDB</UUID>
+					<UUID modifications="45" userName="Mislav" accountName="admin" timestamp="2025-10-28T11:12:13">227FE5E4-D9F1-474B-A744-4E5715FE5DDB</UUID>
 					<TagList></TagList>
 					<ClientType>3</ClientType>
 					<Options hidden="False">64708872193</Options>
@@ -19062,7 +19172,7 @@ self:droptarget .inner_border
 				</Script>
 				<Script>
 					<ScriptReference id="17" name="Release Notes" UUID="C59FC9BA-BB08-4E8D-8A7F-1380F07D1E83"></ScriptReference>
-					<ObjectList membercount="31">
+					<ObjectList membercount="34">
 						<Step index="0" id="89" name="# (comment)" enable="True">
 							<UUID>FC8E3958-34A0-499C-B1D0-DB364CBC2F81</UUID>
 							<OwnerID></OwnerID>
@@ -19074,27 +19184,27 @@ self:droptarget .inner_border
 							</ParameterValues>
 						</Step>
 						<Step index="1" id="89" name="# (comment)" enable="True">
-							<UUID>C6E5094C-DDD1-4947-9B45-FAA8D8DD137E</UUID>
+							<UUID>8F6D9A3A-0B39-4109-A70E-EE920743DF07</UUID>
 							<OwnerID></OwnerID>
 							<Options>4</Options>
 							<ParameterValues membercount="1">
 								<Parameter type="Comment">
-									<Comment value="2025-10-18 Mislav Kos"></Comment>
+									<Comment value="2025-10-28 Mislav Kos"></Comment>
 								</Parameter>
 							</ParameterValues>
 						</Step>
 						<Step index="2" id="89" name="# (comment)" enable="True">
-							<UUID>4BBBF62B-A1CA-4721-A039-18BC8723D086</UUID>
+							<UUID>0A1B338E-1F04-488E-9A54-EC42FB60F80D</UUID>
 							<OwnerID></OwnerID>
 							<Options>4</Options>
 							<ParameterValues membercount="1">
 								<Parameter type="Comment">
-									<Comment value="https://github.com/mislavkos/ooe-fm/issues/1: Added SerialNumberOnCommitIncBy1, SerialNumberOnCommitIncBy10 fields to TestTable&#13;https://github.com/mislavkos/ooe-fm/issues/3: Added placeholder text to all fields on &quot;My Layout for TestTable&quot;&#13;https://github.com/mislavkos/ooe-fm/issues/3: Added additional field control styles: dropdown calendar, dropdown list, popup menu, concealed edit box, radio button, checkbox&#13;https://github.com/mislavkos/ooe-fm/issues/4: Added Self external data source&#13;Updated SaXMLDelivery add-on to v0.1.9"></Comment>
+									<Comment value="https://github.com/mislavkos/ooe-fm/issues/6: Added lookup fields in the TestTable"></Comment>
 								</Parameter>
 							</ParameterValues>
 						</Step>
 						<Step index="3" id="89" name="# (comment)" enable="True">
-							<UUID>5A05F8A3-8227-4A24-AC92-F0D894DE1065</UUID>
+							<UUID>AF78BDA8-DC8B-4DD6-9819-DE3E2341FEDD</UUID>
 							<OwnerID></OwnerID>
 							<Options>0</Options>
 							<ParameterValues membercount="1">
@@ -19104,27 +19214,27 @@ self:droptarget .inner_border
 							</ParameterValues>
 						</Step>
 						<Step index="4" id="89" name="# (comment)" enable="True">
-							<UUID>A32A8E68-26EE-436E-B0D8-17B2F9830AB6</UUID>
+							<UUID>C6E5094C-DDD1-4947-9B45-FAA8D8DD137E</UUID>
 							<OwnerID></OwnerID>
 							<Options>4</Options>
 							<ParameterValues membercount="1">
 								<Parameter type="Comment">
-									<Comment value="2025-08-29 Mislav Kos"></Comment>
+									<Comment value="2025-10-18 Mislav Kos"></Comment>
 								</Parameter>
 							</ParameterValues>
 						</Step>
 						<Step index="5" id="89" name="# (comment)" enable="True">
-							<UUID>38F98321-E90F-402A-A79B-56706DD9260D</UUID>
+							<UUID>4BBBF62B-A1CA-4721-A039-18BC8723D086</UUID>
 							<OwnerID></OwnerID>
 							<Options>4</Options>
 							<ParameterValues membercount="1">
 								<Parameter type="Comment">
-									<Comment value="Added restapi account and privilege set"></Comment>
+									<Comment value="https://github.com/mislavkos/ooe-fm/issues/1: Added SerialNumberOnCommitIncBy1, SerialNumberOnCommitIncBy10 fields to TestTable&#13;https://github.com/mislavkos/ooe-fm/issues/3: Added placeholder text to all fields on &quot;My Layout for TestTable&quot;&#13;https://github.com/mislavkos/ooe-fm/issues/3: Added additional field control styles: dropdown calendar, dropdown list, popup menu, concealed edit box, radio button, checkbox&#13;https://github.com/mislavkos/ooe-fm/issues/4: Added Self external data source&#13;Updated SaXMLDelivery add-on to v0.1.9"></Comment>
 								</Parameter>
 							</ParameterValues>
 						</Step>
 						<Step index="6" id="89" name="# (comment)" enable="True">
-							<UUID>301FBAB5-6CDB-461F-B22A-CE8A1A3E6F08</UUID>
+							<UUID>5A05F8A3-8227-4A24-AC92-F0D894DE1065</UUID>
 							<OwnerID></OwnerID>
 							<Options>0</Options>
 							<ParameterValues membercount="1">
@@ -19134,7 +19244,7 @@ self:droptarget .inner_border
 							</ParameterValues>
 						</Step>
 						<Step index="7" id="89" name="# (comment)" enable="True">
-							<UUID>10C05A17-DD03-47BF-BC82-E6FCE86A6A06</UUID>
+							<UUID>A32A8E68-26EE-436E-B0D8-17B2F9830AB6</UUID>
 							<OwnerID></OwnerID>
 							<Options>4</Options>
 							<ParameterValues membercount="1">
@@ -19144,17 +19254,17 @@ self:droptarget .inner_border
 							</ParameterValues>
 						</Step>
 						<Step index="8" id="89" name="# (comment)" enable="True">
-							<UUID>4B6B9892-3C12-47CB-ABB4-640B3261B5D7</UUID>
+							<UUID>38F98321-E90F-402A-A79B-56706DD9260D</UUID>
 							<OwnerID></OwnerID>
 							<Options>4</Options>
 							<ParameterValues membercount="1">
 								<Parameter type="Comment">
-									<Comment value="Inactivated &quot;dev&quot; account which doesn&apos;t have a password set, so that the file can be hosted on FMS servers that doen&apos;t allow insecure files"></Comment>
+									<Comment value="Added restapi account and privilege set"></Comment>
 								</Parameter>
 							</ParameterValues>
 						</Step>
 						<Step index="9" id="89" name="# (comment)" enable="True">
-							<UUID>0C90448B-2456-4EE2-B51E-3C33436AB42A</UUID>
+							<UUID>301FBAB5-6CDB-461F-B22A-CE8A1A3E6F08</UUID>
 							<OwnerID></OwnerID>
 							<Options>0</Options>
 							<ParameterValues membercount="1">
@@ -19164,27 +19274,27 @@ self:droptarget .inner_border
 							</ParameterValues>
 						</Step>
 						<Step index="10" id="89" name="# (comment)" enable="True">
-							<UUID>4C4C17D4-0895-4D72-91C2-73000C2F36DD</UUID>
+							<UUID>10C05A17-DD03-47BF-BC82-E6FCE86A6A06</UUID>
 							<OwnerID></OwnerID>
 							<Options>4</Options>
 							<ParameterValues membercount="1">
 								<Parameter type="Comment">
-									<Comment value="2025-08-25 Mislav Kos"></Comment>
+									<Comment value="2025-08-29 Mislav Kos"></Comment>
 								</Parameter>
 							</ParameterValues>
 						</Step>
 						<Step index="11" id="89" name="# (comment)" enable="True">
-							<UUID>0CAE7BB9-095C-46E5-9804-D58DD38E8794</UUID>
+							<UUID>4B6B9892-3C12-47CB-ABB4-640B3261B5D7</UUID>
 							<OwnerID></OwnerID>
 							<Options>4</Options>
 							<ParameterValues membercount="1">
 								<Parameter type="Comment">
-									<Comment value="Renamed Two to BrojDva"></Comment>
+									<Comment value="Inactivated &quot;dev&quot; account which doesn&apos;t have a password set, so that the file can be hosted on FMS servers that doen&apos;t allow insecure files"></Comment>
 								</Parameter>
 							</ParameterValues>
 						</Step>
 						<Step index="12" id="89" name="# (comment)" enable="True">
-							<UUID>3F54BB15-DA39-4FC6-A99D-1BFF5ED8FBB3</UUID>
+							<UUID>0C90448B-2456-4EE2-B51E-3C33436AB42A</UUID>
 							<OwnerID></OwnerID>
 							<Options>0</Options>
 							<ParameterValues membercount="1">
@@ -19194,27 +19304,27 @@ self:droptarget .inner_border
 							</ParameterValues>
 						</Step>
 						<Step index="13" id="89" name="# (comment)" enable="True">
-							<UUID>1EC08427-D385-417F-BD92-F89E8F0E3B24</UUID>
+							<UUID>4C4C17D4-0895-4D72-91C2-73000C2F36DD</UUID>
 							<OwnerID></OwnerID>
 							<Options>4</Options>
 							<ParameterValues membercount="1">
 								<Parameter type="Comment">
-									<Comment value="2025-07-24 Mislav Kos"></Comment>
+									<Comment value="2025-08-25 Mislav Kos"></Comment>
 								</Parameter>
 							</ParameterValues>
 						</Step>
 						<Step index="14" id="89" name="# (comment)" enable="True">
-							<UUID>D5887B16-25DD-4098-A19B-9115A6800D37</UUID>
+							<UUID>0CAE7BB9-095C-46E5-9804-D58DD38E8794</UUID>
 							<OwnerID></OwnerID>
 							<Options>4</Options>
 							<ParameterValues membercount="1">
 								<Parameter type="Comment">
-									<Comment value="Renamed Ooe2 to Two&#13;Added multiple fields to Contacts_TestTable relationship sort&#13;Added second predicate to Contacts_TestTable relationship&#13;Added second relationship graph note&#13;Made OrderOfOperations custom function calc more complex&#13;Added/updated custom menus&#13;Added/updated privilege sets"></Comment>
+									<Comment value="Renamed Two to BrojDva"></Comment>
 								</Parameter>
 							</ParameterValues>
 						</Step>
 						<Step index="15" id="89" name="# (comment)" enable="True">
-							<UUID>0F0E9972-8EC9-4090-9CF7-FE8EDD65CEFE</UUID>
+							<UUID>3F54BB15-DA39-4FC6-A99D-1BFF5ED8FBB3</UUID>
 							<OwnerID></OwnerID>
 							<Options>0</Options>
 							<ParameterValues membercount="1">
@@ -19224,6 +19334,36 @@ self:droptarget .inner_border
 							</ParameterValues>
 						</Step>
 						<Step index="16" id="89" name="# (comment)" enable="True">
+							<UUID>1EC08427-D385-417F-BD92-F89E8F0E3B24</UUID>
+							<OwnerID></OwnerID>
+							<Options>4</Options>
+							<ParameterValues membercount="1">
+								<Parameter type="Comment">
+									<Comment value="2025-07-24 Mislav Kos"></Comment>
+								</Parameter>
+							</ParameterValues>
+						</Step>
+						<Step index="17" id="89" name="# (comment)" enable="True">
+							<UUID>D5887B16-25DD-4098-A19B-9115A6800D37</UUID>
+							<OwnerID></OwnerID>
+							<Options>4</Options>
+							<ParameterValues membercount="1">
+								<Parameter type="Comment">
+									<Comment value="Renamed Ooe2 to Two&#13;Added multiple fields to Contacts_TestTable relationship sort&#13;Added second predicate to Contacts_TestTable relationship&#13;Added second relationship graph note&#13;Made OrderOfOperations custom function calc more complex&#13;Added/updated custom menus&#13;Added/updated privilege sets"></Comment>
+								</Parameter>
+							</ParameterValues>
+						</Step>
+						<Step index="18" id="89" name="# (comment)" enable="True">
+							<UUID>0F0E9972-8EC9-4090-9CF7-FE8EDD65CEFE</UUID>
+							<OwnerID></OwnerID>
+							<Options>0</Options>
+							<ParameterValues membercount="1">
+								<Parameter type="Comment">
+									<Comment></Comment>
+								</Parameter>
+							</ParameterValues>
+						</Step>
+						<Step index="19" id="89" name="# (comment)" enable="True">
 							<UUID>62FF0B16-1DEA-4DBF-9021-B0AEC4F7964A</UUID>
 							<OwnerID></OwnerID>
 							<Options>4</Options>
@@ -19233,7 +19373,7 @@ self:droptarget .inner_border
 								</Parameter>
 							</ParameterValues>
 						</Step>
-						<Step index="17" id="89" name="# (comment)" enable="True">
+						<Step index="20" id="89" name="# (comment)" enable="True">
 							<UUID>20131764-DE5A-402F-B3A2-222AB9F8560F</UUID>
 							<OwnerID></OwnerID>
 							<Options>4</Options>
@@ -19243,7 +19383,7 @@ self:droptarget .inner_border
 								</Parameter>
 							</ParameterValues>
 						</Step>
-						<Step index="18" id="89" name="# (comment)" enable="True">
+						<Step index="21" id="89" name="# (comment)" enable="True">
 							<UUID>4D3DFF00-C74F-4DFA-B0DF-3F738C0EEBA6</UUID>
 							<OwnerID></OwnerID>
 							<Options>4</Options>
@@ -19253,7 +19393,7 @@ self:droptarget .inner_border
 								</Parameter>
 							</ParameterValues>
 						</Step>
-						<Step index="19" id="89" name="# (comment)" enable="True">
+						<Step index="22" id="89" name="# (comment)" enable="True">
 							<UUID>46E82AAD-921A-4230-8637-75F279BFBC9B</UUID>
 							<OwnerID></OwnerID>
 							<Options>0</Options>
@@ -19263,7 +19403,7 @@ self:droptarget .inner_border
 								</Parameter>
 							</ParameterValues>
 						</Step>
-						<Step index="20" id="89" name="# (comment)" enable="True">
+						<Step index="23" id="89" name="# (comment)" enable="True">
 							<UUID>F6B64043-5B08-44A5-A525-036C3666BEAE</UUID>
 							<OwnerID></OwnerID>
 							<Options>4</Options>
@@ -19273,7 +19413,7 @@ self:droptarget .inner_border
 								</Parameter>
 							</ParameterValues>
 						</Step>
-						<Step index="21" id="89" name="# (comment)" enable="True">
+						<Step index="24" id="89" name="# (comment)" enable="True">
 							<UUID>B9313C04-3F5F-4907-AD53-FAE71D2E2CFA</UUID>
 							<OwnerID></OwnerID>
 							<Options>4</Options>
@@ -19283,7 +19423,7 @@ self:droptarget .inner_border
 								</Parameter>
 							</ParameterValues>
 						</Step>
-						<Step index="22" id="89" name="# (comment)" enable="True">
+						<Step index="25" id="89" name="# (comment)" enable="True">
 							<UUID>BAF729FC-F31E-45FB-8685-AE5D80F18EC6</UUID>
 							<OwnerID></OwnerID>
 							<Options>4</Options>
@@ -19293,7 +19433,7 @@ self:droptarget .inner_border
 								</Parameter>
 							</ParameterValues>
 						</Step>
-						<Step index="23" id="89" name="# (comment)" enable="True">
+						<Step index="26" id="89" name="# (comment)" enable="True">
 							<UUID>8A404868-0312-4D4C-8824-3BDCC569BB64</UUID>
 							<OwnerID></OwnerID>
 							<Options>0</Options>
@@ -19303,7 +19443,7 @@ self:droptarget .inner_border
 								</Parameter>
 							</ParameterValues>
 						</Step>
-						<Step index="24" id="89" name="# (comment)" enable="True">
+						<Step index="27" id="89" name="# (comment)" enable="True">
 							<UUID>8FF011E6-F95E-41BA-96BC-66809C32FBF0</UUID>
 							<OwnerID></OwnerID>
 							<Options>4</Options>
@@ -19313,7 +19453,7 @@ self:droptarget .inner_border
 								</Parameter>
 							</ParameterValues>
 						</Step>
-						<Step index="25" id="89" name="# (comment)" enable="True">
+						<Step index="28" id="89" name="# (comment)" enable="True">
 							<UUID>0DE7DD92-DB2A-4275-A3FF-F62F631CD841</UUID>
 							<OwnerID></OwnerID>
 							<Options>4</Options>
@@ -19323,7 +19463,7 @@ self:droptarget .inner_border
 								</Parameter>
 							</ParameterValues>
 						</Step>
-						<Step index="26" id="89" name="# (comment)" enable="True">
+						<Step index="29" id="89" name="# (comment)" enable="True">
 							<UUID>237E6919-BAA8-450E-B1D5-1524F06C22D0</UUID>
 							<OwnerID></OwnerID>
 							<Options>4</Options>
@@ -19333,7 +19473,7 @@ self:droptarget .inner_border
 								</Parameter>
 							</ParameterValues>
 						</Step>
-						<Step index="27" id="89" name="# (comment)" enable="True">
+						<Step index="30" id="89" name="# (comment)" enable="True">
 							<UUID>70F584F4-A1C4-4CB4-92A3-5B3B04D714C7</UUID>
 							<OwnerID></OwnerID>
 							<Options>0</Options>
@@ -19343,7 +19483,7 @@ self:droptarget .inner_border
 								</Parameter>
 							</ParameterValues>
 						</Step>
-						<Step index="28" id="89" name="# (comment)" enable="True">
+						<Step index="31" id="89" name="# (comment)" enable="True">
 							<UUID>D0D7B7DD-E386-4B70-929D-156481A7E97E</UUID>
 							<OwnerID></OwnerID>
 							<Options>4</Options>
@@ -19353,7 +19493,7 @@ self:droptarget .inner_border
 								</Parameter>
 							</ParameterValues>
 						</Step>
-						<Step index="29" id="89" name="# (comment)" enable="True">
+						<Step index="32" id="89" name="# (comment)" enable="True">
 							<UUID>19D037B6-8480-4943-92D2-3E8993483A86</UUID>
 							<OwnerID></OwnerID>
 							<Options>4</Options>
@@ -19363,7 +19503,7 @@ self:droptarget .inner_border
 								</Parameter>
 							</ParameterValues>
 						</Step>
-						<Step index="30" id="89" name="# (comment)" enable="True">
+						<Step index="33" id="89" name="# (comment)" enable="True">
 							<UUID>2B0274FF-832F-477B-850D-5A7DEB9C5C46</UUID>
 							<OwnerID></OwnerID>
 							<Options>0</Options>
@@ -50628,7 +50768,7 @@ self:droptarget .inner_border
 			</CustomMenuSetCatalog>
 		</AddAction>
 		<ModifyAction membercount="2">
-			<FieldsForTables membercount="3">
+			<FieldsForTables membercount="9">
 				<FieldCatalog>
 					<BaseTableReference id="129" name="TestTable" UUID="471CCAC6-9046-4B2E-BD66-03EEAE88170B"></BaseTableReference>
 					<ObjectList membercount="1">
@@ -50665,6 +50805,128 @@ self:droptarget .inner_border
 										<Chunk type="NoRef"> )</Chunk>
 									</ChunkList>
 								</Calculation>
+								<BaseTableReference id="129" name="TestTable" UUID="471CCAC6-9046-4B2E-BD66-03EEAE88170B"></BaseTableReference>
+							</FieldReference>
+						</Field>
+					</ObjectList>
+				</FieldCatalog>
+				<FieldCatalog>
+					<BaseTableReference id="129" name="TestTable" UUID="471CCAC6-9046-4B2E-BD66-03EEAE88170B"></BaseTableReference>
+					<ObjectList membercount="1">
+						<Field>
+							<FieldReference id="24" name="Lookup0_default" repetition="1" UUID="BEE33964-B1FB-4A01-B87C-CC8E0CE4E21F">
+								<AutoEnter>
+									<Looked_up dontCopyIfEmpty="True" noMatchCopyOption="DoNotCopy">
+										<FieldReference id="6" name="Name" UUID="CDA37349-D2D9-4ACA-B58C-9F8272B51F9D">
+											<TableOccurrenceReference id="1065094" name="TestTable_Contacts" UUID="34F19F48-2BB3-48DB-8C03-44DD5FBF74F4"></TableOccurrenceReference>
+										</FieldReference>
+										<Context>
+											<TableOccurrenceReference id="1065089" name="TestTable" UUID="4908496C-B0B9-4840-9BFC-6C2D42719F0C"></TableOccurrenceReference>
+										</Context>
+									</Looked_up>
+								</AutoEnter>
+								<BaseTableReference id="129" name="TestTable" UUID="471CCAC6-9046-4B2E-BD66-03EEAE88170B"></BaseTableReference>
+							</FieldReference>
+						</Field>
+					</ObjectList>
+				</FieldCatalog>
+				<FieldCatalog>
+					<BaseTableReference id="129" name="TestTable" UUID="471CCAC6-9046-4B2E-BD66-03EEAE88170B"></BaseTableReference>
+					<ObjectList membercount="1">
+						<Field>
+							<FieldReference id="25" name="Lookup1_copy_empty" repetition="1" UUID="57C2F8DC-9910-44D5-8EC6-053FC88D69B1">
+								<AutoEnter>
+									<Looked_up dontCopyIfEmpty="False" noMatchCopyOption="DoNotCopy">
+										<FieldReference id="6" name="Name" UUID="CDA37349-D2D9-4ACA-B58C-9F8272B51F9D">
+											<TableOccurrenceReference id="1065094" name="TestTable_Contacts" UUID="34F19F48-2BB3-48DB-8C03-44DD5FBF74F4"></TableOccurrenceReference>
+										</FieldReference>
+										<Context>
+											<TableOccurrenceReference id="1065089" name="TestTable" UUID="4908496C-B0B9-4840-9BFC-6C2D42719F0C"></TableOccurrenceReference>
+										</Context>
+									</Looked_up>
+								</AutoEnter>
+								<BaseTableReference id="129" name="TestTable" UUID="471CCAC6-9046-4B2E-BD66-03EEAE88170B"></BaseTableReference>
+							</FieldReference>
+						</Field>
+					</ObjectList>
+				</FieldCatalog>
+				<FieldCatalog>
+					<BaseTableReference id="129" name="TestTable" UUID="471CCAC6-9046-4B2E-BD66-03EEAE88170B"></BaseTableReference>
+					<ObjectList membercount="1">
+						<Field>
+							<FieldReference id="26" name="Lookup2_copy_empty_on_no_match_copy_next_lower_value" repetition="1" UUID="DF5B4A7F-8003-4653-BBFE-BAFD4646E6A6">
+								<AutoEnter>
+									<Looked_up dontCopyIfEmpty="False" noMatchCopyOption="NextLower">
+										<FieldReference id="6" name="Name" UUID="CDA37349-D2D9-4ACA-B58C-9F8272B51F9D">
+											<TableOccurrenceReference id="1065094" name="TestTable_Contacts" UUID="34F19F48-2BB3-48DB-8C03-44DD5FBF74F4"></TableOccurrenceReference>
+										</FieldReference>
+										<Context>
+											<TableOccurrenceReference id="1065089" name="TestTable" UUID="4908496C-B0B9-4840-9BFC-6C2D42719F0C"></TableOccurrenceReference>
+										</Context>
+									</Looked_up>
+								</AutoEnter>
+								<BaseTableReference id="129" name="TestTable" UUID="471CCAC6-9046-4B2E-BD66-03EEAE88170B"></BaseTableReference>
+							</FieldReference>
+						</Field>
+					</ObjectList>
+				</FieldCatalog>
+				<FieldCatalog>
+					<BaseTableReference id="129" name="TestTable" UUID="471CCAC6-9046-4B2E-BD66-03EEAE88170B"></BaseTableReference>
+					<ObjectList membercount="1">
+						<Field>
+							<FieldReference id="27" name="Lookup3_copy_empty_on_no_match_copy_next_higher_value" repetition="1" UUID="94CCFE04-619A-408C-931D-90CA320A7F74">
+								<AutoEnter>
+									<Looked_up dontCopyIfEmpty="False" noMatchCopyOption="NextHigher">
+										<FieldReference id="6" name="Name" UUID="CDA37349-D2D9-4ACA-B58C-9F8272B51F9D">
+											<TableOccurrenceReference id="1065094" name="TestTable_Contacts" UUID="34F19F48-2BB3-48DB-8C03-44DD5FBF74F4"></TableOccurrenceReference>
+										</FieldReference>
+										<Context>
+											<TableOccurrenceReference id="1065089" name="TestTable" UUID="4908496C-B0B9-4840-9BFC-6C2D42719F0C"></TableOccurrenceReference>
+										</Context>
+									</Looked_up>
+								</AutoEnter>
+								<BaseTableReference id="129" name="TestTable" UUID="471CCAC6-9046-4B2E-BD66-03EEAE88170B"></BaseTableReference>
+							</FieldReference>
+						</Field>
+					</ObjectList>
+				</FieldCatalog>
+				<FieldCatalog>
+					<BaseTableReference id="129" name="TestTable" UUID="471CCAC6-9046-4B2E-BD66-03EEAE88170B"></BaseTableReference>
+					<ObjectList membercount="1">
+						<Field>
+							<FieldReference id="28" name="Lookup4_copy_empty_on_no_match_use_blank" repetition="1" UUID="01FEF43D-1E6F-491F-BCFE-EEB98B72C983">
+								<AutoEnter>
+									<Looked_up dontCopyIfEmpty="False" noMatchCopyOption="ConstantData">
+										<ConstantData></ConstantData>
+										<FieldReference id="6" name="Name" UUID="CDA37349-D2D9-4ACA-B58C-9F8272B51F9D">
+											<TableOccurrenceReference id="1065094" name="TestTable_Contacts" UUID="34F19F48-2BB3-48DB-8C03-44DD5FBF74F4"></TableOccurrenceReference>
+										</FieldReference>
+										<Context>
+											<TableOccurrenceReference id="1065089" name="TestTable" UUID="4908496C-B0B9-4840-9BFC-6C2D42719F0C"></TableOccurrenceReference>
+										</Context>
+									</Looked_up>
+								</AutoEnter>
+								<BaseTableReference id="129" name="TestTable" UUID="471CCAC6-9046-4B2E-BD66-03EEAE88170B"></BaseTableReference>
+							</FieldReference>
+						</Field>
+					</ObjectList>
+				</FieldCatalog>
+				<FieldCatalog>
+					<BaseTableReference id="129" name="TestTable" UUID="471CCAC6-9046-4B2E-BD66-03EEAE88170B"></BaseTableReference>
+					<ObjectList membercount="1">
+						<Field>
+							<FieldReference id="29" name="Lookup5_copy_empty_on_no_match_use_value" repetition="1" UUID="A598F8CF-2718-49B3-ADCE-1D1A39CF1896">
+								<AutoEnter>
+									<Looked_up dontCopyIfEmpty="False" noMatchCopyOption="ConstantData">
+										<ConstantData>«missing»</ConstantData>
+										<FieldReference id="6" name="Name" UUID="CDA37349-D2D9-4ACA-B58C-9F8272B51F9D">
+											<TableOccurrenceReference id="1065094" name="TestTable_Contacts" UUID="34F19F48-2BB3-48DB-8C03-44DD5FBF74F4"></TableOccurrenceReference>
+										</FieldReference>
+										<Context>
+											<TableOccurrenceReference id="1065089" name="TestTable" UUID="4908496C-B0B9-4840-9BFC-6C2D42719F0C"></TableOccurrenceReference>
+										</Context>
+									</Looked_up>
+								</AutoEnter>
 								<BaseTableReference id="129" name="TestTable" UUID="471CCAC6-9046-4B2E-BD66-03EEAE88170B"></BaseTableReference>
 							</FieldReference>
 						</Field>

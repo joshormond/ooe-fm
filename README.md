@@ -50,5 +50,5 @@ SaXML files marked with ⚡️ above will be kept up-to-date.
 
 - The `saxml_utf16le` folder contains SaXML files generated using FileMaker clients from all versions since SaXML was first released.
 - Generating the files is automated using the `FMDeveloperTool` which was released with SaXML v2.2.1.0 (FileMaker v20.3.2).
-- Gnerating the files using older FileMaker versions is a manual process (time consuming), so please note that the older SaXML versions will not always be up to date, i.e., reflect the latest Ooe.fmp12 file.
+- Generating the files using older FileMaker versions is a manual process (time consuming), so please note that the older SaXML versions will not always be up to date, i.e., reflect the latest Ooe.fmp12 file.
 - The ddr_info flag became available in SaxML v2.2.2.0 (FileMaker v21.x ), but it only became available in the `FMDeveloperTool` in FileMaker v22.x, so the same caveat holds for the `Ooe__saxml_v2_2_2_0__fm_v21_1_1__ddr_info.xml` file.
