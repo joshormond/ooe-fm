@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0"?>
-<FMSaveAsXML version="2.2.3.0" Source="22.0.1" File="Ooe.fmp12" UUID="0A60AFFF-C849-4680-A7D8-6CD2FCDA30E8" locale="English" Has_DDR_INFO="False">
+<FMSaveAsXML version="2.2.3.0" Source="22.0.4" File="Ooe.fmp12" UUID="0A60AFFF-C849-4680-A7D8-6CD2FCDA30E8" locale="English" Has_DDR_INFO="False">
 	<Structure membercount="2">
 		<AddAction membercount="21">
 			<BaseDirectoryCatalog membercount="5" generate="True" temporary="True">
@@ -18675,7 +18675,7 @@ self:droptarget .inner_border
 							<Layouts Create="True" Edit="True" Delete="True"></Layouts>
 							<ValueLists Create="True" Edit="True" Delete="True"></ValueLists>
 							<Scripts Create="True" Edit="True" Delete="True"></Scripts>
-							<Other value="65535" Print="True" Export="True" manageAccounts="True" manageExtPrivs="True" allowOverride="True" allowOpenQuickly="True" disconnectIdle="False" commands="All">
+							<Other value="65535" Print="True" Export="True" manageDatabase="True" manageCustomMenus="True" manageAccounts="True" manageExtPrivs="True" allowOverride="True" allowOpenQuickly="True" disconnectIdle="False" commands="All">
 								<Password prohibitModification="False"></Password>
 							</Other>
 						</access>
@@ -18688,7 +18688,7 @@ self:droptarget .inner_border
 							<Layouts View="ReadOnly"></Layouts>
 							<ValueLists View="ReadOnly"></ValueLists>
 							<Scripts View="ReadOnly"></Scripts>
-							<Other value="25348" Print="True" Export="True" manageAccounts="False" manageExtPrivs="False" allowOverride="False" allowOpenQuickly="False" disconnectIdle="True" commands="All">
+							<Other value="25348" Print="True" Export="True" manageDatabase="False" manageCustomMenus="False" manageAccounts="False" manageExtPrivs="False" allowOverride="False" allowOpenQuickly="False" disconnectIdle="True" commands="All">
 								<Password prohibitModification="False"></Password>
 							</Other>
 						</access>
@@ -18701,7 +18701,7 @@ self:droptarget .inner_border
 							<Layouts View="ReadOnly"></Layouts>
 							<ValueLists View="ReadOnly"></ValueLists>
 							<Scripts View="ReadOnly"></Scripts>
-							<Other value="25348" Print="True" Export="True" manageAccounts="False" manageExtPrivs="False" allowOverride="False" allowOpenQuickly="False" disconnectIdle="True" commands="All">
+							<Other value="25348" Print="True" Export="True" manageDatabase="False" manageCustomMenus="False" manageAccounts="False" manageExtPrivs="False" allowOverride="False" allowOpenQuickly="False" disconnectIdle="True" commands="All">
 								<Password prohibitModification="False"></Password>
 							</Other>
 						</access>
@@ -19007,7 +19007,7 @@ self:droptarget .inner_border
 									</ObjectList>
 								</Custom>
 							</Scripts>
-							<Other value="61213" Print="True" Export="True" manageAccounts="True" manageExtPrivs="True" allowOverride="True" allowOpenQuickly="True" disconnectIdle="True" commands="All">
+							<Other value="61213" Print="True" Export="True" manageDatabase="False" manageCustomMenus="False" manageAccounts="True" manageExtPrivs="True" allowOverride="True" allowOpenQuickly="True" disconnectIdle="True" commands="All">
 								<Password prohibitModification="False" interval="30" Minimum="5"></Password>
 							</Other>
 						</access>
@@ -19020,7 +19020,7 @@ self:droptarget .inner_border
 							<Layouts View="ReadOnly"></Layouts>
 							<ValueLists View="ReadOnly"></ValueLists>
 							<Scripts View="ReadOnly"></Scripts>
-							<Other value="8194" Print="False" Export="False" manageAccounts="False" manageExtPrivs="False" allowOverride="False" allowOpenQuickly="False" disconnectIdle="False" commands="Edit">
+							<Other value="8194" Print="False" Export="False" manageDatabase="False" manageCustomMenus="False" manageAccounts="False" manageExtPrivs="False" allowOverride="False" allowOpenQuickly="False" disconnectIdle="False" commands="Edit">
 								<Password prohibitModification="True"></Password>
 							</Other>
 						</access>
@@ -19033,7 +19033,7 @@ self:droptarget .inner_border
 							<Layouts Create="False" Edit="False" Delete="False"></Layouts>
 							<ValueLists Create="False" Edit="False" Delete="False"></ValueLists>
 							<Scripts Create="False" Edit="False" Delete="False"></Scripts>
-							<Other value="2" Print="False" Export="False" manageAccounts="False" manageExtPrivs="False" allowOverride="False" allowOpenQuickly="False" disconnectIdle="False" commands="Minimal">
+							<Other value="2" Print="False" Export="False" manageDatabase="False" manageCustomMenus="False" manageAccounts="False" manageExtPrivs="False" allowOverride="False" allowOpenQuickly="False" disconnectIdle="False" commands="Minimal">
 								<Password prohibitModification="True"></Password>
 							</Other>
 						</access>
@@ -19264,7 +19264,7 @@ self:droptarget .inner_border
 									</ObjectList>
 								</Custom>
 							</Scripts>
-							<Other value="24577" Print="False" Export="False" manageAccounts="False" manageExtPrivs="False" allowOverride="False" allowOpenQuickly="False" disconnectIdle="True" commands="All">
+							<Other value="24577" Print="False" Export="False" manageDatabase="False" manageCustomMenus="False" manageAccounts="False" manageExtPrivs="False" allowOverride="False" allowOpenQuickly="False" disconnectIdle="True" commands="All">
 								<Password prohibitModification="True"></Password>
 							</Other>
 						</access>
