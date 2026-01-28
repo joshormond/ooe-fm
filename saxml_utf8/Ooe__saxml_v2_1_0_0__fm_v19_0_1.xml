@@ -485,7 +485,14 @@
 							</Storage>
 							<Calculation>
 								<TableOccurrenceReference id="1065091" name="Contacts" UUID="E8E43577-C015-43EC-A455-99DD51B56BF2"></TableOccurrenceReference>
-								<Text><![CDATA[Contacts_TestTable::TextField1& // This custom function references this field// It also references a related record// It's set up this way, so that we can see how SaXML handles this situationOrderOfOperations]]></Text>
+								<Text><![CDATA[Contacts_TestTable::TextField1
+
+& 
+
+// This custom function references this field
+// It also references a related record
+// It's set up this way, so that we can see how SaXML handles this situation
+OrderOfOperations]]></Text>
 							</Calculation>
 							<TagList></TagList>
 						</Field>
@@ -517,7 +524,8 @@
 				<ValueList id="2" name="YN">
 					<Source value="Custom"></Source>
 					<CustomValues>
-						<Text><![CDATA[YesNo]]></Text>
+						<Text><![CDATA[Yes
+No]]></Text>
 					</CustomValues>
 					<UUID modifications="0" userName="Mislav" accountName="Admin" timestamp="2025-05-04T09:18:33">5BB3A7E0-1BCE-4C59-8AF2-7DB4CB0368E6</UUID>
 					<TagList></TagList>
@@ -637,31 +645,114 @@
 					<CustomFunctionCalc>
 						<CustomFunctionReference id="2" name="OrderOfOperations" UUID="D87A5E62-C8CF-4959-8B25-4E70EAF7BE87"></CustomFunctionReference>
 						<Calculation>
-							<Text><![CDATA[// The custom function references a field// It's set up this way, so that we can see how SaXML handles this situationContacts::OrderOfOperationsTest_u]]></Text>
+							<Text><![CDATA[// The custom function references a field
+// It's set up this way, so that we can see how SaXML handles this situation
+
+Contacts::OrderOfOperationsTest_u]]></Text>
 						</Calculation>
 					</CustomFunctionCalc>
 					<CustomFunctionCalc>
 						<CustomFunctionReference id="3" name="GetExternalContainerPath" UUID="DA97387F-1407-48F2-B7C1-0DED6CF007EF"></CustomFunctionReference>
 						<Calculation>
-							<Text><![CDATA[// Purpose:// Utility function used to fragment external container storage into multiple subfolders based on record creation date// History:// 10/2/19 Mislav: Created custom function.// Notes:// Use this custom function in Field options > Storage > Container > Open storage// Do NOT use Self for the table and/or field name CF parameters. The external storage calculation doesn't seem to reference Self correctly.Let ( 	_date = If ( 		IsEmpty ( creationDate ) ; 		"0000-00" ; 		Let ( 			_date = GetAsDate ( creationDate ) ; 			Year ( _date ) & "-" & Right ( 0 & Month ( _date ) ; 2 ) 		)	) ; 	tableName & "/" & fieldName & "/" & _date & "/")]]></Text>
+							<Text><![CDATA[// Purpose:
+// Utility function used to fragment external container storage into multiple subfolders based on record creation date
+
+// History:
+// 10/2/19 Mislav: Created custom function.
+
+// Notes:
+// Use this custom function in Field options > Storage > Container > Open storage
+// Do NOT use Self for the table and/or field name CF parameters. The external storage calculation doesn't seem to reference Self correctly.
+
+Let ( 
+	_date = If ( 
+		IsEmpty ( creationDate ) ; 
+		"0000-00" ; 
+		Let ( 
+			_date = GetAsDate ( creationDate ) ; 
+			Year ( _date ) & "-" & Right ( 0 & Month ( _date ) ; 2 ) 
+		)
+	) ; 
+	tableName & "/" & fieldName & "/" & _date & "/"
+)]]></Text>
 						</Calculation>
 					</CustomFunctionCalc>
 					<CustomFunctionCalc>
 						<CustomFunctionReference id="4" name="GetFileMakerVersionMajor" UUID="B346B342-C393-4502-A4CE-BADBFE5BA1C2"></CustomFunctionReference>
 						<Calculation>
-							<Text><![CDATA[// Signature:// GetFileMakerVersionMajor// Purpose:// Detects major component of current FileMaker application version// Parameters:// None// Result:// Returns major component of current FileMaker application version// For example, if FileMaker application version is 19.2.1, this custom function will return 19// Dependencies:// None// History:// Created: Mislav Kos <mkos@soliantconsulting.com>GetAsNumber ( GetValue ( Substitute ( RightWords ( Get ( ApplicationVersion ) ; 1 ) ; "." ; ¶ ) ; 1 ) )]]></Text>
+							<Text><![CDATA[// Signature:
+// GetFileMakerVersionMajor
+
+// Purpose:
+// Detects major component of current FileMaker application version
+
+// Parameters:
+// None
+
+// Result:
+// Returns major component of current FileMaker application version
+// For example, if FileMaker application version is 19.2.1, this custom function will return 19
+
+// Dependencies:
+// None
+
+// History:
+// Created: Mislav Kos <mkos@soliantconsulting.com>
+
+
+GetAsNumber ( GetValue ( Substitute ( RightWords ( Get ( ApplicationVersion ) ; 1 ) ; "." ; ¶ ) ; 1 ) )]]></Text>
 						</Calculation>
 					</CustomFunctionCalc>
 					<CustomFunctionCalc>
 						<CustomFunctionReference id="5" name="GetFileMakerVersionMinor" UUID="3A2BFA28-E9ED-4F25-ABB9-BDDF17665139"></CustomFunctionReference>
 						<Calculation>
-							<Text><![CDATA[// Signature:// GetFileMakerVersionMinor// Purpose:// Detects minor component of current FileMaker application version// Parameters:// None// Result:// Returns minor component of current FileMaker application version// For example, if FileMaker application version is 19.2.1, this custom function will return 2// Dependencies:// None// History:// Created: Mislav Kos <mkos@soliantconsulting.com>GetAsNumber ( GetValue ( Substitute ( RightWords ( Get ( ApplicationVersion ) ; 1 ) ; "." ; ¶ ) ; 2 ) )]]></Text>
+							<Text><![CDATA[// Signature:
+// GetFileMakerVersionMinor
+
+// Purpose:
+// Detects minor component of current FileMaker application version
+
+// Parameters:
+// None
+
+// Result:
+// Returns minor component of current FileMaker application version
+// For example, if FileMaker application version is 19.2.1, this custom function will return 2
+
+// Dependencies:
+// None
+
+// History:
+// Created: Mislav Kos <mkos@soliantconsulting.com>
+
+
+GetAsNumber ( GetValue ( Substitute ( RightWords ( Get ( ApplicationVersion ) ; 1 ) ; "." ; ¶ ) ; 2 ) )]]></Text>
 						</Calculation>
 					</CustomFunctionCalc>
 					<CustomFunctionCalc>
 						<CustomFunctionReference id="6" name="GetFileMakerVersionPatch" UUID="6F60EA66-06F1-43FA-807C-CC0C9A5E44D2"></CustomFunctionReference>
 						<Calculation>
-							<Text><![CDATA[// Signature:// GetFileMakerVersionPatch// Purpose:// Detects patch component of current FileMaker application version// Parameters:// None// Result:// Returns patch component of current FileMaker application version// For example, if FileMaker application version is 19.2.1, this custom function will return 1// Dependencies:// None// History:// Created: Mislav Kos <mkos@soliantconsulting.com>GetAsNumber ( GetValue ( Substitute ( RightWords ( Get ( ApplicationVersion ) ; 1 ) ; "." ; ¶ ) ; 3 ) )]]></Text>
+							<Text><![CDATA[// Signature:
+// GetFileMakerVersionPatch
+
+// Purpose:
+// Detects patch component of current FileMaker application version
+
+// Parameters:
+// None
+
+// Result:
+// Returns patch component of current FileMaker application version
+// For example, if FileMaker application version is 19.2.1, this custom function will return 1
+
+// Dependencies:
+// None
+
+// History:
+// Created: Mislav Kos <mkos@soliantconsulting.com>
+
+
+GetAsNumber ( GetValue ( Substitute ( RightWords ( Get ( ApplicationVersion ) ; 1 ) ; "." ; ¶ ) ; 3 ) )]]></Text>
 						</Calculation>
 					</CustomFunctionCalc>
 					<CustomFunctionCalc>
@@ -679,13 +770,21 @@
 					<CustomFunctionCalc>
 						<CustomFunctionReference id="11" name="GFN" UUID="6868B921-7A89-4BDB-900A-B54A59D434F8"></CustomFunctionReference>
 						<Calculation>
-							<Text><![CDATA[// Sample input:  	a field whose name is "Employee::Name"// Sample output: 	"Name"// Based on filemakerhacks.com CFGetValue ( Substitute ( GetFieldName ( field ) ; "::" ; ¶ ) ; 2 )]]></Text>
+							<Text><![CDATA[// Sample input:  	a field whose name is "Employee::Name"
+// Sample output: 	"Name"
+// Based on filemakerhacks.com CF
+
+GetValue ( Substitute ( GetFieldName ( field ) ; "::" ; ¶ ) ; 2 )]]></Text>
 						</Calculation>
 					</CustomFunctionCalc>
 					<CustomFunctionCalc>
 						<CustomFunctionReference id="12" name="GTN" UUID="F854C3D2-0079-41E5-AB7E-FB054D651142"></CustomFunctionReference>
 						<Calculation>
-							<Text><![CDATA[// Sample input:  	a field whose name is "Employee::Name"// Sample output: 	"Employee"// Based on filemakerhacks.com CFGetValue ( Substitute ( GetFieldName ( field ) ; "::" ; ¶ ) ; 1 )]]></Text>
+							<Text><![CDATA[// Sample input:  	a field whose name is "Employee::Name"
+// Sample output: 	"Employee"
+// Based on filemakerhacks.com CF
+
+GetValue ( Substitute ( GetFieldName ( field ) ; "::" ; ¶ ) ; 1 )]]></Text>
 						</Calculation>
 					</CustomFunctionCalc>
 					<CustomFunctionCalc>
@@ -12725,7 +12824,16 @@ part.white_part:normal .self
 									<Text>
 										<Options>2</Options>
 										<StyledText>
-											<Data><![CDATA[This file endeavors to have an example of One Of Everything (Ooe)—one of every possible configuration of every kind of solution element.For example, every kind of layout part or layout object, every kind of value list, every kind of script step, etc.Achieving 100% coverage is not a realistic goal, but the hope is that over time we can add examples of all these different permutations to this file.Last updated: 2025-06-23]]></Data>
+											<Data><![CDATA[This file endeavors to have an example of One Of Everything (Ooe)—one of every possible configuration of every kind of solution element.
+
+For example, every kind of layout part or layout object, every kind of value list, every kind of script step, etc.
+
+Achieving 100% coverage is not a realistic goal, but the hope is that over time we can add examples of all these different permutations to this file.
+
+
+
+Last updated: 2025-06-23
+]]></Data>
 										</StyledText>
 									</Text>
 									<LocalCSS name=""><![CDATA[self:normal .self
@@ -14309,7 +14417,11 @@ part.white_part:normal .self
 									<Text>
 										<Options>2</Options>
 										<StyledText>
-											<Data><![CDATA[This file endeavors to have an example of one of everything (Ooe), i.e. one of every possible configuration of a solution element.e.g. every kind of layout part or layout object, every kind of value list, every kind of script step, etc.Achieving this 100% is not a realistic goal, but the hope is that over time we can add examples of all these different permutations in this file.This file was last updated on 2025-06-09. Please update the Change Log script when you add something to this file.]]></Data>
+											<Data><![CDATA[This file endeavors to have an example of one of everything (Ooe), i.e. one of every possible configuration of a solution element.
+e.g. every kind of layout part or layout object, every kind of value list, every kind of script step, etc.
+Achieving this 100% is not a realistic goal, but the hope is that over time we can add examples of all these different permutations in this file.
+
+This file was last updated on 2025-06-09. Please update the Change Log script when you add something to this file.]]></Data>
 										</StyledText>
 									</Text>
 									<LocalCSS name="FM-413A4E13-09BF-4799-B66D-27BE078F05E7"><![CDATA[self.FM-413A4E13-09BF-4799-B66D-27BE078F05E7:normal .self
@@ -18267,7 +18379,33 @@ part.white_part:normal .self
 									<value>
 										<Calculation datatype="1" position="1">
 											<Calculation>
-												<Text><![CDATA[/*Let([ $Command_EN =_Syntax::Command_EN ;$Command_Foreign = Syntax.GUISyntax::Command ;$CommandColoringOn = _Syntax::On = 1;$ColorExists = Syntax.Color::__ID > 0 and Syntax.Color::ColorName ≠ "--None--";$ColorHex = Syntax.Color::_kColorHex ;vStamp = Get( CurrentTime )];Case( _Syntax::_kIsGroupTitle ; "" ;not $CommandColoringOn or not $ColorExists ;vStamp & " Removed: English " & MBS( "SyntaxColoring.RemoveTag" ; $Command_EN ) & Case( _Syntax::_gLanguage <> "English" and not IsEmpty( $Command_Foreign ) ;  ", " & _Syntax::_gLanguage & " " & MBS( "SyntaxColoring.RemoveTag" ; $Command_Foreign )) ;$CommandColoringOn and $ColorExists ;vStamp & " Added: English " & MBS( "SyntaxColoring.AddTag" ; $Command_EN ; $ColorHex ) & Case( _Syntax::_gLanguage ≠ "English" and not IsEmpty( $Command_Foreign ) ;  ", " & _Syntax::_gLanguage & " " & MBS( "SyntaxColoring.AddTag" ; $Command_Foreign ; $ColorHex )) ;"-"))*/]]></Text>
+												<Text><![CDATA[/*Let([ 
+$Command_EN =_Syntax::Command_EN ;
+$Command_Foreign = Syntax.GUISyntax::Command ;
+$CommandColoringOn = _Syntax::On = 1;
+$ColorExists = Syntax.Color::__ID > 0 and Syntax.Color::ColorName ≠ "--None--";
+$ColorHex = Syntax.Color::_kColorHex ;
+vStamp = Get( CurrentTime )
+];
+Case( 
+
+_Syntax::_kIsGroupTitle ; "" ;
+
+not $CommandColoringOn or not $ColorExists ;
+vStamp & " Removed: English " & MBS( "SyntaxColoring.RemoveTag" ; $Command_EN ) & 
+Case( _Syntax::_gLanguage <> "English" and not IsEmpty( $Command_Foreign ) ;
+  ", " & _Syntax::_gLanguage & " " & MBS( "SyntaxColoring.RemoveTag" ; $Command_Foreign )
+) ;
+
+$CommandColoringOn and $ColorExists ;
+vStamp & " Added: English " & MBS( "SyntaxColoring.AddTag" ; $Command_EN ; $ColorHex ) & 
+Case( _Syntax::_gLanguage ≠ "English" and not IsEmpty( $Command_Foreign ) ;
+  ", " & _Syntax::_gLanguage & " " & MBS( "SyntaxColoring.AddTag" ; $Command_Foreign ; $ColorHex )
+) ;
+
+"-"
+
+))*/]]></Text>
 											</Calculation>
 										</Calculation>
 									</value>
@@ -24304,7 +24442,10 @@ part.white_part:normal .self
 								<Parameter type="Calculation">
 									<Calculation datatype="1" position="1">
 										<Calculation>
-											<Text><![CDATA["--trace $TargetDump--uploadOrWhatever $SourceFile"]]></Text>
+											<Text><![CDATA["
+--trace $TargetDump
+--uploadOrWhatever $SourceFile
+"]]></Text>
 										</Calculation>
 									</Calculation>
 								</Parameter>
@@ -37495,7 +37636,8 @@ part.white_part:normal .self
 								<Parameter type="Message">
 									<Calculation datatype="1" position="1">
 										<Calculation>
-											<Text><![CDATA["Only Button 1 and 3¶" & "and input 2"]]></Text>
+											<Text><![CDATA["Only Button 1 and 3¶" & 
+"and input 2"]]></Text>
 										</Calculation>
 									</Calculation>
 								</Parameter>
@@ -38367,7 +38509,14 @@ part.white_part:normal .self
 							<FieldReference id="8" name="OrderOfOperationsTest_u" repetition="1" UUID="BAD8B032-4CD5-420D-80A1-86A3AC338852">
 								<Calculation>
 									<TableOccurrenceReference id="1065091" name="Contacts" UUID="E8E43577-C015-43EC-A455-99DD51B56BF2"></TableOccurrenceReference>
-									<Text><![CDATA[Contacts_TestTable::TextField1& // This custom function references this field// It also references a related record// It's set up this way, so that we can see how SaXML handles this situationOrderOfOperations]]></Text>
+									<Text><![CDATA[Contacts_TestTable::TextField1
+
+& 
+
+// This custom function references this field
+// It also references a related record
+// It's set up this way, so that we can see how SaXML handles this situation
+OrderOfOperations]]></Text>
 								</Calculation>
 								<BaseTableReference id="131" name="Contacts" UUID="48C3E49A-617B-45C4-98F9-E901BD4E69BE"></BaseTableReference>
 							</FieldReference>

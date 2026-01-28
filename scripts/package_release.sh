@@ -21,4 +21,14 @@ if [ $? -ne 0 ]; then
     exit 1
 fi
 
+# Generate SaXML paths
+input_folder="saxml_utf8"
+output_folder="saxml_paths_depth_4"
+echo "Generating SaXML paths..."
+scripts/generate_saxml_paths.sh "$input_folder" "$output_folder"
+if [ $? -ne 0 ]; then
+    echo "❌ Error generating SaXML paths. Exiting."
+    exit 1
+fi
+
 echo "✅ Release packaging complete!"
